@@ -1,0 +1,33 @@
+read me >
+fichier txt avec pls infos
+
+index.php >
+home page du site, seule page en dehors des view
+
+header >
+inclusion de bootstrap et du style.css
+
+footer >
+si scipt js, les mettre dans les footers
+
+config >
+linker les éléments back office
+ROOT > crée un chemin absolu pour les link
+ROOT_URL > crée un chemin pour les url je crois ?
+libraire .env > propre a chaque manchine, variable fix par manchine
+
+mettre app DEBUg en false dans le pt env lorsqu'on présente le site
+
+view > la ou on va mettre toutes les pages
+
+src > fichier css, font, image
+
+includes > si besoin d'inclure librairie externe
+
+fonction > toutes les fonctions
+
+config > fichier de config, pas toucher à part config
+
+class > sans doute pas le temps d'y toucher
+
+api > recois les infos et renvoie si c'est besoin, lien entre fonction et html

@@ -1,0 +1,2 @@
+</body>
+<!-- Load JS scripts -->
