@@ -13,7 +13,7 @@ $libSsTitr2Art = $_POST['libSsTitr2Art'];
 $parag3Art = $_POST['parag3Art'];
 $libConclArt = $_POST['libConclArt'];
 $urlPhotArt = $_POST['urlPhotArt'];
-echo ' coucou';
+
 
 
 sql_insert('article', "`libTitrArt`, `libChapoArt`, `libAccrochArt`, `parag1Art`, `libSsTitr1Art`, `parag2Art`, `libSsTitr2Art`, `parag3Art`, `libConclArt`, `urlPhotArt`, `numThem`","'$libTitrArt','$libChapoArt','$libAccrochArt','$parag1Art','$libSsTitr1Art','$parag2Art','$libSsTitr2Art','$parag3Art','$libConclArt','$urlPhotArt',1");

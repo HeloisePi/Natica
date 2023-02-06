@@ -6,5 +6,5 @@ $numMotCle = $_POST['numMotCle'];
 
 sql_delete('MOTCLE',"numMotCle = $numMotCle");
 
-header('Location: ../../');
+header('Location: ../../views/backend/keywords/list.php');
 
