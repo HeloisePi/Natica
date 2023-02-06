@@ -7,7 +7,7 @@ include '../../../header.php'; // contains the header and call to config.php
     exit();
 } */
 
-//Load all statuses
+//Load all members
 $members = sql_select("membre", "*");
 ?>
 
@@ -24,7 +24,7 @@ $members = sql_select("membre", "*");
                         <th>nom</th>
                         <th>pseudo</th>
                         <th>e-mail</th>
-                        
+
 
                     </tr>
                 </thead>
@@ -48,5 +48,5 @@ $members = sql_select("membre", "*");
         </div>
     </div>
 
-<?php
-include '../../../footer.php'; // contains the footer
+    <?php
+    include '../../../footer.php'; // contains the footer
