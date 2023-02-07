@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,11 +18,12 @@ require_once 'config.php';
 
 //load php scripts
 ?>
-<body>
+
+
 
 <nav class="navbar navbar-expand-lg ">
   <div class="container-fluid">
-        <img src="/images/eXim-logo.svg" alt="logo">
+    <img src="/images/eXim-logo.svg" alt="logo">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -43,14 +45,14 @@ require_once 'config.php';
 </nav>
 
 <div class="haut">
-  <div class="title" >
-    <h1 class="titre-header" >EXIM BORDEAUX</h1>
+  <div class="title">
+    <h1>EXIM BORDEAUX</h1>
   </div>
   <div class="purple-line"></div>
-  <div class="under-title" >
+  <div class="under-title">
     <h2>Expériences Immersives</h2>
   </div>
-  
+
   <div class="scroll-down">
     <img src="/images/scroll-down.svg" alt="scroll down">
   </div>
