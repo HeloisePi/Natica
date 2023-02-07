@@ -11,8 +11,8 @@ include '../../../header.php';
     exit();
 } */
 
-$pseudoMemb = $_GET['pseudoMemb'];
-$membre = sql_select("membre", 'pseudoMemb', "pseudoMemb = '$pseudoMemb'");
+$numMemb = $_GET['numMemb'];
+$membre = sql_select("membre", 'numMemb', "numMemb = '$numMemb'");
 
 
 ?>
@@ -28,8 +28,8 @@ $membre = sql_select("membre", 'pseudoMemb', "pseudoMemb = '$pseudoMemb'");
             <form action="<?php echo ROOT_URL . '/api/membre/delete.php' ?>" method="post">
                 <div class="form-group">
                     <label for="libStat"></label>
-                    <input id="pseudoMemb" class="form-control" style="display: none;" type="text" name="pseudoMemb" value="<?php echo ($pseudoMemb); ?>" readonly="readonly">
-                    <input id="membre" class="form-control" type="text" name="menbre" value="<?php echo ($pseudoMemb); ?>" readonly="readonly">
+                    <input id="numMemb" class="form-control" style="display: none;" type="text" name="numMemb" value="<?php echo ($numMemb); ?>" readonly="readonly">
+                    <input id="membre" class="form-control" type="text" name="menbre" value="<?php echo ($numMemb); ?>" readonly="readonly">
                 </div>
                 <div class="form-group mt-2">
                     <button type="submit" class="btn btn-danger">Confirmer la suppression ?</button>

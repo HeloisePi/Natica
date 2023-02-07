@@ -27,7 +27,7 @@ include '../../header.php';
                             <td>
                                 <a href="/views/backend/status/list.php" class="btn btn-primary">List</a>
                                 <a href="/views/backend/status/create.php" class="btn btn-success">Create</a>
-                                <a href="/views/backend/status/edit.php" class="btn btn-warning">Edit</a>
+
                                 <!-- <a href="/views/backend/status/delete.php" class="btn btn-danger">Delete</a>  Ne sers à rien , et ne marche pas-->
                             </td>
                             <td>
@@ -48,7 +48,7 @@ include '../../header.php';
                             <td>
                                 <a href="/views/backend/articles/list.php" class="btn btn-primary ">List</a>
                                 <a href="/views/backend/articles/create.php" class="btn btn-success ">Create</a>
-                                <a href="/views/backend/articles/edit.php" class="btn btn-warning disabled">Edit</a>
+                                
 
                             </td>
                             <td></td>
