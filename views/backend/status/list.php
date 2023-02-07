@@ -30,7 +30,7 @@ $statuses = sql_select("STATUT", "*");
                             <td><?php echo $status['numStat']; ?></td>
                             <td><?php echo $status['libStat']; ?></td>
                             <td>
-                                <a href="edit.php?id=<?php echo $status['numStat']; ?>" class="btn btn-primary">Edit</a>
+                                <a href="edit.php?numStat=<?php echo $status['numStat']; ?>" class="btn btn-primary">Edit</a>
                                 <a href="delete.php?numStat=<?php echo $status['numStat']; ?>" class="btn btn-danger">Delete</a>
                             </td>
                         </tr>
@@ -41,5 +41,5 @@ $statuses = sql_select("STATUT", "*");
         </div>
     </div>
 
-<?php
-include '../../../footer.php'; // contains the footer
+    <?php
+    include '../../../footer.php'; // contains the footer
