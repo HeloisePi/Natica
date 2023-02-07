@@ -42,3 +42,13 @@ require_once 'config.php';
   </div>
 </nav>
 
+<div class="title" >
+  <h1>EXIM BORDEAUX</h1>
+</div>
+
+<div class="under-title" >
+  <h2>Expériences Immersives</h2>
+</div>
+
+<body>
+

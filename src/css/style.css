@@ -1,6 +1,6 @@
-.navbar-expand-lg {
+.navbar-collapse {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .blabla:hover {
@@ -15,5 +15,17 @@
     border-color: black;
     border-width: 1px;
     border-radius: 5px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.under-title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4%;
 }
 
