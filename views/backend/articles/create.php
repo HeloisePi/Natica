@@ -21,9 +21,11 @@ include '../../../header.php';
     <input type="text" id="sous-titre3" name="libSsTitr2Art" required><br>
     <label for="paragraphe3">Paragraphe 3 * </label><br>
     <input type="text" id="paragraphe3" name="parag3Art" required><br>
+    <label for="conclusion">Conclusion * </label><br>
+    <input type="text" id="conclusion" name="libConclArt" required><br>
     <label for="motcles">Mot Clés *</label><br>
-    <input type="text" id="motcles" name="libConclArt" required><br>
-    <label for="photo">Importer photo *</label><br>r
+    <input type="text" id="motcles" name="libMotCle" required><br>
+    <label for="photo">Importer photo *</label><br>
     <input type="file" id="photo" name="urlPhotArt"><br>
     <label for="adresse">Adresse</label><br>
     <input type="text" id="adresse" ><br>

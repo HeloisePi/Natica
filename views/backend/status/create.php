@@ -13,7 +13,7 @@ include '../../../header.php';
             <!--Form to create a new status-->
             <form action="<?php echo ROOT_URL . '/api/status/create.php' ?>" method="post">
                 <div class="form-group">
-                    <label for="libStat">libStat</label>
+                    <label for="libStat"></label>
                     <input id="libStat" class="form-control" type="text" name="libStat">
                 </div>
                 <div class="form-group mt-2">

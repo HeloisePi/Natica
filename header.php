@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <!-- Load CSS -->
     <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="reset.css" href="/src/css/reset.css">
 </head>
 
 <?php
@@ -20,25 +21,23 @@ require_once 'config.php';
 
 <nav class="navbar navbar-expand-lg bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">BlogArt</a>
+    <a class="navbar-brand" href="#">eXim</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/">Home</a>
+          <a class="nav-link" aria-current="page" href="/">Accueil</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/views/backend/dashboard.php">Admin</a>
+          <a class="nav-link" href="/views/backend/dashboard.php">Articles</a>
         </li>
       </ul>
     </div>
     <!--right align-->
     <div class="d-flex">
-      <!-- <a class="btn btn-primary m-1" href="/views/backend/login.php" role="button">Login</a>
-      <a class="btn btn-dark m-1" href="/views/backend/register.php" role="button">Register</a> -->
-      <a class="btn btn-primary m-1 blabla" href="/views/backend/login.php" role="button">Mon compte</a>
+      <a class="btn btn-primary m-1 blabla" href="/views/backend/login.php" role="button">Se connecter</a>
     </div>
   </div>
 </nav>

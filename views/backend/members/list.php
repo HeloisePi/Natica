@@ -37,8 +37,8 @@ $members = sql_select("membre", "*");
                             <td><?php echo $member['pseudoMemb']; ?></td>
                             <td><?php echo $member['eMailMemb']; ?></td>
                             <td>
-                                <a href="edit.php?id=<?php echo $member['numStat']; ?>" class="btn btn-primary">Edit</a>
-                                <a href="delete.php?numStat=<?php echo $member['numStat']; ?>" class="btn btn-danger">Delete</a>
+                                <a href="edit.php?id=<?php echo $member['pseudoMemb']; ?>" class="btn btn-primary">Edit</a>
+                                <a href="delete.php?pseudoMemb=<?php echo $member['pseudoMemb']; ?>" class="btn btn-danger">Delete</a>
                             </td>
                         </tr>
                     <?php } ?>
