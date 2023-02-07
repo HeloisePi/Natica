@@ -30,7 +30,7 @@ $keywords = sql_select("motcle", "*");
                             <td><?php echo $keyword['numMotCle']; ?></td>
                             <td><?php echo $keyword['libMotCle']; ?></td>                           
                             <td>
-                                <a href="edit.php?id=<?php echo $keyword['numMotCle']; ?>" class="btn btn-primary">Edit</a>
+                                <a href="edit.php?numMotCle=<?php echo $keyword['numMotCle']; ?>" class="btn btn-primary">Edit</a>
                                 <a href="delete.php?numMotCle=<?php echo $keyword['numMotCle']; ?>" class="btn btn-danger">Delete</a>
                             </td>
                         </tr>
