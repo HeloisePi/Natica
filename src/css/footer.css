@@ -7,4 +7,11 @@ h1, .liens {
     text-decoration: none;
 }
 
+.liens:hover{
+    text-decoration: underline;
+}
+
+.last-in-footer {
+    margin-left: auto;
+}
 
