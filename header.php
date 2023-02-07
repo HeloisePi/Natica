@@ -56,8 +56,4 @@ require_once 'config.php';
   </div>
 </div>
 
-<script type="text/javascript">
-alert ("Bonjour je suis un cookie tu vas me détester haha");
-</script>
-<body>
 
