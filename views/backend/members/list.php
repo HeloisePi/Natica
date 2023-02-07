@@ -24,6 +24,7 @@ $members = sql_select("membre", "*");
                         <th>nom</th>
                         <th>pseudo</th>
                         <th>e-mail</th>
+                        <th> Mot de Passe</th>
 
 
                     </tr>
@@ -36,9 +37,10 @@ $members = sql_select("membre", "*");
                             <td><?php echo $member['nomMemb']; ?></td>
                             <td><?php echo $member['pseudoMemb']; ?></td>
                             <td><?php echo $member['eMailMemb']; ?></td>
+                            <td><?php echo $member['passMemb']; ?></td>
                             <td>
-                                <a href="edit.php?id=<?php echo $member['pseudoMemb']; ?>" class="btn btn-primary">Edit</a>
-                                <a href="delete.php?pseudoMemb=<?php echo $member['pseudoMemb']; ?>" class="btn btn-danger">Delete</a>
+                                <a href="edit.php?numMemb=<?php echo $member['numMemb']; ?>" class="btn btn-primary">Edit</a>
+                                <a href="delete.php?numMemb=<?php echo $member['numMemb']; ?>" class="btn btn-danger">Delete</a>
                             </td>
                         </tr>
                     <?php } ?>
