@@ -7,8 +7,8 @@ include '../../../header.php'; // contains the header and call to config.php
     exit();
 } */
 
-//Load all statuses
-$commentaires = sql_select("comment", "*");
+//Load all comments
+$commentaires = sql_select("COMMENT", "*");
 ?>
 
 <!-- Bootstrap default layout to display all status in foreach -->
@@ -36,7 +36,7 @@ $commentaires = sql_select("comment", "*");
                             <td><?php echo $commentaire['numMemb']; ?></td>
                             <td>
                                 <a href="edit.php?id=<?php echo $commentaire['numCom']; ?>" class="btn btn-primary">Edit</a>
-                                <a href="delete.php?numStat=<?php echo $commentaire['numCom']; ?>" class="btn btn-danger">Delete</a>
+                                <a href="delete.php?numCom=<?php echo $commentaire['numCom']; ?>" class="btn btn-danger">Delete</a>
                             </td>
                         </tr>
                     <?php } ?>
