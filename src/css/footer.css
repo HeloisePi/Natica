@@ -4,4 +4,7 @@ footer, .text-center, .p-3 {
 
 h1, .liens {
     color: black;
+    text-decoration: none;
 }
+
+
