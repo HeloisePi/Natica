@@ -27,12 +27,12 @@ $libStat = sql_select("STATUT", "libStat", "numStat = $numStat")[0]['libStat'];
             <!--Form to create a new status-->
             <form action="<?php echo ROOT_URL . '/api/status/delete.php' ?>" method="post">
                 <div class="form-group">
-                    <label for="libStat">libStat</label>
-                    <input id="numStat" class="form-control" style="display: none;" type="text" name="numStat" value="<?php echo($numStat); ?>" readonly="readonly">
-                    <input id="libStat" class="form-control" type="text" name="libStat" value="<?php echo($libStat); ?>" readonly="readonly">
+                    <label for="libStat"></label>
+                    <input id="numStat" class="form-control" style="display: none;" type="text" name="numStat" value="<?php echo ($numStat); ?>" readonly="readonly">
+                    <input id="libStat" class="form-control" type="text" name="libStat" value="<?php echo ($libStat); ?>" readonly="readonly">
                 </div>
                 <div class="form-group mt-2">
-                    <button type="submit" class="btn btn-danger">Confirm Deletion ?</button>
+                    <button type="submit" class="btn btn-danger">Confirmer la suppression ?</button>
                 </div>
             </form>
         </div>
