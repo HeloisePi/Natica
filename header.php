@@ -7,7 +7,7 @@
     <!-- Bootstrap CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <!-- Load CSS -->
-    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="/src/css/style.css">
 </head>
 
 <?php
@@ -36,9 +36,9 @@ require_once 'config.php';
     </div>
     <!--right align-->
     <div class="d-flex">
-      <a class="btn couleur m-1" href="/views/backend/login.php" role="button">Login</a>
-      <a class="btn btn-dark m-1" href="/views/backend/register.php" role="button">Register</a>
-      <a class="btn btn-primary m-1" href="/views/backend/login.php" role="button">Mon compte</a>
+      <!-- <a class="btn btn-primary m-1" href="/views/backend/login.php" role="button">Login</a>
+      <a class="btn btn-dark m-1" href="/views/backend/register.php" role="button">Register</a> -->
+      <a class="btn btn-primary m-1 blabla" href="/views/backend/login.php" role="button">Mon compte</a>
     </div>
   </div>
 </nav>

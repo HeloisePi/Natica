@@ -1,3 +1,7 @@
-.couleur {
-    background-color: brown;
+.blabla {
+    color: black;
+    background-color: #7C73F5;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 5px;
 }
