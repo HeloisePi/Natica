@@ -1,3 +1,14 @@
+.navbar-expand-lg {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blabla:hover {
+    color: rgb(0, 0, 0);
+    background-color: #ffffff ;
+    border-color: rgb(0, 0, 0);
+}
+
 .blabla {
     color: black;
     background-color: #7C73F5;
@@ -5,3 +16,4 @@
     border-width: 1px;
     border-radius: 5px;
 }
+
