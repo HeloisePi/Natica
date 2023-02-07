@@ -7,4 +7,10 @@ h1, .liens {
     text-decoration: none;
 }
 
+.last-in-footer {
+    margin-left: auto;
+}
 
+footer {
+    padding-top: 2rem;
+}
