@@ -55,7 +55,7 @@ $articles = sql_select("article", "*");
                             
                             <td>
                                 <a href="edit.php?id=<?php echo $article['numArt']; ?>" class="btn btn-primary">Edit</a>
-                                <a href="delete.php?numStat=<?php echo $article['numArt']; ?>" class="btn btn-danger">Delete</a>
+                                <a href="delete.php?numArt=<?php echo $article['numArt']; ?>" class="btn btn-danger">Delete</a>
                             </td>
                         </tr>
                     <?php } ?>
