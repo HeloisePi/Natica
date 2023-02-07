@@ -40,7 +40,6 @@ include '../../header.php';
                                 <a href="/views/backend/members/list.php" class="btn btn-primary ">List</a>
                                 <a href="/views/backend/members/create.php" class="btn btn-success disabled">Create</a>
                                 <a href="/views/backend/members/edit.php" class="btn btn-warning disabled">Edit</a>
-                                <a href="/views/backend/members/delete.php" class="btn btn-danger disabled">Delete</a>
                             </td>
                             <td>Attention, il faut aussi gérer la partie inscription/connection et la sécurité</td>
                         </tr>
