@@ -44,7 +44,7 @@ require_once 'config.php';
 
 <div class="haut">
   <div class="title" >
-    <h1>EXIM BORDEAUX</h1>
+    <h1 class="titre-header" >EXIM BORDEAUX</h1>
   </div>
   <div class="purple-line"></div>
   <div class="under-title" >

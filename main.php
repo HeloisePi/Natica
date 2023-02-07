@@ -10,6 +10,14 @@
     <link rel="stylesheet" href="/src/css/main.css">
 </head>
 <body>
-    
+    <h1>Test d'affichage du main !</h1>
+    <div class="article-header">
+        <div class="card-article">
+            <div id="rectangle"></div>
+        </div>
+        <div class="list-article-header">
+
+        </div>
+    </div>
 </body>
 </html>
