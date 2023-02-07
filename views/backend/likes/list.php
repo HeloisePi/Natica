@@ -42,5 +42,5 @@ $likes = sql_select("likeart", "*");
         </div>
     </div>
 
-<?php
-include '../../../footer.php'; // contains the footer
+    <?php
+    include '../../../footer.php'; // contains the footer
