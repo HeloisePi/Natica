@@ -21,10 +21,8 @@
             <div class="row">
                 <!--Grid column-->
                 <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-                <h5 class="text-uppercase">eXim</h5>
+                <img src="/images/eXim-logo.svg" alt="logo">
                 </div>
-                <!--Grid column-->
-
                 <!--Grid column-->
                 <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
                 <h5 class="text-uppercase">Plan du site</h5>
@@ -60,7 +58,7 @@
             <!-- Grid container -->
 
             <!-- Copyright -->
-            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            <div class="text-center p-3">
             © eXim, Tous droits réservés . 
             <a class="liens" href="https://exim.com/"> Mentions Légales</a>
             </div>
