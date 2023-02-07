@@ -1,12 +1,10 @@
 <?php
-
-
-// print_r($_POST); voir si on a bien reçu l'infos
-
 require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
+// print_r($_POST);
 
+$numThem = $_POST['numThem'];
 $libThem = $_POST['libThem'];
 
-sql_insert('THEMATIQUE', 'libThem', "'$libThem'");
+sql_update('THEMATIQUE', "libThem= '$libThem'", "numThem = $numThem");
 
 header('Location: ../../views/backend/thematiques/list.php');

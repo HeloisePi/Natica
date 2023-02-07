@@ -30,7 +30,7 @@ $thematiques = sql_select("thematique", "*");
                             <td><?php echo $thematiques['numThem']; ?></td>
                             <td><?php echo $thematiques['libThem']; ?></td>
                             <td>
-                                <a href="edit.php?id=<?php echo $thematiques['numThem']; ?>" class="btn btn-primary">Edit</a>
+                                <a href="edit.php?numThem=<?php echo $thematiques['numThem']; ?>" class="btn btn-primary">Edit</a>
                                 <a href="delete.php?numThem=<?php echo $thematiques['numThem']; ?>" class="btn btn-danger">Delete</a>
                             </td>
                         </tr>
