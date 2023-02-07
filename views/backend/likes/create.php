@@ -30,7 +30,7 @@ include '../../../header.php';
             <div class="form-group mt-2">
                 <button type="submit" class="btn btn-primary">Create</button>
             </div>
-            <?php if ($numArt > 99 or $likeA > 1) {
+            <?php if ($likeA > 1) {
                 header('Location: ../../views/backend/likes/create.php');
                 echo ("Les valeurs saisies sont incorrectes");
             }
