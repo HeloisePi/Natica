@@ -25,7 +25,7 @@ body {
     text-decoration: underline;
     color: #7C73F5;
 }
-.articles-decouvrir h1 {
+.all-articles h1 {
     text-align: center;
     font-family: "bebas-neue", sans-serif;
     padding-top: 2.5%;
@@ -37,15 +37,15 @@ body {
     flex-direction: column;
 }
 
-.rect-decouvrir {
+.rect-all {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
-.titres-decouvrir {
+.titres-all {
     display: block;
 }
-.bloc-decouvrir {
+.bloc-all {
     display: flex;
     margin-right: 1.7%;
     overflow: hidden;
