@@ -98,3 +98,9 @@ body {
     border-radius: 4px;
 }
 
+.titre-eximBordeaux{
+    font-size: 128px;
+    position: relative;
+    z-index: 5;
+}
+
