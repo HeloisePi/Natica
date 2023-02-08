@@ -12,11 +12,11 @@
 <body>
 <div class="haut">
     <div class="title">
-        <h1>EXIM BORDEAUX</h1>
+        <h1 class="titre-eximBordeaux">EXIM BORDEAUX</h1>
+        <div class="purple-line"></div>
     </div>
-    <div class="purple-line"></div>
     <div class="under-title">
-        <h2>Expériences Immersives</h2>
+        <h2  >Expériences Immersives</h2>
     </div>
 
     <div class="scroll-down">
@@ -58,21 +58,27 @@
 <div class="articles-decouvrir">
 <h1>Quelques expériences immersives qui pourraient vous plaire</h1>
     <div class="rect-decouvrir">
-        <div class="bloc-decouvrir">
-            <h3>évènement 1</h3>
-            <div class="info-decouvrir">
-            </div>
-        </div>   
-        <div class="bloc-decouvrir">
-        <h3>évènement 2</h3>
-            <div class="info-decouvrir">
+        <div class= "titres-decouvrir">
+            <h3>Evènement 1</h3>
+            <div class="bloc-decouvrir">
+                <div class="info-decouvrir">
+                </div>
+            </div>   
+        </div>
+        <div class= "titres-decouvrir">
+            <h3>Evènement 2</h3>
+            <div class="bloc-decouvrir">
+                <div class="info-decouvrir">
+                </div>
             </div>
         </div>
-        <div class="bloc-decouvrir">
-        <h3>évènement 3</h3>
-            <div class="info-decouvrir">
+        <div class= "titres-decouvrir">
+            <h3>Evènement 3</h3>
+            <div class="bloc-decouvrir">
+                <div class="info-decouvrir">
+                </div>
             </div>
-        </div>
+        </div>    
     </div>
 </div>
 
