@@ -12,8 +12,6 @@
 </head>
 <body>
     
-</body>
-</html>
 
 <?php
 include '../../header.php';
@@ -26,7 +24,7 @@ $passMemb = $_GET['passMemb'];
 
 
 
-<div class="fil-ariane">
+<div class="fil-ariane1">
     <a href="/index.php" class="liens-ariane">Accueil</a>
     <p class="separation"> > </p>
     <a href="/views/backend/login.php" class="liens-ariane">Se connecter</a>
@@ -94,5 +92,6 @@ $passMemb = $_GET['passMemb'];
 
 
 
-<?php include '../../footer.php'; // contains the footer
-?>
+<?php include '../../footer.php'; // contains the footer ?>
+</body>
+</html>

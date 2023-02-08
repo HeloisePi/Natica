@@ -1,10 +1,23 @@
-.fil-ariane {
+.fil-ariane1 {
     display: flex;
     font-family: "bebas-neue", sans-serif;
     font-size: 40px;
     padding-left: 5rem;
     margin-top: 2rem;
     margin-bottom: 6rem;
+}
+
+.fil-ariane2 {
+    display: flex;
+    font-family: "bebas-neue", sans-serif;
+    font-size: 40px;
+    padding-left: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.champs-obl {
+    padding-left: 13rem;
 }
 
 .liens-ariane {
