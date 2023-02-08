@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,27 +11,16 @@
     <link rel="stylesheet" href="https://use.typekit.net/ujw8boj.css">
 </head>
 <body>
-    
-</body>
-</html>
-
 <?php
-if (!empty($_POST['eMailMemb'])) {
-    setcookie('Emailutilisateur', 'eMailMemb', time() + 60 * 60 * 24 * 30, '/'); // le cookie en clé utilisateur comporte la valeur test et a un temps de 30 jours
-
-}
 include '../../header.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
 
-//$eMailMemb = $_GET['eMailMemb'];
-//$passMemb = $_GET['passMemb'];
-
+$eMailMemb = $_GET['eMailMemb'];
+$passMemb = $_GET['passMemb'];
 ?>
 
 
-
-
-<div class="fil-ariane">
+<div class="fil-ariane1">
     <a href="/index.php" class="liens-ariane">Accueil</a>
     <p class="separation"> > </p>
     <a href="/views/backend/login.php" class="liens-ariane">Se connecter</a>
@@ -88,7 +77,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
                 </div>
                 <div class="align-btn-connect">
                     <p class="text-connect">Vous n’avez pas de compte ?</p>
-                    <a href="#!" class="liens-ariane text-connect">Créer un compte.</a>
+                    <a href="/views/backend/inscription.php" class="liens-ariane text-connect">Créer un compte.</a>
                 </div>
             </form>
         </div>
@@ -96,5 +85,9 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
 </div>
 
 
-<?php include '../../footer.php'; // contains the footer
-?>
+
+
+
+<?php include '../../footer.php'; // contains the footer ?>
+</body>
+</html>
