@@ -41,8 +41,8 @@
                         <input class="form-control taille-saisie" type="text" id="eMailMemb" name='eMailMemb' require> <br>
 
                         <?php
-                        $msgErreur = $_GET['error'];
                         if (isset($_GET["error"]) && $_GET["error"] == 1) {
+                            $msgErreur = $_GET['error'];
                         ?>
 
                             <span>
