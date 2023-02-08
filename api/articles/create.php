@@ -13,8 +13,10 @@ $libSsTitr2Art = $_POST['libSsTitr2Art'];
 $parag3Art = $_POST['parag3Art'];
 $libConclArt = $_POST['libConclArt'];
 $urlPhotArt = $_POST['urlPhotArt'];
+$numThem = $_POST['numThem'];
+echo $numThem;
 
 
 
-sql_insert('article', "`libTitrArt`, `libChapoArt`, `libAccrochArt`, `parag1Art`, `libSsTitr1Art`, `parag2Art`, `libSsTitr2Art`, `parag3Art`, `libConclArt`, `urlPhotArt`, `numThem`","'$libTitrArt','$libChapoArt','$libAccrochArt','$parag1Art','$libSsTitr1Art','$parag2Art','$libSsTitr2Art','$parag3Art','$libConclArt','$urlPhotArt',1");
+sql_insert('article', "`libTitrArt`, `libChapoArt`, `libAccrochArt`, `parag1Art`, `libSsTitr1Art`, `parag2Art`, `libSsTitr2Art`, `parag3Art`, `libConclArt`, `urlPhotArt`, `numThem`","'$libTitrArt','$libChapoArt','$libAccrochArt','$parag1Art','$libSsTitr1Art','$parag2Art','$libSsTitr2Art','$parag3Art','$libConclArt','$urlPhotArt','$numThem'");
 header('Location: ../../views/backend/articles/list.php');
