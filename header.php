@@ -39,7 +39,7 @@ require_once 'config.php';
     </div>
     <!--right align-->
     <div class="d-flex">
-      <a class="btn btn-primary m-1 blabla" href="/views/backend/login.php" role="button">Se connecter</a>
+      <a class="btn btn-primary m-1 connexion" href="/views/backend/login.php" role="button">Se connecter</a>
     </div>
   </div>
 </nav>

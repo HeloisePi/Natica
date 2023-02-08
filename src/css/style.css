@@ -12,13 +12,13 @@ body {
     justify-content: space-around;
 }
 
-.blabla:hover {
+.connexion:hover {
     color: rgb(0, 0, 0);
     background-color: #ffffff ;
     border-color: rgb(0, 0, 0);
 }
 
-.blabla {
+.connexion {
     color: black;
     background-color: #7C73F5;
     border-color: black;
@@ -37,12 +37,6 @@ body {
     z-index: 3;
 }
 
-/*.titre-header{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 128px;
-    line-height: 154px;
-}*/
 
 .purple-line {
     width: 616px;
