@@ -4,10 +4,34 @@
 
 .texte-header {
     background-color: #7C73F5;
+    padding-top: 2rem;
 }
 
-.date-evenement, p {
+.display-flex-date {
+    display: flex;
+}
+
+.date-evenement1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 26px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.date-evenement2 {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
+    font-size: 26px;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
+.titre-article-evenement {
+    font-family: "Bebas-neue", sans-serif;
+    font-size: 62px;
+    padding-left: 2rem;
+}
+
+.sous-titre-gras {
+    font-weight: 700;
+}

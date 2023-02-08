@@ -30,15 +30,22 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
 
 <div class="header-evenement">
     <div class="texte-header">
-        </div class="date-evenement">
+        <div class="display-flex-date date-evenement1">
             <p>Événement : &emsp;</p>
-            
-            <p> du 4 au 24 février</p>
+            <p class="date-evenement2"> du 4 au 24 février</p>
+        </div>
+        <div>
+            <p class="titre-article-evenement">Le planétarium, une expérience dans les étoiles</p>
+            <p class="date-evenement1" >
+            <span><b>Connaissez-vous les profondeurs de la voie lactée ?</b></span> 
+            Pendant les vacances d’hiver, 
+            venez découvrir le planétarium et ses films immersifs à Cap Sciences, 
+            à Bordeaux centre. Nous avons testé pour vous cette expérience immersive.</p>
         </div>
     </div>
 
     <div class="img-header">
-
+        <img src="/images/lune.svg" alt="Image d'une lune dans l'espace.">
     </div>
 </div>
 
