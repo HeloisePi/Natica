@@ -25,16 +25,15 @@ include '../../../header.php';
 
             <div class="form-group">
                 <label for="titre">Nombre de likes</label>
-                <input id="likeA" class="form-control" type="int" name="likeA" required>
+                <input id="likeA" class="form-control" type="int" name="likeA" pattern = "[0-1]" required>
             </div>
             <div class="form-group mt-2">
                 <button type="submit" class="btn btn-primary">Create</button>
             </div>
-            <?php if ($likeA > 1) {
-                header('Location: ../../views/backend/likes/create.php');
-                echo ("Les valeurs saisies sont incorrectes");
-            }
-            ?>
+            
+            
+           
+            
             </form>
         </div>
     </div>
