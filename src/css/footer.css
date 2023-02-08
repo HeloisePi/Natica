@@ -9,6 +9,7 @@ h1, .liens {
 
 .liens:hover{
     text-decoration: underline;
+    color: #7C73F5;
 }
 
 .last-in-footer {
