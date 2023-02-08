@@ -104,5 +104,3 @@ if (!check_access(1) || !check_access(2)) {
     </div>
 
 </div>
-
-<?php include '../../footer.php'; ?>

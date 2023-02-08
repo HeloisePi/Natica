@@ -26,34 +26,39 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
 </div>
 
 <div class="all-articles">
-<h1>expériences immersives de 202</h1>
-
-    <div class="rect-all">
-    <a href="/evenement.php">
-        <div class= "titres-all">
-            <h3>Evènement 1</h3>
-            <div class="bloc-all">
-                <div class="info-all">
-                </div>
-            </div>   
-        </div>
-    </a>
-        <div class= "titres-all">
-            <h3>Evènement 2</h3>
-            <div class="bloc-all">
-                <div class="info-all">
-                </div>
+    <form class="d-flex" role="search">
+            <div class="col-md-5">
+                <input class="form-control m-2 taille-saisie" type="search" placeholder="Rechercher..." aria-label="Rechercher...">
+                <button class="search" type="submit">Rechercher</button>
             </div>
         </div>
-        <div class= "titres-all">
-            <h3>Evènement 3</h3>
-            <div class="bloc-all">
-                <div class="info-all">
+    </form>
+    <h1>expériences immersives de 2023-2024</h1>
+        <div class="rect-all">
+        <a href="/evenement.php">
+            <div class= "titres-all">
+                <h3>Evènement 1</h3>
+                <div class="bloc-all">
+                    <div class="info-all">
+                    </div>
+                </div>   
+            </div>
+        </a>
+            <div class= "titres-all">
+                <h3>Evènement 2</h3>
+                <div class="bloc-all">
+                    <div class="info-all">
+                    </div>
                 </div>
             </div>
-        </div>    
-    </div>
-
+            <div class= "titres-all">
+                <h3>Evènement 3</h3>
+                <div class="bloc-all">
+                    <div class="info-all">
+                    </div>
+                </div>
+            </div>    
+        </div>
 </div>
 
 <?php include 'footer.php'; // contains the footer ?>
