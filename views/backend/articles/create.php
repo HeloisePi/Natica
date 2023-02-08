@@ -7,7 +7,7 @@ include '../../../header.php';
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h1>Create new membre</h1>
+            <h1>Create new article</h1>
         </div>
     <div class="col-md-12">
         <form action="<?php echo ROOT_URL . '/api/articles/create.php' ?>" method="post">
