@@ -12,7 +12,7 @@ include '../../../header.php';
 } */
 
 $numMemb = $_GET['numMemb'];
-$membre = sql_select("membre", 'numMemb', "numMemb = '$numMemb'");
+$membre = sql_select("membre", '*', "numMemb = '$numMemb'")[0];
 
 
 ?>
@@ -29,7 +29,11 @@ $membre = sql_select("membre", 'numMemb', "numMemb = '$numMemb'");
                 <div class="form-group">
                     <label for="libStat"></label>
                     <input id="numMemb" class="form-control" style="display: none;" type="text" name="numMemb" value="<?php echo ($numMemb); ?>" readonly="readonly">
-                    <input id="membre" class="form-control" type="text" name="menbre" value="<?php echo ($numMemb); ?>" readonly="readonly">
+                    <input id="membre" class="form-control" type="text" name="menbre" value="<?php echo ($numMemb); ?>" readonly="readonly"><br>
+                    <input id="membre" class="form-control" type="text" name="menbre" value="<?php echo ($membre['prenomMemb']); ?>" readonly="readonly"><br>
+                    <input id="membre" class="form-control" type="text" name="menbre" value="<?php echo ($membre['nomMemb']); ?>" readonly="readonly"><br>
+                    <input id="membre" class="form-control" type="text" name="menbre" value="<?php echo ($membre['eMailMemb']); ?>" readonly="readonly"><br>
+                    <input id="membre" class="form-control" type="text" name="menbre" value="<?php echo ($membre['dtCreaMemb']); ?>" readonly="readonly"><br>
                 </div>
                 <div class="form-group mt-2">
                     <button type="submit" class="btn btn-danger">Confirmer la suppression ?</button>
