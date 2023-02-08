@@ -1,6 +1,7 @@
 body {
     background-color: #F0EFFF;
 }
+
 .articles-header {
     display: flex;
     justify-content: center;
@@ -80,11 +81,11 @@ body {
 .rect-decouvrir {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .bloc-decouvrir {
     display: flex;
-    justify-content: space-around;
     margin-right: 1.7%;
     overflow: hidden;
     margin-bottom: 10% ;
@@ -96,3 +97,4 @@ body {
     background: #C1C6E0;
     border-radius: 4px;
 }
+
