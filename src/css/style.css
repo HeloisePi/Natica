@@ -4,6 +4,7 @@ body {
 
 .navbar {
     background-color: #F0EFFF;
+    z-index: 1;
 
 }
 
@@ -56,4 +57,16 @@ body {
     justify-content: center;
     margin-top: 25%;
     margin-bottom: 25%;
+}
+
+.bordure-nav {
+    width: 100vw;
+    height: 23px;
+    margin-top: -22px;
+    z-index: 1O;
+    background: #000000;
+}
+
+.bloc-nav {
+    display: block;
 }
