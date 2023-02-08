@@ -3,8 +3,8 @@
 
 require_once $_SERVER['DOCUMENT_ROOT']. '/config.php';
 
-$libTitrArt = $_POST['libTitrArt'];
+$numArt = $_POST['numArt'];
 
-sql_delete('article',"libTitrArt = $libTitrArt");
+sql_delete('article',"numArt = $numArt");
 
-header('Location: ../../');
+header('Location: ../../views/backend/articles/list.php');
