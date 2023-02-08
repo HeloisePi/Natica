@@ -6,8 +6,8 @@ if (!empty($_POST['eMailMemb'])) {
 include '../../header.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
 
-$eMailMemb = $_GET['eMailMemb'];
-$passMemb = $_GET['passMemb'];
+//$eMailMemb = $_GET['eMailMemb'];
+//$passMemb = $_GET['passMemb'];
 
 ?>
 
