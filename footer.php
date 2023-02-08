@@ -10,6 +10,7 @@
     <title>Footer</title>
     <link rel="reset.css" href="/src/css/reset.css">
     <link rel="stylesheet" href="/src/css/footer.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ujw8boj.css">
 </head>
 <body>
     <div>
