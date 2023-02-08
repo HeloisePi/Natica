@@ -38,7 +38,10 @@ require_once 'config.php';
           <a class="nav-link" aria-current="page" href="/">Accueil</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/views/backend/dashboard.php">Articles</a>
+          <a class="nav-link" href="/views/backend/dashboard.php">Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/articles.php">Articles</a>
         </li>
       </ul>
     </div>
