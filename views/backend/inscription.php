@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Se connecter - eXim</title>
+    <title>S'inscrire - eXim</title>
     <link rel="stylesheet" href="/src/css/connection.css">
     <link rel="stylesheet" href="https://use.typekit.net/ujw8boj.css">
     <link rel="stylesheet" href="/assert/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf"><link rel="stylesheet" href="/assert/Montserrat-Italic-VariableFont_wght.ttf">
@@ -24,18 +24,18 @@
         <div class="col-md-6 ">
             <form action="<?php echo ROOT_URL . '/api/inscription.php' ?>" method="post">
                 <div class="form-group ">
-                    <label for="nomMemb">Nom * </label> <br>
-                    <input class="form-control taille-saisie" type="text" id="nomMemb" name='nomMemb' require> <br>
+                    <label for="nomMemb">Nom * </label> 
+                    <input class="form-control taille-saisie" type="text" id="nomMemb" name='nomMemb' require> 
 
                     
-                    <label for="prenomMemb">Prénom * </label> <br>
-                    <input class="form-control taille-saisie" type="text" id="prenomMemb" name='prenomMemb' require> <br>
+                    <label for="prenomMemb">Prénom * </label> 
+                    <input class="form-control taille-saisie" type="text" id="prenomMemb" name='prenomMemb' require> 
 
-                    <label for="eMailMemb">Adresse mail* </label> <br>
-                    <input class="form-control taille-saisie" type="text" id="eMailMemb" name='eMailMemb' require> <br>
+                    <label for="eMailMemb">Adresse mail* </label> 
+                    <input class="form-control taille-saisie" type="text" id="eMailMemb" name='eMailMemb' require>
 
-                    <label for="passMemb">Mot de passe* </label> <br>
-                    <input class="form-control taille-saisie" type="password" id="passMemb" name='passMemb' require> <br>
+                    <label for="passMemb">Mot de passe* </label> 
+                    <input class="form-control taille-saisie" type="password" id="passMemb" name='passMemb' require> 
                 
                 </div>
                 <div class="text-mdp">

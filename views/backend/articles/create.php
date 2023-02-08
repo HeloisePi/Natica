@@ -1,6 +1,8 @@
 <?php
 include '../../../header.php';
 
+$numThems = sql_select('thematique', '*');
+
 ?>
 
 
@@ -32,8 +34,19 @@ include '../../../header.php';
                 <input type="text" id="paragraphe3" name="parag3Art"  class="form-control" required><br>
                 <label for="conclusion">Conclusion * </label><br>
                 <input type="text" id="conclusion" name="libConclArt"  class="form-control" required><br>
-                <label for="motcles">Mot Clés *</label><br>
-                <input type="text" id="motcles" name="libMotCle"  class="form-control" required><br>
+                <label for="numThem">Mot Clés *</label>
+                <select  id="numThem" name="numThem"  class="form-control" required>
+                    <?php
+                    foreach( $numThems as $numThem){
+                        ?> <option value="<?php echo $numThem['numThem'] ?>"> <?php echo$numThem['libThem']; ?> </option>
+                        <?php
+                    }
+                    ?>
+
+
+                </select>
+
+
                 <label for="photo">Importer photo *</label><br>
                 <input type="file" id="photo" name="urlPhotArt"><br>
                 <label for="adresse">Adresse</label><br>
