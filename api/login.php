@@ -13,27 +13,18 @@ $truePassMemb = sql_select('MEMBRE', 'passMemb', "eMailMemb = '$eMailMemb'")[0][
 if (password_verify($passMemb, $truePassMemb)) { 
     $numMemb = sql_select('MEMBRE', 'numMemb', "eMailMemb = '$eMailMemb'")[0]['numMemb'];
     $_SESSION["numMemb"] = $numMemb;
-    echo "connexion réussie. \n";
+    $_SESSION["pseudoMemb"] = sql_select('MEMBRE', 'pseudoMemb', "eMailMemb = '$eMailMemb'")[0]['pseudoMemb'];
+    header('Location: ../../../main.php?error=3');
 
     
-        $_SESSION["pseudoMemb"] = sql_select('MEMBRE', 'pseudoMemb', "eMailMemb = '$eMailMemb'")[0]['pseudoMemb'];
         /* now displaying the session id..... */
-        echo "Le numéro de l'utilisateur de cette session est : " . $numMemb;
-        echo " Le pseudonyme de l'utilisateur est " . $_SESSION['pseudoMemb'];
-
-
-        /* now destroying the session id */
-
-        // if (isset($_SESSION['pseudoMemb'])) {
-        //     $_SESSION = array();
-        //     unset($_SESSION);
-        //     session_destroy();
-        //     echo "session destroyed...";
-        // }
+        // echo "Le numéro de l'utilisateur de cette session est : " . $numMemb;
+        // echo " Le pseudonyme de l'utilisateur est " . $_SESSION['pseudoMemb'];
 
         // var_dump("$numMemb", "$passMemb");
 } else {
 
-    echo "connexion échouée, erreur dans votre mdp ou votre adresse mail !";
+    // echo "connexion échouée, erreur dans votre mdp ou votre adresse mail !";
+    header('Location: ../../../views/backend/login.php?error=2');
 }
 ?>

@@ -41,14 +41,16 @@
                         <input class="form-control taille-saisie" type="text" id="eMailMemb" name='eMailMemb' require> <br>
 
                         <?php
-                        if (isset($_GET["error"]) && $_GET["error"] == 1) {
-                            $msgErreur = $_GET['error'];
+                        if (isset($_GET["error"])) {
+                            if ($_GET["error"] == 1){
+                                $msgErreur = $_GET['error'];
                         ?>
 
-                            <span>
-                                <span> Erreur, l'adresse mail saisie est déjà attribuée, veuillez entrer une autre adresse mail </span><br><br>
-                            </span>
+                                <span>
+                                    <span> Erreur, l'adresse mail saisie est déjà attribuée, veuillez entrer une autre adresse mail </span><br><br>
+                                </span>
                         <?php
+                            }       
                         } ?>
 
                         <label for="passMemb">Mot de passe* </label> <br>
