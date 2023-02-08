@@ -1,0 +1,27 @@
+body {
+    background-color:  #F0EFFF;
+}
+
+.fil-ariane3 {
+    display: flex;
+    font-family: "bebas-neue", sans-serif;
+    font-size: 40px;
+    padding-left: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+}
+
+.separation {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.liens-ariane {
+    color: black;
+    text-decoration: none;
+}
+
+.liens-ariane:hover{
+    text-decoration: underline;
+    color: #7C73F5;
+}
