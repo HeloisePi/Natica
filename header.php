@@ -4,12 +4,17 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>eXim</title>
+  <title>eXim Bordeaux</title>
   <!-- Bootstrap CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <!-- Load CSS -->
   <link rel="stylesheet" href="/src/css/style.css">
   <link rel="reset.css" href="/src/css/reset.css">
+  <link rel="stylesheet" href="https://use.typekit.net/ujw8boj.css">
+  <link rel="stylesheet" href="/assert/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf">
+  <link rel="stylesheet" href="/assert/Montserrat-Italic-VariableFont_wght.ttf">
+  <link rel="stylesheet" href="/assert/Montserrat-VariableFont_wght.ttf">
+
 </head>
 
 <?php
@@ -39,23 +44,11 @@ require_once 'config.php';
     </div>
     <!--right align-->
     <div class="d-flex">
-      <a class="btn btn-primary m-1 blabla" href="/views/backend/login.php" role="button">Se connecter</a>
+      <a class="btn btn-primary m-1 connexion" href="/views/backend/login.php" role="button">Se connecter</a>
     </div>
   </div>
 </nav>
 
-<div class="haut">
-  <div class="title">
-    <h1>EXIM BORDEAUX</h1>
-  </div>
-  <div class="purple-line"></div>
-  <div class="under-title">
-    <h2>Expériences Immersives</h2>
-  </div>
 
-  <div class="scroll-down">
-    <img src="/images/scroll-down.svg" alt="scroll down">
-  </div>
-</div>
 
 </body>
