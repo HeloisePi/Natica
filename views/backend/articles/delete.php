@@ -12,7 +12,7 @@ include '../../../header.php';
 } */
 
 $numArt = $_GET['numArt'];
-
+var_dump($numArt);
 $article = sql_select("article", "*", "numArt = $numArt")[0];
 
 
@@ -31,16 +31,16 @@ $article = sql_select("article", "*", "numArt = $numArt")[0];
                     <label for="article">article</label>
                     
                     <input id="article" class="form-control" type="text" name="numArt" value="<?php echo($numArt); ?>" readonly="readonly"><br>
-                    <input id="article" class="form-control" type="text" name="numArt" value="<?php echo($article['dtCreArt']); ?>" readonly="readonly"><br>
-                    <input id="article" class="form-control" type="text" name="numArt" value="<?php echo($article['libTitrArt']); ?>" readonly="readonly"><br>
-                    <input id="article" class="form-control" type="text" name="numArt" value="<?php echo($article['libChapoArt']); ?>" readonly="readonly"><br>
-                    <input id="article" class="form-control" type="text" name="numArt" value="<?php echo($article['libAccrochArt']); ?>" readonly="readonly"><br>
-                    <input id="article" class="form-control" type="text" name="numArt" value="<?php echo($article['parag1Art']); ?>" readonly="readonly"><br>
-                    <input id="article" class="form-control" type="text" name="numArt" value="<?php echo($article['libSsTitr1Art']); ?>" readonly="readonly"><br>
-                    <input id="article" class="form-control" type="text" name="numArt" value="<?php echo($article['parag2Art']); ?>" readonly="readonly"><br>
-                    <input id="article" class="form-control" type="text" name="numArt" value="<?php echo($article['libSsTitr2Art']); ?>" readonly="readonly"><br>
-                    <input id="article" class="form-control" type="text" name="numArt" value="<?php echo($article['parag3Art']); ?>" readonly="readonly"><br>
-                    <input id="article" class="form-control" type="text" name="numArt" value="<?php echo($article['libConclArt']); ?>" readonly="readonly"><br>
+                    <input id="article" class="form-control" type="text" name="dtCreaArt" value="<?php echo($article['dtCreArt']); ?>" readonly="readonly"><br>
+                    <input id="article" class="form-control" type="text" name="libTitrArt" value="<?php echo($article['libTitrArt']); ?>" readonly="readonly"><br>
+                    <input id="article" class="form-control" type="text" name="libChapoArt" value="<?php echo($article['libChapoArt']); ?>" readonly="readonly"><br>
+                    <input id="article" class="form-control" type="text" name="libAccrochArt" value="<?php echo($article['libAccrochArt']); ?>" readonly="readonly"><br>
+                    <input id="article" class="form-control" type="text" name="parag1Art" value="<?php echo($article['parag1Art']); ?>" readonly="readonly"><br>
+                    <input id="article" class="form-control" type="text" name="libSsTitr1Art" value="<?php echo($article['libSsTitr1Art']); ?>" readonly="readonly"><br>
+                    <input id="article" class="form-control" type="text" name="parag2Art" value="<?php echo($article['parag2Art']); ?>" readonly="readonly"><br>
+                    <input id="article" class="form-control" type="text" name="libSsTitr2Art" value="<?php echo($article['libSsTitr2Art']); ?>" readonly="readonly"><br>
+                    <input id="article" class="form-control" type="text" name="parag3Art" value="<?php echo($article['parag3Art']); ?>" readonly="readonly"><br>
+                    <input id="article" class="form-control" type="text" name="libConclArt" value="<?php echo($article['libConclArt']); ?>" readonly="readonly"><br>
 
                 </div>
                 <div class="form-group mt-2">

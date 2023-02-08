@@ -14,7 +14,6 @@ include '../../../header.php';
 $numThem = $_GET['numThem'];
 $libThem = sql_select("THEMATIQUE", "libThem", "numThem = $numThem")[0]['libThem'];
 
-
 ?>
 
 <!--Bootstrap form to create a new status-->
