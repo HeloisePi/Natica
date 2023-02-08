@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="https://use.typekit.net/ujw8boj.css">
   <link rel="stylesheet" href="/assert/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf">
   <link rel="stylesheet" href="/assert/Montserrat-Italic-VariableFont_wght.ttf">
-  <link rel="stylesheet" href="/assert/Montserrat-VariableFont_wght.ttf">
+  <link rel="stylesheet" href="https://use.typekit.net/ujw8boj.css">
 
 </head>
 

@@ -32,7 +32,17 @@
     margin-bottom: 10rem;
 }
 
+.conect:hover {
+    color: rgb(0, 0, 0);
+    background-color: #ffffff ;
+    border-color: rgb(0, 0, 0);
+}
+
 .mt-2 {
     display: flex;
     justify-content: center;
+}
+
+.form-group {
+    font-family: "montserrat";
 }
