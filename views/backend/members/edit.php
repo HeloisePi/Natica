@@ -6,10 +6,10 @@ include '../../../header.php';
 
 //Security check
 //Level 1 mean administator in DB
-/* if (!check_access(1)) {
+if (!check_access(1)) {
     header('Location: /'); //Redirect to home
     exit();
-} */
+}
 
 
 $numMemb  = $_GET['numMemb'];

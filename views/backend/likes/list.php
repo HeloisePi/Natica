@@ -1,12 +1,11 @@
 <?php
 include '../../../header.php'; // contains the header and call to config.php
+
 //Security check
-//Level 1 mean administator in DB
-/* if (!check_access(1)) {
+if (!check_access(1) || !check_access(2)) {
     header('Location: /'); //Redirect to home
     exit();
-} */
-
+}
 //Load all statuses
 $likes = sql_select("likeart", "*");
 ?>

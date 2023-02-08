@@ -1,6 +1,13 @@
 <?php
 include '../../../header.php';
+$membres = sql_select('membre', '*');
+$articles = sql_select('article', '*');
 
+//Security check
+if (!check_access(1) || !check_access(2)) {
+    header('Location: /'); //Redirect to home
+    exit();
+}
 ?>
 
 <!--Bootstrap form to create a new status-->
@@ -13,13 +20,36 @@ include '../../../header.php';
             <!--Formulaire pour sélectionner un membre-->
             <form action="<?php echo ROOT_URL . '/api/likes/create.php' ?>" method="post">
                 <div class="form-group">
-                    <label for="titre">Numéro du membre ?</label>
-                    <input id="numMemb" class="form-control" type="int" name="numMemb" required>
+                    <label for="numMemb">Quel Membre ?</label>
+                    <select id="numMemb" class="form-control" type="int" name="numMemb" required>
+                    <?php
+                    foreach( $membres as $membre){
+                        ?> <option value="<?php echo $membre['numMemb'] ?>"> <?php echo $membre['pseudoMemb']; ?> </option>
+                        <?php
+                    }
+                    ?>
+
+
+                </select>
+
+
+
                 </div>
         </div>
         <div class="form-group">
             <label for="titre">Numéro de l'article ?</label>
-            <input id="numArt" class="form-control" type="int" name="numArt" required>
+
+            <select id="numArt" class="form-control" type="int" name="numArt" required>
+                    <?php
+                    foreach( $articles as $article){
+                        ?> <option value="<?php echo $article['numArt'] ?>"> <?php echo $article['libTitrArt']; ?> </option>
+                        <?php
+                    }
+                    ?>
+
+
+                </select>
+
         </div>
         <div class="form-group mt-2">
 

@@ -23,10 +23,10 @@ require_once 'config.php';
 
 //load php scripts
 ?>
-
-
-
+<div class="bloc-nav">
 <nav class="navbar navbar-expand-lg ">
+
+
   <div class="container-fluid">
     <img src="/images/eXim-logo.svg" alt="logo">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,17 +38,30 @@ require_once 'config.php';
           <a class="nav-link" aria-current="page" href="/">Accueil</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/views/backend/dashboard.php">Articles</a>
+        <?php if (!check_access(1) || !check_access(2)) { ?>
+        <a class="nav-link disabled" href="/views/backend/dashboard.php" style="display: none;">Dashboard</a> 
+        <?php
+        }
+        else { ?> <a class="nav-link" href="/views/backend/dashboard.php">Dashboard</a> <?php }?>
+        
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/articles.php">Articles</a>
         </li>
       </ul>
     </div>
     <!--right align-->
     <div class="d-flex">
-      <a class="btn btn-primary m-1 connexion" href="/views/backend/login.php" role="button">Se connecter</a>
+      <?php if (isset($_SESSION['pseudoMemb'])){
+        ?>
+        <a class="btn btn-primary m-1 connexion" href="/views/backend/login.php" role="button">Mon compte</a> <?php } 
+        else {?>
+        <a class="btn btn-primary m-1 connexion" href="/views/backend/login.php" role="button">Se connecter</a><?php }?>
     </div>
   </div>
+</div>
 </nav>
-
+<div class="bordure-nav"></div>
 
 
 </body>

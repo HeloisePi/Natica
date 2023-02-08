@@ -3,13 +3,14 @@
 
 
 include '../../../header.php';
+$numThems = sql_select('thematique', '*');
 
 //Security check
 //Level 1 mean administator in DB
-/* if (!check_access(1)) {
+if (!check_access(1)) {
     header('Location: /'); //Redirect to home
     exit();
-} */
+}
 
 $numArt = $_GET['numArt'];
 $article = sql_select("article","*", "numArt = $numArt");
@@ -50,7 +51,16 @@ print_r($numArt);
                 <label for="conclusion">Conclusion * </label><br>
                 <input type="text" id="conclusion" name="libConclArt"  class="form-control" value="<?php echo($article[0]['libConclArt'])?>" required><br>
                 <label for="motcles">Mot Clés *</label><br>
-                <input type="text" id="motcles" name="libMotCle"  class="form-control" required><br>
+                <select  id="motcles" name="libMotCle"  class="form-control" required>
+                    <?php
+                    foreach( $numThems as $numThem){
+                        ?> <option value="<?php echo $numThem['numThem'] ?>"> <?php echo$numThem['libThem']; ?> </option>
+                        <?php
+                    }
+                    ?>
+
+
+                </select><br>
                 <label for="photo">Importer photo *</label><br>
                 <input type="file" id="photo" name="urlPhotArt"><br>
                 <label for="adresse">Adresse</label><br>

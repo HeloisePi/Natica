@@ -83,7 +83,9 @@ body {
     flex-direction: row;
     justify-content: space-evenly;
 }
-
+.titres-decouvrir {
+    display: block;
+}
 .bloc-decouvrir {
     display: flex;
     margin-right: 1.7%;
@@ -96,5 +98,11 @@ body {
     top: 2168px;
     background: #C1C6E0;
     border-radius: 4px;
+}
+
+.titre-eximBordeaux{
+    font-size: 128px;
+    position: relative;
+    z-index: 5;
 }
 
