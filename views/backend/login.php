@@ -49,7 +49,37 @@ $passMemb = $_GET['passMemb'];
                     <input id="eMailMemb" class="form-control taille-saisie" type="text" name="eMailMemb">
                     <label class="text-champ" for="titre">Mot de passe</label>
                     <input id="passMemb" class="form-control taille-saisie" type="password" name="passMemb">
+
                 </div>
+                <div class="password-icon">
+                    <i data-feather="eye"></i>
+                    <i data-feather="eye-off"></i>
+                </div>
+                <!-- ICON SCRIPT -->
+                <script src="https://unpkg.com/feather-icons"></script>
+                <script>
+                feather.replace();
+
+                const eye = document.querySelector(".feather-eye");
+                const eyeoff = document.querySelector(".feather-eye-off");
+                const passwordField = document.querySelector("input[type=password]");
+
+                eye.addEventListener("click", () => {
+                eye.style.display = "none";
+                eyeoff.style.display = "block";
+
+                passwordField.type = "text";
+                });
+
+                eyeoff.addEventListener("click", () => {
+                eyeoff.style.display = "none";
+                eye.style.display = "block";
+
+                passwordField.type = "password";
+                });
+                </script>
+
+
                 <div class="form-group mt-2">
                     <button type="submit" class="conect">Se connecter</button>
                 </div>
