@@ -1,6 +1,11 @@
 <?php
 include '../../../header.php';
 
+//Security check
+if (!check_access(1)) {
+    header('Location: /'); //Redirect to home
+    exit();
+}
 ?>
 
 <!--Bootstrap form to create a new status-->

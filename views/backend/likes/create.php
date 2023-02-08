@@ -2,6 +2,12 @@
 include '../../../header.php';
 $membres = sql_select('membre', '*');
 $articles = sql_select('article', '*');
+
+//Security check
+if (!check_access(1) || !check_access(2)) {
+    header('Location: /'); //Redirect to home
+    exit();
+}
 ?>
 
 <!--Bootstrap form to create a new status-->
