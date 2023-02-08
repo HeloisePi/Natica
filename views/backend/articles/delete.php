@@ -12,8 +12,8 @@ include '../../../header.php';
 } */
 
 $numArt = $_GET['numArt'];
-
-$libStat = sql_select("article", "'numArt', 'dtCreArt', `libTitrArt`, `libChapoArt`, `libAccrochArt`, `parag1Art`, `libSsTitr1Art`, `parag2Art`, `libSsTitr2Art`, `parag3Art`, `libConclArt`, `urlPhotArt`, `numThem`", "numArt = $numArt")[0]['numArt'];
+var_dump($numArt);
+$article = sql_select("article", "*", "numArt = $numArt")[0];
 
 
 ?>
@@ -22,15 +22,26 @@ $libStat = sql_select("article", "'numArt', 'dtCreArt', `libTitrArt`, `libChapoA
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h1>Delete Status</h1>
+            <h1>Delete Article</h1>
         </div>
         <div class="col-md-12">
             <!--Form to create a new status-->
-            <form action="<?php echo ROOT_URL . '/api/status/delete.php' ?>" method="post">
+            <form action="<?php echo ROOT_URL . '/api/articles/delete.php' ?>" method="post">
                 <div class="form-group">
-                    <label for="libStat">libStat</label>
+                    <label for="article">article</label>
                     
-                    <input id="libStat" class="form-control" type="text" name="libStat" value="<?php echo($numArt); ?>" readonly="readonly">
+                    <input id="article" class="form-control" type="text" name="numArt" value="<?php echo($numArt); ?>" readonly="readonly"><br>
+                    <input id="article" class="form-control" type="text" name="dtCreaArt" value="<?php echo($article['dtCreArt']); ?>" readonly="readonly"><br>
+                    <input id="article" class="form-control" type="text" name="libTitrArt" value="<?php echo($article['libTitrArt']); ?>" readonly="readonly"><br>
+                    <input id="article" class="form-control" type="text" name="libChapoArt" value="<?php echo($article['libChapoArt']); ?>" readonly="readonly"><br>
+                    <input id="article" class="form-control" type="text" name="libAccrochArt" value="<?php echo($article['libAccrochArt']); ?>" readonly="readonly"><br>
+                    <input id="article" class="form-control" type="text" name="parag1Art" value="<?php echo($article['parag1Art']); ?>" readonly="readonly"><br>
+                    <input id="article" class="form-control" type="text" name="libSsTitr1Art" value="<?php echo($article['libSsTitr1Art']); ?>" readonly="readonly"><br>
+                    <input id="article" class="form-control" type="text" name="parag2Art" value="<?php echo($article['parag2Art']); ?>" readonly="readonly"><br>
+                    <input id="article" class="form-control" type="text" name="libSsTitr2Art" value="<?php echo($article['libSsTitr2Art']); ?>" readonly="readonly"><br>
+                    <input id="article" class="form-control" type="text" name="parag3Art" value="<?php echo($article['parag3Art']); ?>" readonly="readonly"><br>
+                    <input id="article" class="form-control" type="text" name="libConclArt" value="<?php echo($article['libConclArt']); ?>" readonly="readonly"><br>
+
                 </div>
                 <div class="form-group mt-2">
                     <button type="submit" class="btn btn-danger">Confirm Deletion ?</button>

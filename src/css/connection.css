@@ -1,0 +1,146 @@
+.fil-ariane {
+    display: flex;
+    font-family: "bebas-neue", sans-serif;
+    font-size: 40px;
+    padding-left: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+}
+
+.liens-ariane {
+    color: black;
+    text-decoration: none;
+}
+
+.liens-ariane:hover{
+    text-decoration: underline;
+    color: #7C73F5;
+}
+
+.separation {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.conect {
+    color: black;
+    background-color: #7C73F5;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 5px;
+    margin-top: 2rem ;
+    margin-bottom: 5rem;
+}
+
+.conect:hover {
+    color: rgb(0, 0, 0);
+    background-color: #ffffff ;
+    border-color: rgb(0, 0, 0);
+}
+
+.mt-2 {
+    display: flex;
+    justify-content: center;
+}
+
+.form-group {
+    font-family: "montserrat", sans-serif;
+    font-size: 26px;
+}
+
+.text-champ {
+    padding-top: 2rem;
+}
+
+.taille-saisie {
+    height: 75px;
+}
+
+.row {
+    justify-content: center;
+}
+
+
+* {
+margin: 0;
+padding: 0;
+border: none;
+outline: none;
+box-sizing: border-box;
+}
+
+html,
+body {
+height: 100%;
+}
+
+body {
+align-items: center;
+justify-content: center;
+
+font-family: arial;
+background: #131416;
+}
+
+label {
+position: relative;
+}
+
+label input {
+font-size: 1em;
+color: #f9f9f9;
+background: transparent;
+
+padding: 1rem 1.2rem;
+width: 350px;
+
+border-radius: 5px;
+border: 2px solid #7a7a7a;
+
+transition: all 0.2s;
+}
+
+label input:focus {
+border-color: #ff4754;
+}
+
+label .password-icon {
+display: flex;
+align-items: center;
+
+position: absolute;
+top: 50%;
+right: 20px;
+transform: translateY(-50%);
+width: 20px;
+
+color: #f9f9f9;
+transition: all 0.2s;
+}
+
+label .password-icon:hover {
+cursor: pointer;
+color: #ff4754;
+}
+
+label .password-icon .feather-eye-off {
+display: none;
+}
+
+.text-connect {
+    font-family: "montserrat", sans-serif;
+    font-size: 20px;
+    padding-left: 1rem;
+}
+
+.text-mdp {
+    display: flex;
+    padding-left: 1rem;
+}
+
+.align-btn-connect {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding-bottom: 2rem;
+}

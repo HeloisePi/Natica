@@ -12,7 +12,12 @@ include '../../../header.php';
 } */
 
 $numCom = $_GET['numCom'];
-$libCom = sql_select("COMMENT", "libCom", "numCom = $numCom")[0]['libCom'];
+$libCom = sql_select("COMMENT", 'libCom', "numCom = $numCom")[0]['libCom'];
+$notifComKOAff = sql_select("COMMENT", 'notifComKOAff', "numCom = $numCom")[0]['notifComKOAff'];
+$numArt = sql_select("COMMENT", 'numArt', "numCom = $numCom")[0]['numArt'];
+$libTitrArt = sql_select("ARTICLE", 'libTitrArt', "numArt = $numArt")[0]['libTitrArt'];
+$numMemb = sql_select("COMMENT", 'numMemb', "numCom = $numCom")[0]['numMemb'];
+$pseudoMemb = sql_select("MEMBRE", 'pseudoMemb', "numMemb = $numMemb")[0]['pseudoMemb'];
 
 
 ?>
@@ -30,6 +35,12 @@ $libCom = sql_select("COMMENT", "libCom", "numCom = $numCom")[0]['libCom'];
                     <label for="libCom">Commentaire</label>
                     <input id="numCom" class="form-control" style="display: none;" type="text" name="numCom" value="<?php echo($numCom); ?>" readonly="readonly">
                     <input id="numCom" class="form-control" type="text" name="libCom" value="<?php echo($libCom); ?>" readonly="readonly">
+                    <label for="libCom">message du modérateur</label>
+                    <input id="numCom" class="form-control" type="text" name="notifComKOAff" value="<?php echo($notifComKOAff); ?>" readonly="readonly">
+                    <label for="libCom">Article concerné</label>
+                    <input id="numCom" class="form-control" type="text" name="libArt" value="<?php echo($libTitrArt); ?>" readonly="readonly">
+                    <label for="libCom">membre qui a écrit le commentaire</label>
+                    <input id="numCom" class="form-control" type="text" name="pseudoMemb" value="<?php echo($pseudoMemb); ?>" readonly="readonly">
                 </div>
                 <div class="form-group mt-2">
                     <button type="submit" class="btn btn-danger">Confirm Deletion ?</button>
