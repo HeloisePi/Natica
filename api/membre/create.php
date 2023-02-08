@@ -1,5 +1,5 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT']. '/config.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
 //print_r($_POST);
 
 
@@ -9,10 +9,20 @@ $passMemb =  sql_escape($_POST['passMemb']);
 $eMailMemb =  sql_escape($_POST['eMailMemb']);
 $pseudoMemb =  sql_escape($_POST['pseudoMemb']);
 
+//print_r(sql_select(sql_select('MEMBRE', 'eMailMemb', "eMailMemb = '$eMailMemb'")[0]['eMailMemb']));
 
-var_dump($_POST);
+if (sql_select('MEMBRE', 'eMailMemb', "eMailMemb = '$eMailMemb'")[0]['eMailMemb'] == $eMailMemb) {
+    if (!check_access(1) || !check_access(2)) {
+        header('Location: ../../../views/backend/inscription.php?error=1');
+    }
+} else {
 
-sql_insert('membre', "prenomMemb, nomMemb, pseudoMemb, passMemb, eMailMemb, numStat",
-                    "'$prenomMemb','$nomMemb','$pseudoMemb','$passMemb','$eMailMemb', 3");
-                    
-header('Location: ../../views/backend/members/list.php');
+    // var_dump($_POST);
+    sql_insert(
+        'membre',
+        "prenomMemb, nomMemb, pseudoMemb, passMemb, eMailMemb, numStat",
+        "'$prenomMemb','$nomMemb','$pseudoMemb','$passMemb','$eMailMemb', 3"
+    );
+
+    header('Location: ../../../views/backend/members/list.php');
+}

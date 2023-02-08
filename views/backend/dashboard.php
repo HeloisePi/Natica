@@ -1,6 +1,10 @@
 <?php
 include '../../header.php';
-
+//Security check
+if (!check_access(1) || !check_access(2)) {
+    header('Location: /'); //Redirect to home
+    exit();
+}
 ?>
 
 <!--Bootstrap admin dashboard template-->
@@ -48,7 +52,7 @@ include '../../header.php';
                             <td>
                                 <a href="/views/backend/articles/list.php" class="btn btn-primary ">List</a>
                                 <a href="/views/backend/articles/create.php" class="btn btn-success ">Create</a>
-                                
+
 
                             </td>
                             <td></td>
@@ -97,6 +101,6 @@ include '../../header.php';
                     </tbody>
             </div>
         </div>
-    </div>  
+    </div>
 
 </div>

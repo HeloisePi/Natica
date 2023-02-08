@@ -1,7 +1,10 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT']. '/config.php';
 //print_r($_POST);
-
+if (!check_access(1)) {
+    header('Location: /'); //Redirect to home
+    exit();
+}
 
 $libTitrArt = $_POST['libTitrArt'];
 $libChapoArt = $_POST['libChapoArt'];
