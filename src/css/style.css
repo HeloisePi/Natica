@@ -73,3 +73,7 @@ body {
 .bloc-nav {
     display: block;
 }
+
+html{
+	overflow-x: hidden;
+}
