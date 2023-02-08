@@ -13,12 +13,47 @@
 </head>
 
 <body>
+<?php
+include 'header.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
 
-<div class="fil-ariane1">
+?>
+
+<div class="fil-ariane3">
     <a href="/index.php" class="liens-ariane">Accueil</a>
     <p class="separation"> > </p>
     <a href="/articles.php" class="liens-ariane">Articles</a>
 </div>
 
+<div class="articles-decouvrir">
+<h1>Quelques expériences immersives qui pourraient vous plaire</h1>
+
+    <div class="rect-decouvrir">
+    <a href="/evenement.php">
+        <div class= "titres-decouvrir">
+            <h3>Evènement 1</h3>
+            <div class="bloc-decouvrir">
+                <div class="info-decouvrir">
+                </div>
+            </div>   
+        </div>
+    </a>
+        <div class= "titres-decouvrir">
+            <h3>Evènement 2</h3>
+            <div class="bloc-decouvrir">
+                <div class="info-decouvrir">
+                </div>
+            </div>
+        </div>
+        <div class= "titres-decouvrir">
+            <h3>Evènement 3</h3>
+            <div class="bloc-decouvrir">
+                <div class="info-decouvrir">
+                </div>
+            </div>
+        </div>    
+    </div>
+
+</div>
 </body>
 </html>
