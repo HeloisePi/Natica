@@ -47,7 +47,10 @@ require_once 'config.php';
     </div>
     <!--right align-->
     <div class="d-flex">
-      <a class="btn btn-primary m-1 connexion" href="/views/backend/login.php" role="button">Se connecter</a>
+      <?php if (isset($_SESSION['pseudoMemb'])){
+        ?>
+        <a class="btn btn-primary m-1 connexion" href="/views/backend/login.php" role="button">Mon compte</a> <?php } else {?>
+        <a class="btn btn-primary m-1 connexion" href="/views/backend/login.php" role="button">Se connecter</a><?php }?>
     </div>
   </div>
 </div>
