@@ -1,34 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>inscrition</title>
+    <title>Se connecter - eXim</title>
+    <link rel="stylesheet" href="/src/css/connection.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ujw8boj.css">
+    <link rel="stylesheet" href="/assert/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf"><link rel="stylesheet" href="/assert/Montserrat-Italic-VariableFont_wght.ttf">
+    <link rel="stylesheet" href="https://use.typekit.net/ujw8boj.css">
 </head>
 <body>
     <?php include '../../header.php'; ?>
     <div class="fil-ariane">
-    <a href="/index.php" class="liens-ariane">Accueil</a>
-    <p class="separation"> > </p>
-    <a href="/views/backend/login.php" class="liens-ariane">S'inscrire</a>
-    
+        <a href="/index.php" class="liens-ariane">Accueil</a>
+        <p class="separation"> > </p>
+        <a href="/views/backend/inscription.php" class="liens-ariane">S'inscrire</a>
+    </div>
 
-    <p> Champs Obligatoire *</p>
+    <p class="form-group"> Champs Obligatoire *</p>
     <form action="<?php echo ROOT_URL . '/api/inscription.php' ?>" method="post">
-    <div class="form-group">
+    <div class="form-group ">
         <label for="nomMemb">Nom * </label> <br>
-        <input type="text" id="nomMemb" name='nomMemb' require> <br>
+        <input class="taille-saisie" type="text" id="nomMemb" name='nomMemb' require> <br>
 
         
         <label for="prenomMemb">Prénom * </label> <br>
-        <input type="text" id="prenomMemb" name='prenomMemb' require> <br>
+        <input class="taille-saisie" type="text" id="prenomMemb" name='prenomMemb' require> <br>
 
         <label for="eMailMemb">Adresse mail* </label> <br>
-        <input type="text" id="eMailMemb" name='eMailMemb' require> <br>
+        <input class="taille-saisie" type="text" id="eMailMemb" name='eMailMemb' require> <br>
 
         <label for="passMemb">Mot de passe* </label> <br>
-        <input type="password" id="passMemb" name='passMemb' require> <br>
+        <input class="taille-saisie" type="password" id="passMemb" name='passMemb' require> <br>
     </div>
 
     <div class="text-mdp">
@@ -66,7 +70,7 @@
 
     <div class="align-btn-connect">
                     <p class="text-connect">Vous avez déjà un compte ? </p>
-                    <a href="#!" class="liens-ariane text-connect">Se connecter.</a>
+                    <a href="/views/backend/login.php" class="liens-ariane text-connect">Se connecter.</a>
                 </div>
 
     <?php include '../../footer.php';  // contains the footer ?>

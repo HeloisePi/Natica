@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -88,7 +88,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
                 </div>
                 <div class="align-btn-connect">
                     <p class="text-connect">Vous n’avez pas de compte ?</p>
-                    <a href="#!" class="liens-ariane text-connect">Créer un compte.</a>
+                    <a href="/views/backend/inscription.php" class="liens-ariane text-connect">Créer un compte.</a>
                 </div>
             </form>
         </div>
