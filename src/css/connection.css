@@ -152,7 +152,10 @@ display: none;
 .text-mdp {
     display: flex;
     padding-left: 1rem;
+    padding-top: 1rem;
 }
+
+
 
 .align-btn-connect {
     display: flex;
