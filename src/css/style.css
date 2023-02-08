@@ -1,5 +1,6 @@
 body {
     background-color : #F0EFFF;
+    cursor: url(/assert/svg/cursor.svg) 5 5, progress;
 }
 
 .navbar {
@@ -75,3 +76,15 @@ body {
 html{
 	overflow-x: hidden;
 }
+
+::-moz-selection { 
+	color: white;
+	background: #7C73F5;
+  }
+  
+::selection {
+	color: white;
+	background: #7C73F5;
+}
+
+

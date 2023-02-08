@@ -50,4 +50,15 @@ table {
 
 html{
 	overflow-y: hidden;
+	background-color: red;
+}
+
+::-moz-selection { 
+	color: red;
+	background: yellow;
+  }
+  
+::selection {
+	color: red;
+	background: yellow;
 }

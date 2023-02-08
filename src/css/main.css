@@ -106,3 +106,12 @@ body {
     z-index: 5;
 }
 
+::-moz-selection { 
+	color: white;
+	background: #7C73F5;
+  }
+  
+::selection {
+	color: white;
+	background: #7C73F5;
+}
