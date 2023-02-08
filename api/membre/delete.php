@@ -3,8 +3,8 @@
 
 require_once $_SERVER['DOCUMENT_ROOT']. '/config.php';
 
-$pseudoMemb = $_POST['pseudoMemb'];
+$numMemb = $_POST['numMemb'];
 
-sql_delete('membre',"pseudoMemb = $pseudoMemb");
+sql_delete('membre',"numMemb = $numMemb");
 
-header('Location: ../../');
+header('Location: ../../views/backend/members/list.php');
