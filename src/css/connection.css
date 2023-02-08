@@ -28,7 +28,7 @@
     border-color: black;
     border-width: 1px;
     border-radius: 5px;
-    margin-top: 5rem ;
+    margin-top: 3rem ;
     margin-bottom: 10rem;
 }
 
@@ -44,5 +44,18 @@
 }
 
 .form-group {
-    font-family: "montserrat";
+    font-family: "montserrat", sans-serif;
+    font-size: 26px;
+}
+
+.text-champ {
+    padding-top: 2rem;
+}
+
+.taille-saisie {
+    height: 75px;
+}
+
+.row {
+    justify-content: center;
 }
