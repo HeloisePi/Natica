@@ -9,6 +9,8 @@ $passMemb =  sql_escape($_POST['passMemb']);
 $eMailMemb =  sql_escape($_POST['eMailMemb']);
 $pseudoMemb =  sql_escape($_POST['pseudoMemb']);
 
+$encryptedPassMemb = password_hash($passMemb, PASSWORD_DEFAULT);
+
 //print_r(sql_select(sql_select('MEMBRE', 'eMailMemb', "eMailMemb = '$eMailMemb'")[0]['eMailMemb']));
 
 if (sql_select('MEMBRE', 'eMailMemb', "eMailMemb = '$eMailMemb'")[0]['eMailMemb'] == $eMailMemb) {
@@ -21,7 +23,7 @@ if (sql_select('MEMBRE', 'eMailMemb', "eMailMemb = '$eMailMemb'")[0]['eMailMemb'
     sql_insert(
         'membre',
         "prenomMemb, nomMemb, pseudoMemb, passMemb, eMailMemb, numStat",
-        "'$prenomMemb','$nomMemb','$pseudoMemb','$passMemb','$eMailMemb', 3"
+        "'$prenomMemb','$nomMemb','$pseudoMemb','$encryptedPassMemb','$eMailMemb', 3"
     );
 
     header('Location: ../../../views/backend/members/list.php');
