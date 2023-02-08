@@ -6,10 +6,10 @@ include '../../../header.php';
 
 //Security check
 //Level 1 mean administator in DB
-/* if (!check_access(1)) {
+if (!check_access(1) || !check_access(2)) {
     header('Location: /'); //Redirect to home
     exit();
-} */
+}
 
 $numCom = $_GET['numCom'];
 $libCom = sql_select("COMMENT","libCom", "numCom = $numCom")[0]['libCom'];

@@ -7,10 +7,10 @@ $numThems = sql_select('thematique', '*');
 
 //Security check
 //Level 1 mean administator in DB
-/* if (!check_access(1)) {
+if (!check_access(1)) {
     header('Location: /'); //Redirect to home
     exit();
-} */
+}
 
 $numArt = $_GET['numArt'];
 $article = sql_select("article","*", "numArt = $numArt");
