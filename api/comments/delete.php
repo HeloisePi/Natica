@@ -3,10 +3,12 @@
 
 require_once $_SERVER['DOCUMENT_ROOT']. '/config.php';
 
-if (!check_access(1)) {
+//security check
+if (!check_access(1) || !check_access(2)) {
     header('Location: /'); //Redirect to home
     exit();
 }
+
 
 $libCom = $_POST['libCom'];
 $numCom = $_POST['numCom'];
