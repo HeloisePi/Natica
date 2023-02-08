@@ -4,7 +4,7 @@
     font-size: 40px;
     padding-left: 5rem;
     margin-top: 2rem;
-    margin-bottom: 8rem;
+    margin-bottom: 6rem;
 }
 
 .liens-ariane {
@@ -28,8 +28,8 @@
     border-color: black;
     border-width: 1px;
     border-radius: 5px;
-    margin-top: 3rem ;
-    margin-bottom: 9rem;
+    margin-top: 2rem ;
+    margin-bottom: 5rem;
 }
 
 .conect:hover {
@@ -125,4 +125,22 @@ color: #ff4754;
 
 label .password-icon .feather-eye-off {
 display: none;
+}
+
+.text-connect {
+    font-family: "montserrat", sans-serif;
+    font-size: 20px;
+    padding-left: 1rem;
+}
+
+.text-mdp {
+    display: flex;
+    padding-left: 1rem;
+}
+
+.align-btn-connect {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding-bottom: 2rem;
 }
