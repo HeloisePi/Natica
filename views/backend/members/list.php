@@ -48,8 +48,8 @@ $members = sql_select("membre", "*");
             </table>
 
             <?php
-            $msgErreur = $_GET['error'];
             if (isset($_GET["error"]) && $_GET["error"] == 1) {
+                $msgErreur = $_GET['error'];
             ?>
                 <span>
                     <span> Erreur, l'adresse mail saisie est déjà attribuée, veuillez entrer une autre adresse mail </span><br><br>
