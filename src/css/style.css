@@ -32,7 +32,7 @@ body {
     text-align: center;
 }
 .title {
-    font-family:beb ;
+    font-family: "bebas-neue", sans-serif;
     margin-top: 50%;
     z-index: 3;
 }

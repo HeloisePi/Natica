@@ -10,10 +10,10 @@
   <!-- Load CSS -->
   <link rel="stylesheet" href="/src/css/style.css">
   <link rel="reset.css" href="/src/css/reset.css">
-  <link rel="preconnect" href="/assert/Bebas-Regular.otf">
-  <link rel="preconnect" href="/assert/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf">
-  <link rel="preconnect" href="/assert/Montserrat-Italic-VariableFont_wght.ttf">
-  <link rel="preconnect" href="/assert/Montserrat-VariableFont_wght.ttf">
+  <link rel="stylesheet" href="https://use.typekit.net/ujw8boj.css">
+  <link rel="stylesheet" href="/assert/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf">
+  <link rel="stylesheet" href="/assert/Montserrat-Italic-VariableFont_wght.ttf">
+  <link rel="stylesheet" href="/assert/Montserrat-VariableFont_wght.ttf">
 
 </head>
 
