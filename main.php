@@ -12,11 +12,11 @@
 <body>
 <div class="haut">
     <div class="title">
-        <h1>EXIM BORDEAUX</h1>
+        <h1 class="titre-eximBordeaux">EXIM BORDEAUX</h1>
+        <div class="purple-line"></div>
     </div>
-    <div class="purple-line"></div>
     <div class="under-title">
-        <h2>Expériences Immersives</h2>
+        <h2  >Expériences Immersives</h2>
     </div>
 
     <div class="scroll-down">

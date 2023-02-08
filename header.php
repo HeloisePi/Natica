@@ -23,10 +23,10 @@ require_once 'config.php';
 
 //load php scripts
 ?>
-
-
-
+<div class="bloc-nav">
 <nav class="navbar navbar-expand-lg ">
+
+
   <div class="container-fluid">
     <img src="/images/eXim-logo.svg" alt="logo">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,7 +47,11 @@ require_once 'config.php';
       <a class="btn btn-primary m-1 connexion" href="/views/backend/login.php" role="button">Se connecter</a>
     </div>
   </div>
+</div>
 </nav>
+<div class="bordure-nav"></div>
+
+
 
 
 
