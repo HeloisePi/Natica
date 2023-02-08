@@ -15,8 +15,8 @@
 include '../../header.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
 
-$eMailMemb = $_GET['eMailMemb'];
-$passMemb = $_GET['passMemb'];
+// $eMailMemb = $_GET['eMailMemb'];
+// $passMemb = $_GET['passMemb'];
 ?>
 
 
@@ -35,9 +35,9 @@ $passMemb = $_GET['passMemb'];
             <form action="<?php echo ROOT_URL . '/api/login.php' ?>" method="post">
                 <div class="form-group">
                     <label class="text-champ" for="titre">Adresse mail</label>
-                    <input id="eMailMemb" class="form-control taille-saisie" type="text" name="eMailMemb">
+                    <input id="eMailMemb" class="form-control taille-saisie" type="text" name="eMailMemb" required>
                     <label class="text-champ" for="titre">Mot de passe</label>
-                    <input id="passMemb" class="form-control taille-saisie" type="password" name="passMemb">
+                    <input id="passMemb" class="form-control taille-saisie" type="password" name="passMemb" required>
 
                 </div>
                 <div class="text-mdp">

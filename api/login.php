@@ -5,12 +5,12 @@ $eMailMemb = trim($_POST['eMailMemb']);
 $passMemb = $_POST['passMemb'];
 $numMemb = $_POST['numMemb'];
 
-//var_dump($passMemb);
+var_dump($passMemb);
 
 //mettre un and si plusieurs paramètres à sql select
 
 $truePassMemb = sql_select('MEMBRE', 'passMemb', "eMailMemb = '$eMailMemb'")[0]['passMemb'];
-
+var_dump($truePassMemb);
 //vérifaction du mdp
 if ($truePassMemb == $passMemb) {
 
