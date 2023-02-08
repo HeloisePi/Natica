@@ -1,7 +1,7 @@
 <?php
 include '../../header.php';
 //Security check
-if (!check_access(1) || !check_access(1)) {
+if (!check_access(1) || !check_access(2)) {
     header('Location: /'); //Redirect to home
     exit();
 }
@@ -52,7 +52,7 @@ if (!check_access(1) || !check_access(1)) {
                             <td>
                                 <a href="/views/backend/articles/list.php" class="btn btn-primary ">List</a>
                                 <a href="/views/backend/articles/create.php" class="btn btn-success ">Create</a>
-                                
+
 
                             </td>
                             <td></td>
@@ -101,8 +101,6 @@ if (!check_access(1) || !check_access(1)) {
                     </tbody>
             </div>
         </div>
-    </div>  
+    </div>
 
 </div>
-
-<?php include '../../footer.php'; ?>

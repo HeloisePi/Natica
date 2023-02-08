@@ -46,6 +46,17 @@ $members = sql_select("membre", "*");
                     <?php } ?>
                 </tbody>
             </table>
+
+            <?php
+            $msgErreur = $_GET['error'];
+            if (isset($_GET["error"]) && $_GET["error"] == 1) {
+            ?>
+                <span>
+                    <span> Erreur, l'adresse mail saisie est déjà attribuée, veuillez entrer une autre adresse mail </span><br><br>
+                </span>
+            <?php
+            } ?>
+
             <a href="create.php" class="btn btn-success">Create</a>
         </div>
     </div>

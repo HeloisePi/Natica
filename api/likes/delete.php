@@ -2,6 +2,12 @@
 
 require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
 
+//security check
+if (!check_access(1) || !check_access(2)) {
+    header('Location: /'); //Redirect to home
+    exit();
+}
+
 $numArt = $_POST['numArt'];
 $likeA = $_POST['likeA'];
 $numMemb = $_POST['numMemb'];

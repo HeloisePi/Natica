@@ -2,6 +2,11 @@
 
 require_once $_SERVER['DOCUMENT_ROOT']. '/config.php';
 
+if (!check_access(1)) {
+    header('Location: /'); //Redirect to home
+    exit();
+}
+
 $numArt = $_POST['numArt'];
 
 sql_delete('COMMENT', "numArt = $numArt");

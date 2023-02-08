@@ -25,6 +25,8 @@
     </div>
 </div>
 
+<?php sql_select()
+
 <div class="articles-header">
     <div class="rect">
         <div class="bloc-rect">
