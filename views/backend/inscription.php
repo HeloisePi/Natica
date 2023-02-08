@@ -23,7 +23,7 @@
 
     <p class="form-group champs-obl"> Champs Obligatoire *</p>
     <div class="container">
-        <div class="row">
+        <div class="">
             <div class="col-md-6 ">
                 <form action="<?php echo ROOT_URL . '/api/membre/create.php' ?>" method="post">
                     <div class="form-group ">

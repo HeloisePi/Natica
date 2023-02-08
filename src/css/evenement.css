@@ -43,3 +43,14 @@
 .sous-titre-gras {
     font-weight: 700;
 }
+
+.align-article-evenement {
+    justify-content: start ;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.sous-titre-article {
+    font-family: "Bebas-neue", sans-serif;
+    font-size: 42px;
+}
