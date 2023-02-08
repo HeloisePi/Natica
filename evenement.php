@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="/src/css/connection.css">
     <link rel="stylesheet" href="/src/css/evenement.css">
     <link rel="stylesheet" href="https://use.typekit.net/ujw8boj.css">
-    <link rel="stylesheet" href="https://use.typekit.net/ujw8boj.css">
-    <link rel="stylesheet" href="https://use.typekit.net/ujw8boj.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
 </head>
 <body>
     
@@ -31,7 +30,11 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
 
 <div class="header-evenement">
     <div class="texte-header">
-        <p>Événement : du 4 au 24 février</p>
+        </div class="date-evenement">
+            <p>Événement : &emsp;</p>
+            
+            <p> du 4 au 24 février</p>
+        </div>
     </div>
 
     <div class="img-header">
