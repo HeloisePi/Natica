@@ -83,7 +83,9 @@ body {
     flex-direction: row;
     justify-content: space-evenly;
 }
-
+.titres-decouvrir {
+    display: block;
+}
 .bloc-decouvrir {
     display: flex;
     margin-right: 1.7%;

@@ -58,21 +58,27 @@
 <div class="articles-decouvrir">
 <h1>Quelques expériences immersives qui pourraient vous plaire</h1>
     <div class="rect-decouvrir">
-        <div class="bloc-decouvrir">
-            <h3>évènement 1</h3>
-            <div class="info-decouvrir">
-            </div>
-        </div>   
-        <div class="bloc-decouvrir">
-        <h3>évènement 2</h3>
-            <div class="info-decouvrir">
+        <div class= "titres-decouvrir">
+            <h3>Evènement 1</h3>
+            <div class="bloc-decouvrir">
+                <div class="info-decouvrir">
+                </div>
+            </div>   
+        </div>
+        <div class= "titres-decouvrir">
+            <h3>Evènement 2</h3>
+            <div class="bloc-decouvrir">
+                <div class="info-decouvrir">
+                </div>
             </div>
         </div>
-        <div class="bloc-decouvrir">
-        <h3>évènement 3</h3>
-            <div class="info-decouvrir">
+        <div class= "titres-decouvrir">
+            <h3>Evènement 3</h3>
+            <div class="bloc-decouvrir">
+                <div class="info-decouvrir">
+                </div>
             </div>
-        </div>
+        </div>    
     </div>
 </div>
 
