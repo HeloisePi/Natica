@@ -41,14 +41,14 @@ $passMemb = $_GET['passMemb'];
 <!--Bootstrap form to create a formulaire-->
 <div class="container">
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-6 ">
             <!--Form to create a new status-->
             <form action="<?php echo ROOT_URL . '/api/login.php' ?>" method="post">
                 <div class="form-group">
-                    <label for="titre">adresse mail</label>
-                    <input id="eMailMemb" class="form-control" type="text" name="eMailMemb">
-                    <label for="titre">Mot de passe</label>
-                    <input id="passMemb" class="form-control" type="password" name="passMemb">
+                    <label class="text-champ" for="titre">Adresse mail</label>
+                    <input id="eMailMemb" class="form-control taille-saisie" type="text" name="eMailMemb">
+                    <label class="text-champ" for="titre">Mot de passe</label>
+                    <input id="passMemb" class="form-control taille-saisie" type="password" name="passMemb">
                 </div>
                 <div class="form-group mt-2">
                     <button type="submit" class="conect">Se connecter</button>
