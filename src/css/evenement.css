@@ -26,6 +26,14 @@
     padding-right: 2rem;
 }
 
+.date-evenement3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+}
+
 .titre-article-evenement {
     font-family: "Bebas-neue", sans-serif;
     font-size: 62px;

@@ -42,6 +42,11 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
             venez découvrir le planétarium et ses films immersifs à Cap Sciences, 
             à Bordeaux centre. Nous avons testé pour vous cette expérience immersive.</p>
         </div>
+        <div>
+            <p class="date-evenement3">ÉCRIT PAR : Natica
+            Le : 1er février 2023
+            édité le : 2 février 2023</p>
+        </div>
     </div>
 
     <div class="img-header">
@@ -49,6 +54,12 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
     </div>
 </div>
 
+<div>
+    <p>Vous n'aurez plus besoin d'un télescope ou d'une fusée pour vous rapprocher des étoiles. Du 4 au 24 février 2023, les astres seront à portée de main à Cap Sciences !
+    Nous avons testé cette expérience en avant première et voici notre retour de cette nouvelle aventure. Cap Sciences nous a proposé deux voyages uniques de 30 minutes au milieu des galaxies au sein de son planétarium gonflable. La tête dans les étoiles, allongés sur des fauteuils confortables, plongés dans le noir, nous avons pu découvrir les merveilles de la voute céleste.  
+    Ce planétarium a de nombreux atouts, le premier étant son accessibilité. Les films proposés sont simples et compréhensibles dès trois ans. Il propose deux courts-métrages à portée des jeunes et des plus âgés. Un premier dénommé “Séances contées”, qui nous raconte des histoires spatiales avec des airs de petit prince. De quoi émerveiller toute la famille avec un voyage dans l'enfance et les planètes de notre système solaire. Le deuxième, intitulé “Histoires d'étoiles”, est accessible à partir de huit ans. Avec des thématiques plus scientifiques, il se demande d'où venons-nous, qui sommes-nous et où allons-nous, tout en nous en mettant plein la vue avec ses images sublimes de la galaxie. 
+    Pour nous, chasseurs d'expériences inédites, Cap sciences nous a apporté de nouveau du rêve et de la science, pour le plus grand bonheur de nos pupilles.</p>
+</div>
 
 <br>
 <?php
