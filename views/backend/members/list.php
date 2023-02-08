@@ -11,7 +11,7 @@ include '../../../header.php'; // contains the header and call to config.php
 $members = sql_select("membre", "*");
 ?>
 
-<!-- Bootstrap default layout to display all status in foreach -->
+<!-- Bootstrap default layout to display all members in foreach -->
 <div class="container">
     <div class="row">
         <div class="col-md-12">
@@ -24,7 +24,7 @@ $members = sql_select("membre", "*");
                         <th>nom</th>
                         <th>pseudo</th>
                         <th>e-mail</th>
-                        <th> Mot de Passe</th>
+                        <th>Mot de Passe</th>
 
 
                     </tr>
