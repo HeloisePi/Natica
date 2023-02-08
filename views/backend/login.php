@@ -11,8 +11,6 @@
     <link rel="stylesheet" href="https://use.typekit.net/ujw8boj.css">
 </head>
 <body>
-    
-
 <?php
 include '../../header.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
@@ -20,8 +18,6 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
 $eMailMemb = $_GET['eMailMemb'];
 $passMemb = $_GET['passMemb'];
 ?>
-
-
 
 
 <div class="fil-ariane1">

@@ -25,17 +25,17 @@
             <form action="<?php echo ROOT_URL . '/api/inscription.php' ?>" method="post">
                 <div class="form-group ">
                     <label for="nomMemb">Nom * </label> <br>
-                    <input class="taille-saisie" type="text" id="nomMemb" name='nomMemb' require> <br>
+                    <input class="form-control taille-saisie" type="text" id="nomMemb" name='nomMemb' require> <br>
 
                     
                     <label for="prenomMemb">Prénom * </label> <br>
-                    <input class="taille-saisie" type="text" id="prenomMemb" name='prenomMemb' require> <br>
+                    <input class="form-control taille-saisie" type="text" id="prenomMemb" name='prenomMemb' require> <br>
 
                     <label for="eMailMemb">Adresse mail* </label> <br>
-                    <input class="taille-saisie" type="text" id="eMailMemb" name='eMailMemb' require> <br>
+                    <input class="form-control taille-saisie" type="text" id="eMailMemb" name='eMailMemb' require> <br>
 
                     <label for="passMemb">Mot de passe* </label> <br>
-                    <input class="taille-saisie" type="password" id="passMemb" name='passMemb' require> <br>
+                    <input class="form-control taille-saisie" type="password" id="passMemb" name='passMemb' require> <br>
                 
                 </div>
                 <div class="text-mdp">
