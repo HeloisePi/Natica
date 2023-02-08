@@ -24,6 +24,54 @@
     </div>
 </div>
 
+<div class="articles-header">
+    <div class="rect">
+        <div class="bloc-rect">
+            <div class="info-rect">
+                <h3>test 1</h3>
+                <p> dvdxfcdv</p>
+            </div>
+        </div>
+        <div class="square">
+            <div class="bloc-square">
+                <div class="info-square 1">
+                    <h3>test 2</h3>
+                    <p>fvhbdcshujbv</p>
+                </div>
+            </div>
+            <div class="bloc-square">
+                <div class="info-square 2">
+                    <h3>test 3</h3>
+                    <p>dfvicnjef</p>
+                </div>
+            </div>
+            <div class="bloc-square">
+                <div class="info-square 3">
+                    <h3>test 4</h3>
+                    <p>fthjutyhtghytg</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="articles-decouvrir">
+<h1>Quelques expériences immersives qui pourraient vous plaire</h1>
+    <div class="rect-decouvrir">
+        <div class="bloc-decouvrir">
+            <div class="info-decouvrir">
+            </div>
+        </div>   
+        <div class="bloc-decouvrir">
+            <div class="info-decouvrir">
+            </div>
+        </div>
+        <div class="bloc-decouvrir">
+            <div class="info-decouvrir">
+            </div>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>
