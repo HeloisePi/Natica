@@ -1,3 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Se connecter - eXim</title>
+    <link rel="stylesheet" href="/src/css/connection.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ujw8boj.css">
+    <link rel="stylesheet" href="/assert/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf"><link rel="stylesheet" href="/assert/Montserrat-Italic-VariableFont_wght.ttf">
+    <link rel="stylesheet" href="/assert/Montserrat-VariableFont_wght.ttf">
+</head>
+<body>
+    
+</body>
+</html>
+
 <?php
 if (!empty($_POST['eMailMemb'])) {
     setcookie('Emailutilisateur', 'eMailMemb', time() + 60 * 60 * 24 * 30, '/'); // le cookie en clé utilisateur comporte la valeur test et a un temps de 30 jours
@@ -10,6 +27,16 @@ $eMailMemb = $_GET['eMailMemb'];
 $passMemb = $_GET['passMemb'];
 
 ?>
+
+
+
+
+<div class="fil-ariane">
+    <a href="/index.php" class="liens-ariane">Accueil</a>
+    <p class="separation"> > </p>
+    <a href="/views/backend/login.php" class="liens-ariane">Se connecter</a>
+
+</div>
 
 <!--Bootstrap form to create a formulaire-->
 <div class="container">
@@ -24,7 +51,7 @@ $passMemb = $_GET['passMemb'];
                     <input id="passMemb" class="form-control" type="password" name="passMemb">
                 </div>
                 <div class="form-group mt-2">
-                    <button type="submit" class="btn btn-primary">Connexion</button>
+                    <button type="submit" class="conect">Se connecter</button>
                 </div>
             </form>
         </div>
