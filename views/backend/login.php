@@ -1,15 +1,11 @@
 <?php
-
-if (!empty($_POST['eMailMemb'])) {
-    setcookie('Emailutilisateur', 'eMailMemb', time() + 60 * 60 * 24 * 30, '/'); // le cookie en clé utilisateur comporte la valeur test et a un temps de 30 jours
-}
 include '../../header.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
 
-//$eMailMemb = $_GET['eMailMemb'];
-//$passMemb = $_GET['passMemb'];
-
+$eMailMemb = $_GET['eMailMemb'];
+$passMemb = $_GET['passMemb'];
 ?>
+
 
 <!--Bootstrap form to create a formulaire-->
 <div class="container">
