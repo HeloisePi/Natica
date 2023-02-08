@@ -2,17 +2,76 @@ body {
     background-color: #F0EFFF;
 }
 
-.article-header {
+.articles-header .rect {
     display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: stretch;
+    margin-left: 19.7%;
+    margin-right: 11.9%;
+    padding-bottom: 11.3%;
 }
 
-.card-article{
-    background-color:#C1C6E0;
+.articles-header .square {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: flex-end;
+    align-items: flex-end;
 }
 
-#rectangle {
-    background : #C1C6E0;
+.articles-header .bloc-rect {
+    display: flex;
+    align-items: flex-end;
+    margin-right: 1.7%;
+    overflow: hidden;
+
+    width: 536px;
     height: 624px;
     left: 173px;
     top: 949px;
+    background: #C1C6E0;
+    border-radius: 4px;
+}
+
+.articles-header .bloc-square {
+    display: flex;
+    align-items: flex-end;
+    margin-right: 1.7%;
+    overflow: hidden;
+
+    width: 200px;
+    height: 195px;
+    left: 732px;
+    top: 949px;
+    background: #C1C6E0;
+    border-radius: 5px;
+}
+
+.articles-header .info-square {
+    position: absolute;
+    width: 30%;
+    height: 10%;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+}
+
+.articles-header .info-square h3,
+.articles-header .info-square p {
+    padding-top: 1.5%;
+    padding-left: 1.5%;
+}
+
+.articles-header .info-rect {
+    position: absolute;
+    width: 20%;
+    height: 7%;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+}
+
+.articles-header .info-rect h3,
+.articles-header .info-rect p {
+    padding-top: 1%;
+    padding-left: 1%;
 }
