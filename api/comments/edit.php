@@ -2,6 +2,12 @@
 require_once $_SERVER['DOCUMENT_ROOT']. '/config.php';
 // print_r($_POST);
 
+//security check
+if (!check_access(1)) {
+    header('Location: /'); //Redirect to home
+    exit();
+}
+
 $numCom = $_POST['numCom'];
 $libCom = $_POST['libCom'];
 //var_dump($libCom, $numCom);
