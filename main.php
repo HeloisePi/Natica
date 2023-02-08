@@ -10,14 +10,18 @@
     <link rel="stylesheet" href="/src/css/main.css">
 </head>
 <body>
-    <h1>Test d'affichage du main !</h1>
-    <div class="article-header">
-        <div class="card-article">
-            <div id="rectangle"></div>
-        </div>
-        <div class="list-article-header">
-
-        </div>
+<div class="haut">
+    <div class="title">
+        <h1>EXIM BORDEAUX</h1>
     </div>
+    <div class="purple-line"></div>
+    <div class="under-title">
+        <h2>Expériences Immersives</h2>
+    </div>
+
+    <div class="scroll-down">
+        <img src="/images/scroll-down.svg" alt="scroll down">
+    </div>
+</div>
 </body>
 </html>
