@@ -17,7 +17,7 @@ if (!check_access(1)) {
             <h1>Create new article</h1>
         </div>
         <div class="col-md-12">
-            <form action="<?php echo ROOT_URL . '/api/articles/create.php' ?>" method="post">
+            <form action="<?php echo ROOT_URL . '/api/enctype/enctype.php' ?>" method="post" enctype='multipart/form-data'>
 
                 <div class="form-group">
                     <label for="titre">Titre de l’article *</label><br>
@@ -50,14 +50,8 @@ if (!check_access(1)) {
 
 
                     <br>
-                    <!-- <label for="photo">Importer photo *</label><br>
-                    <input type="file" id="photo" name="urlPhotArt"><br>
-                    <form method="post" enctype="multipart/form-data" accept=".jpg, .jpeg, .png"> -->
-
-                    <form action="<?php echo ROOT_URL . '/api/enctype/enctype.php' ?>" method="post" enctype='multipart/form-data'>
-                        <input type="file" name="file" id="file">
-                        <br><input type="submit" value="Upload">
-                    </form>
+                    <label for="photo">Importer photo *</label><br>
+                    <input type="file" id="file" name="file"><br>
 
                     <br><br><label for="adresse">Adresse</label><br>
                     <input type="text" id="adresse" class="form-control"><br>
@@ -65,22 +59,22 @@ if (!check_access(1)) {
                     <input type="text" id="cout" class="form-control" required><br>
                     <label for="">Accessibilité de l’expérience (cocher si le lieu est accessible) </label><br>
 
-                    <label for="defMent"><img src="/assert/svg/Deficients-mentaux-RVB 1.svg" alt="Deficients mentaux"></label>
+                    <label for="defMent"><img src="/assert/svg/Deficients-mentaux-RVB.svg" alt="Deficients mentaux"></label>
                     <input type="checkbox" id="defMent" name="defMent">
 
-                    <label for="defMotA"> <img src="/assert/svg/Deficients-moteur-avec-accompagnateur-RVB 1.svg" alt="Déficient moteur avec accompagnateur"></label>
+                    <label for="defMotA"> <img src="/assert/svg/Deficients-moteur-avec-accompagnateur-RVB.svg" alt="Déficient moteur avec accompagnateur"></label>
                     <input type="checkbox" id="defMotA" name="defMotA">
 
-                    <label for="defMot"> <img src="/assert/svg/Deficients-moteur-RVB 1.svg" alt="Déficient moteur"></label>
+                    <label for="defMot"> <img src="/assert/svg/Deficients-moteur-RVB.svg" alt="Déficient moteur"></label>
                     <input type="checkbox" id="defMot" name="defMot">
 
-                    <label for="defVis"> <img src="/assert/svg/Deficients-visuels-RVB 1.svg" alt="Deficient visuel"> </label>
+                    <label for="defVis"> <img src="/assert/svg/Deficients-visuels-RVB.svg" alt="Deficient visuel"> </label>
                     <input type="checkbox" id="defVis" name="defVis">
 
-                    <label for="persMobiRedu"> <img src="/assert/svg/Personnes-a-mobilite-reduite-RVB 1.svg" alt=" Personnes à mobilité reduite"></label>
+                    <label for="persMobiRedu"> <img src="/assert/svg/Personnes-a-mobilite-reduite-RVB.svg" alt=" Personnes à mobilité reduite"></label>
                     <input type="checkbox" id="persMobiRedu" name="persMobiRedu">
 
-                    <label for="pousette"> <img src="/assert/svg/Poussette-RVB 1.svg" alt="Pousette"></label>
+                    <label for="pousette"> <img src="/assert/svg/Poussette-RVB.svg" alt="Pousette"></label>
                     <input type="checkbox" id="pousette" name="pousette"><br>
 
                 </div>
