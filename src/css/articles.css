@@ -75,8 +75,17 @@ body {
     flex-direction: row;
     justify-content: space-evenly;
 }
-.titres-all {
+
+.liens-evenement:hover {
     display: block;
+    color :#7C73F5;
+    text-decoration: underline;
+}
+
+.liens-evenement {
+    display: block;
+    color : black;
+    text-decoration: none;
 }
 .bloc-all {
     display: flex;

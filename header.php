@@ -35,7 +35,7 @@ require_once 'config.php';
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="/">Accueil</a>
+          <a class="nav-link" aria-current="page" href="/index.php">Accueil</a>
         </li>
         <li class="nav-item">
         <?php if (!check_access(1) || !check_access(2)) { ?>
@@ -54,7 +54,16 @@ require_once 'config.php';
     <div class="d-flex">
       <?php if (isset($_SESSION['pseudoMemb'])){
         ?>
-        <a class="btn-primary m-1 connexion" href="/views/backend/login.php" role="button">Mon compte</a> <?php } 
+          <div class="dropdown">
+            <button class="btn-primary m-1 dropdown-toggle connexion" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Mon compte</button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/views/backend/dashboard">Dashboard</a></li>
+                <li><a class="dropdown-item" href="#">Ecrire un article</a></li>
+                <li><a class="dropdown-item" href="#">Mode administrateur</a></li>
+                <li><a class="dropdown-item" href="#">Se déconnecter</a></li>
+              </ul>
+          </div><?php } 
         else {?>
         <a class="btn-primary m-1 connexion" href="/views/backend/login.php" role="button">Se connecter</a><?php }?>
     </div>
