@@ -59,28 +59,28 @@ if (!check_access(1)) {
                 <input type="text" id="cout" class="form-control"  required><br>
                 <label for="">Accessibilité de l’expérience (cocher si le lieu est accessible) </label><br>
 
-                <label for="defMent"><img src="/assert/svg/Deficients-mentaux-RVB 1.svg" alt="Deficients mentaux"></label>
+                <label for="defMent"><img src="/assert/svg/Deficients-mentaux-RVB.svg" alt="Deficients mentaux"></label>
                 <input type="checkbox" id="defMent" name="defMent">
                 
-                <label for="defMotA"> <img src="/assert/svg/Deficients-moteur-avec-accompagnateur-RVB 1.svg" alt="Déficient moteur avec accompagnateur"></label>
+                <label for="defMotA"> <img src="/assert/svg/Deficients-moteur-avec-accompagnateur-RVB.svg" alt="Déficient moteur avec accompagnateur"></label>
                 <input type="checkbox" id="defMotA" name="defMotA">
 
-                <label for="defMot"> <img src="/assert/svg/Deficients-moteur-RVB 1.svg" alt="Déficient moteur"></label>
+                <label for="defMot"> <img src="/assert/svg//Deficients-moteur-RVB.svg" alt="Déficient moteur"></label>
                 <input type="checkbox" id="defMot" name="defMot">
 
-                <label for="defVis"> <img src="/assert/svg/Deficients-visuels-RVB 1.svg" alt="Deficient visuel"> </label>
+                <label for="defVis"> <img src="/assert/svg/Deficients-visuels-RVB.svg" alt="Deficient visuel"> </label>
                 <input type="checkbox" id="defVis" name="defVis">
 
-                <label for="persMobiRedu"> <img src="/assert/svg/Personnes-a-mobilite-reduite-RVB 1.svg" alt=" Personnes à mobilité reduite"></label>
+                <label for="persMobiRedu"> <img src="/assert/svg/Personnes-a-mobilite-reduite-RVB.svg" alt=" Personnes à mobilité reduite"></label>
                 <input type="checkbox" id="persMobiRedu" name="persMobiRedu">
 
-                <label for="pousette"> <img src="/assert/svg/Poussette-RVB 1.svg" alt="Pousette"></label>
+                <label for="pousette"> <img src="/assert/svg/Poussette-RVB.svg" alt="Pousette"></label>
                 <input type="checkbox" id="pousette" name="pousette"><br>
 
             </div>
             <div class="form-group mt-2"></div>
             <input class="btn btn-primary" type="submit" name="" id="" value="ENVOYER">
-
+                </div>
 
             
         </form>
