@@ -44,20 +44,21 @@ require_once 'config.php';
             <a class="nav-link" href="/articles.php">Articles</a>
           </li>
 
-          <li class="nav-item">
           <?php if (!check_access(1)) { ?>
-          <a class="nav-link disabled" href="/views/backend/articles/create.php" style="display: none;">Écrire un article</a> 
+          
           <?php
           }
-          else { ?> <a class="nav-link" href="/views/backend/articles/create.php">Écrire un article</a> <?php }?>
-          </li>
-
+          else { ?> 
           <li class="nav-item">
+            <a class="nav-link" href="/views/backend/articles/create.php">Écrire un article</a> <?php }?>
+          </li>
           <?php if (!check_access(2)) { ?>
-          <a class="nav-link disabled" href="/views/backend/dashboard.php" style="display: none;">Dashboard</a> 
-          <?php
+            
+            <?php
           }
-          else { ?> <a class="nav-link" href="/views/backend/dashboard.php">Dashboard</a> <?php }?>
+          else { ?> 
+          <li class="nav-item">
+            <a class="nav-link" href="/views/backend/dashboard.php">Dashboard</a> <?php }?>
           </li>
     </div>
 

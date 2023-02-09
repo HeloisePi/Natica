@@ -18,11 +18,10 @@
     <?php
     include 'header.php';
     require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
+    $articles = sql_select('article', '*', "", "numArt DESC"); ?>
 
 
-    $articles = sql_select('article', '*', "", "numArt DESC");
 
-    ?>
 
     <div class="fil-ariane3">
         <a href="/index.php" class="liens-ariane">Accueil</a>
@@ -51,12 +50,11 @@
                 <div class="info-all">
                     <?php echo('<p>' . $article['dtCreArt']. '</p>') ?>
                 </div>
+            <?php } ?>
             </div>
-        <?php } ?>
-    </div>
 
 
-    <!-- <div class= "titres-all">
+            <!-- <div class= "titres-all">
                 <h3>Evènement 2</h3>
                 <div class="bloc-all">
                     <div class="info-all">
