@@ -176,6 +176,9 @@ $comments = sql_select('ARTICLE INNER JOIN COMMENT ON ARTICLE.numArt = COMMENT.n
         </div>
     </div>
 </div>
+<div class="btn-com-envoyer">
+    <button type="submit" class="conect1">Envoyer</button>
+</div>
 <br>
 
 <div class="container">
@@ -190,7 +193,6 @@ $comments = sql_select('ARTICLE INNER JOIN COMMENT ON ARTICLE.numArt = COMMENT.n
         </div>
         <div class="col-8 fonction-like text-end">
             <img src="/images/coeur-picto.svg" alt="Pictogramme pour les likes">
-
         </div>
     </div>
 
