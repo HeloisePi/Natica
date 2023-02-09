@@ -145,7 +145,7 @@ $comments = sql_select('ARTICLE INNER JOIN COMMENT ON ARTICLE.numArt = COMMENT.n
         </div>
 
         <div class="col-6 apercu-comm">
-
+            <p>Trop cool comme article, j'adore !</p>
         </div>
     
     </div>
