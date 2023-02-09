@@ -198,9 +198,7 @@ $comments = sql_select('ARTICLE INNER JOIN COMMENT ON ARTICLE.numArt = COMMENT.n
         </div>
     </div>
 
-    <?php
-    include 'footer.php';
-    ?>
+
         
     
     </div>
