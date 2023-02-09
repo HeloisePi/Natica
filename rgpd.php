@@ -53,6 +53,56 @@ include 'header.php';
         <div class="sous-titre-mentions-legales">Conception</div>
         <br>
         <p><b>Création :</b>&nbsp; Le groupe Natica</p>
+        <p><b>Crédits photographiques :</b>&nbsp; Natica, <b>tous droits réservés</b> et Pexels, Images couvertes par la licence <b>Creative Commons Zero</b> (CC0)</p>
+        <br>
+        <br>
+        <h1>Conditions Générales d’Utilisation (CGU)</h1>
+        <p>Constituant le <b>contrat</b> entre la société IUT Bordeaux Montaigne, l’Utilisateur, 
+            l’accès au site doit être précédé de <b>l’acceptation de ces CGU</b>. 
+            L’accès à cette plateforme signifie l’acceptation des présentes <b>CGU</b>.</p>
+        <p>En utilisant notre site, l’utilisateur d’engage à respecter les conditions générales d’utilisation du site suivante.</p>
+        <div class="sous-titre-mentions-legales">Propriété intellectuelle</div>
+        <br>
+        <p><b>Tout</b> les éléments présent sur le <b>site</b> (photographie, logo, 
+            illustration) sont protégés par la loi en vigueur au titre de la <b>propriété intellectuelle.</b> 
+            En effet toute reproduction ou utilisation est strictement interdite sans accord au préalable de l'éditeur. 
+            Cela vaut pour l’entièreté du site excepté certaines images libres de droits venant de pexel.fr et unsplash.fr. </p>
+        <p>La <b>reproduction</b> et la <b>copie</b> des contenus par l’Utilisateur requièrent une <b>autorisation</b> préalable du site. Dans ce cas, 
+            toute utilisation à des usages commerciaux ou à des fins publicitaires est <b>proscrite</b>.</p>
+        <div class="sous-titre-mentions-legales">Champ d’application / contenu utilisateur </div>
+        <br>
+        <p>Description des services : Nous proposons des services <b>non-marchands</b>, car le site est un blog. 
+            Les services proposés pour les utilisateurs sont la création d’article et l’inscription. </p>
+            <p>Le site est <b>accessible gratuitement</b> depuis n’importe où par tout utilisateur disposant d’un accès à Internet. 
+            <b>Tous</b> les frais nécessaires pour l’accès aux services (matériel informatique, connexion Internet…) sont <b>à la charge de l’utilisateur</b>.</p>
+        <p>L’accès aux services dédiés aux membres s’effectue à l’aide d’un identifiant et d’un mot de passe.</p>
+        <p>Pour des raisons de maintenance ou autres, l’accès au site peut être <b>interrompu</b> ou <b>suspendu</b> par l’éditeur <b>sans préavis ni justification</b>.</p>
+        <div class="sous-titre-mentions-legales">Responsabilité</div>
+        <br>
+        <p>Bien que les informations publiées sur le site soient réputées fiables, le site se réserve la faculté d’une non-garantie de la <b>fiabilité</b> des sources.</p>
+        <p>Les informations diffusées sur le blog eXim sont présentées à titre purement <b>informatif</b> et sont <b>sans valeur contractuelle</b>. En dépit des mises à jour régulières, 
+            la <b>responsabilité du site</b> ne peut être engagée en cas de modification des dispositions <b>administratives</b> et <b>juridiques</b> apparaissant <b>après</b> la publication. 
+            Il en est de même pour l’utilisation et l’interprétation des informations communiquées sur la plateforme.</p>
+        <p>Le site décline toute <b>responsabilité</b> concernant les éventuels virus pouvant infecter le matériel informatique de l’Utilisateur après l’utilisation ou l’accès à ce site.</p>
+        <p>Le site ne peut être tenu pour <b>responsable</b> en cas de force majeure ou du fait imprévisible et insurmontable d’un tiers.</p>
+        <p>La garantie totale de la sécurité et la confidentialité des données n’est pas assurée par le site. Cependant, le site s’engage à mettre en œuvre toutes les méthodes requises pour le faire au mieux.</p>
+        <p>En cas de propos <b>injurieux</b>, <b>diffamatoires</b> ou <b>racistes</b> postés par un utilisateur, notre responsabilité se limite à la <b>modération</b> de ces propos, <b>nous n’en sommes en aucun cas responsable</b>.</p>
+        <div class="sous-titre-mentions-legales">Publication par l’utilisateur</div>
+        <br>
+        <p>Le site eXim, réalisé par Natica, permet aux membres de publier des commentaires.</p>
+        <p>Dans ses publications, <b>le membre est tenu de respecter les règles de publications ainsi que les règles de droit en vigueur</b>.
+        <p>Le site <b>dispose du droit d’exercer une modération</b> à priori sur les publications et peut refuser leur mise en ligne sans avoir à fournir de justification.</p>
+        <p>Le membre garde <b>l’intégralité</b> de ses droits de propriété intellectuelle. Toutefois, toute publication sur le site implique la <b>délégation</b> du droit non exclusif et gratuit à la société éditrice de représenter, 
+            reproduire, modifier, adapter, distribuer et diffuser la publication n’importe où et sur n’importe quel support pour la durée de la propriété intellectuelle. 
+            Cela peut se faire directement ou par l’intermédiaire d’un tiers autorisé. 
+            Cela concerne notamment le droit d’utilisation de la publication sur le web et sur les réseaux de téléphonie mobile.</p>
+        <p>À chaque utilisation, l’éditeur s’engage à mentionner le nom du membre à proximité de la publication.</p>
+        <p>L’Utilisateur est tenu <b>responsable de tout contenu</b> qu’il met en ligne. 
+            L’Utilisateur <b>s’engage</b> à ne pas publier de contenus susceptibles de porter atteinte aux intérêts de tierces personnes. 
+            Toutes procédures engagées en justice par un tiers lésé à l’encontre du site devront être prises en charge par <b>l’Utilisateur</b>.</p>
+            <p>La <b>suppression</b> ou la <b>modification</b> par le site du contenu de l’Utilisateur peut s’effectuer à <b>tout</b> moment, pour n’importe quelle raison et sans préavis.</p>
+
+
 
     </div>
 
