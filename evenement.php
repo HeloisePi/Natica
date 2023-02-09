@@ -81,7 +81,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
             <br>
             <div class="sous-titre-article align-texte-com-picto">
                 <p>Commentaires :</p>
-                <img class="picto-com" src="/images/icon-com.svg" alt="Pictograme des commentaires">
+                <img class="picto-com" src="/images/icon-com.svg" alt="Pictogramme des commentaires">
             </div>
         </div>
 
@@ -114,11 +114,19 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
 <div class="align-bloc-comm">
     <label class="date-evenement3 " for="libCom">Votre commentaire :</label>
     <br>
-    <textarea id="numCom" name="libCom"
-            rows="5" cols="33">
+    <textarea class="bloquer-la-taille" id="numCom" name="libCom"
+        rows="5" cols="33">
     </textarea>
+    <br>
+    <div class="align-text-atention-comm">
+        <img src="/images/attention-picto.svg" alt="Pictogramme attention">
+        <p class="text-com-attention">Merci de bien rester cordial et d’écrire des avis constructifs.</p>
+    </div>
 </div>
 
+<div class="btn-envoyer-comm">
+    <button type="submit" class="conect1">Envoyer</button>
+</div>
 <br>
 <?php
 include 'footer.php';
