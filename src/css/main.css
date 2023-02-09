@@ -9,8 +9,8 @@ body {
 
 .articles-header .rect {
     display: flex;
-    justify-content: space-between;
     flex-direction: row;
+    gap: 1.7%;
     align-items: stretch;
     padding-bottom: 5%;
 }
@@ -26,7 +26,6 @@ body {
 .articles-header .bloc-rect {
     display: flex;
     align-items: flex-start;
-    margin-right: 1.7%;
     overflow: hidden;
 
     width: 536px;
@@ -114,4 +113,66 @@ body {
 ::selection {
 	color: white;
 	background: #7C73F5;
+}
+
+@media screen and  (max-width: 1020px){
+    .rect-decouvrir{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: 20px;
+
+    }
+    .titres-decouvrir{
+        max-width: 70%;
+    }
+}
+
+@media screen and  (max-width: 800px){
+    .articles-header .bloc-rect{
+        max-width: 70%;
+        height: 40%;
+    }
+
+    .articles-header .square{
+        max-width: 70%;
+        height: 40%;
+        width: 70%;
+
+    }
+
+    .articles-header .bloc-square{
+        width: 100%;
+        height: 100%;
+    }
+
+    .articles-header .rect {
+        max-width: 100%;
+        gap: 1.2rem;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media  screen and (max-width: 700px){
+    .titre-eximBordeaux{
+        font-size: 60px;
+    }
+    .purple-line{
+        width: 290px;
+        transform: translateY(-65%);
+    }
+    .scroll-down-image{
+        width: 36%;
+
+    }
+}
+
+
+
+@media screen and (max-width: 500px ){
+    .bloc-decouvrir{
+        width: 240px;
+        height: 240PX;
+    }
 }
