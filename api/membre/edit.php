@@ -5,10 +5,10 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
 
 
 $numMemb = trim($_POST['numMemb']);
-$prenomMemb = $_POST['prenomMemb'];
-$nomMemb = $_POST['nomMemb'];
-$pseudoMemb = $_POST['pseudoMemb'];
-$passMemb = ($_POST['passMemb']);
+$prenomMemb = trim($_POST['prenomMemb']);
+$nomMemb = trim($_POST['nomMemb']);
+$pseudoMemb = trim($_POST['pseudoMemb']);
+$passMemb = trim(($_POST['passMemb']));
 $eMailMemb = trim($_POST['eMailMemb']);
 $numStat = trim($_POST['numStat']);
 
