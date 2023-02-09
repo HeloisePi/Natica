@@ -38,6 +38,16 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
                     <input id="eMailMemb" class="form-control taille-saisie" type="text" name="eMailMemb" required>
                     <label class="text-champ" for="titre">Mot de passe</label>
                     <input id="passMemb" class="form-control taille-saisie" type="password" name="passMemb" required>
+                    <?php 
+                        if (isset($_GET["error"])) {
+                            if ($_GET["error"] == 2){
+                                $msgErreur = $_GET['error'];
+                    ?>
+                                <span>
+                                    <span> Connexion échouée, erreur dans la saisie du mot de passe ou de l'adresse mail ! </span><br><br>
+                                </span>
+                        <?php }
+                        } ?>
 
                 </div>
                 <div class="text-mdp">

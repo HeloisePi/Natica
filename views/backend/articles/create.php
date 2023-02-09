@@ -14,31 +14,31 @@ if (!check_access(1)) {
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h1>Create new article</h1>
+            <h1>Écrire un article</h1>
         </div>
         <div class="col-md-12">
             <form action="<?php echo ROOT_URL . '/api/enctype/enctype.php' ?>" method="post" enctype='multipart/form-data'>
 
                 <div class="form-group">
                     <label for="titre">Titre de l’article *</label><br>
-                    <input type="text" id="titre" name="libTitrArt" class="form-control" required><br>
+                    <textarea type="text" id="titre" name="libTitrArt" class="form-control" required></textarea><br>
                     <label for="chapo">Chapô de l’article *</label><br>
-                    <input type="text" id="chapo" name="libChapoArt" class="form-control" required><br>
+                    <textarea type="text" id="chapo" name="libChapoArt" class="form-control" required></textarea><br>
                     <label for="accroche">Accroche *</label><br>
-                    <input type="text" id="accroche" name="libAccrochArt" class="form-control" required><br>
+                    <textarea type="text" id="accroche" name="libAccrochArt" class="form-control" required></textarea><br>
 
                     <label for="paragraphe1">Paragraphe 1 * </label><br>
-                    <input type="text" id="paragraphe1" name="parag1Art" class="form-control" required><br>
+                    <textarea type="text" id="paragraphe1" name="parag1Art" class="form-control" required></textarea><br>
                     <label for="sous-titre2">Sous titre 2 *</label><br>
                     <input type="text" id="sous-titre2" name="libSsTitr1Art" libSsTitr1Art class="form-control" required><br>
                     <label for="paragraphe2">Paragraphe 2 * </label><br>
-                    <input type="text" id="paragraphe2" name="parag2Art" class="form-control" required><br>
+                    <textarea type="text" id="paragraphe2" name="parag2Art" class="form-control" required></textarea><br>
                     <label for="sous-titre3">Sous titre 3 *</label><br>
                     <input type="text" id="sous-titre3" name="libSsTitr2Art" class="form-control" required><br>
                     <label for="paragraphe3">Paragraphe 3 * </label><br>
-                    <input type="text" id="paragraphe3" name="parag3Art" class="form-control" required><br>
+                    <textarea type="text" id="paragraphe3" name="parag3Art" class="form-control" required></textarea><br>
                     <label for="conclusion">Conclusion * </label><br>
-                    <input type="text" id="conclusion" name="libConclArt" class="form-control" required><br>
+                    <textarea type="text" id="conclusion" name="libConclArt" class="form-control" required></textarea><br>
                     <label for="numThem">Mot Clés *</label><br>
                     <?php
                     foreach ($numThems as $numThem) {
