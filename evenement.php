@@ -63,10 +63,10 @@ $comments = sql_select('ARTICLE INNER JOIN COMMENT ON ARTICLE.numArt = COMMENT.n
     <div class="row align-article-evenement">
 
         <div class="col-7 ">
-            <p class="date-evenement3" >Vous n'aurez plus besoin d'un télescope ou d'une fusée pour vous rapprocher des étoiles. Du 4 au 24 février 2023, les astres seront à portée de main à Cap Sciences !</p>
-            <p class="date-evenement3" >Nous avons testé cette expérience en avant première et voici notre retour de cette nouvelle aventure. Cap Sciences nous a proposé deux voyages uniques de 30 minutes au milieu des galaxies au sein de son planétarium gonflable. La tête dans les étoiles, allongés sur des fauteuils confortables, plongés dans le noir, nous avons pu découvrir les merveilles de la voute céleste.</p>
-            <p class="date-evenement3" >Ce planétarium a de nombreux atouts, le premier étant son accessibilité. Les films proposés sont simples et compréhensibles dès trois ans. Il propose deux courts-métrages à portée des jeunes et des plus âgés. Un premier dénommé “Séances contées”, qui nous raconte des histoires spatiales avec des airs de petit prince. De quoi émerveiller toute la famille avec un voyage dans l'enfance et les planètes de notre système solaire. Le deuxième, intitulé “Histoires d'étoiles”, est accessible à partir de huit ans. Avec des thématiques plus scientifiques, il se demande d'où venons-nous, qui sommes-nous et où allons-nous, tout en nous en mettant plein la vue avec ses images sublimes de la galaxie.</p>
-            <p class="date-evenement3" >Pour nous, chasseurs d'expériences inédites, Cap sciences nous a apporté de nouveau du rêve et de la science, pour le plus grand bonheur de nos pupilles.</p>
+            <p <?php
+                    echo ($articles[0]['libAccrochArt'] . ' ' . $articles[0]['parag1Art']); 
+                    ?> >
+            </p>
             <p class="sous-titre-article">Une bulle dans les nuages</p>
             <p class="date-evenement3" >En quoi consiste cet événement et qu'est ce qu'un planétarium ? Nous avons été plongé dans le noir, entouré d'une immense toile avec une capacité de plus de cent personnes. Équipé d'un projecteur, la salle est plongée dans le ciel nocturne. Le film est alors projeté. Cela nous donne la sensation d'être dans un vaisseau spatial qui se déplace à la vitesse de la lumière à travers plus de 3000 étoiles.</p>
             <p class="date-evenement3" >Réalisées à partir des images prises par la NASA et par des observatoires du monde entier, leur beauté nous a fait quitter la Terre. Il est important de savoir que le planétarium de Cap Science est éphémère. Situé près de Bordeaux centre, il est fortement accessible en transport en commun ou en voiture avec les parkings payants aux alentours.</p>
