@@ -35,7 +35,7 @@ $articles = sql_select('article', '*', "", "numArt DESC", 3);
             </div>
         </div>
     </form>
-    <h1>expériences immersives de 2023-2024</h1>
+    <h1 class="experiences-immersives">expériences immersives de 2023-2024</h1>
         <div class="rect-all">
         <a href="/evenement.php">
             <div class= "titres-all">

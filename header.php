@@ -54,9 +54,9 @@ require_once 'config.php';
     <div class="d-flex">
       <?php if (isset($_SESSION['pseudoMemb'])){
         ?>
-        <a class="btn btn-primary m-1 connexion" href="/views/backend/login.php" role="button">Mon compte</a> <?php } 
+        <a class="btn-primary m-1 connexion" href="/views/backend/login.php" role="button">Mon compte</a> <?php } 
         else {?>
-        <a class="btn btn-primary m-1 connexion" href="/views/backend/login.php" role="button">Se connecter</a><?php }?>
+        <a class="btn-primary m-1 connexion" href="/views/backend/login.php" role="button">Se connecter</a><?php }?>
     </div>
   </div>
 </div>
