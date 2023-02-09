@@ -1,0 +1,15 @@
+.texte-paragraphe, p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+}
+
+.texte-intro {
+    padding-bottom: 4rem;
+}
+
+h1 {
+    font-family: "bebas-neue", sans-serif;
+    font-size: 30px;
+    padding-bottom: 2rem;
+}
+
