@@ -10,8 +10,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
   <!-- Load CSS -->
-  <link rel="stylesheet" href="/src/css/style.css">
   <link rel="reset.css" href="/src/css/reset.css">
+  <link rel="stylesheet" href="/src/css/style.css">
   <link rel="stylesheet" href="https://use.typekit.net/ujw8boj.css">
   <link rel="stylesheet" href="/assert/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf">
   <link rel="stylesheet" href="/assert/Montserrat-Italic-VariableFont_wght.ttf">
@@ -34,8 +34,9 @@ require_once 'config.php';
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
+
+
+    <div class="collapse navbar-collapse navbar-nav" id="navbarNav">
         <li class="nav-item">
           <a class="nav-link" aria-current="page" href="/index.php">Accueil</a>
         </li>
@@ -58,9 +59,9 @@ require_once 'config.php';
           }
           else { ?> <a class="nav-link" href="/views/backend/dashboard.php">Dashboard</a> <?php }?>
           </li>
-
-      </ul>
     </div>
+
+
     <!--right align-->
     <div class="d-flex">
       <?php if (isset($_SESSION['pseudoMemb'])){
@@ -76,3 +77,4 @@ require_once 'config.php';
 
 
 </body>
+

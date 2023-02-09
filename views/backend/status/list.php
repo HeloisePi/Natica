@@ -40,6 +40,5 @@ $statuses = sql_select("STATUT", "*");
             <a href="create.php" class="btn btn-success">Create</a>
         </div>
     </div>
-
+</div>
     <?php
-    include '../../../footer.php'; // contains the footer
