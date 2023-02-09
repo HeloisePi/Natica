@@ -37,7 +37,7 @@ $articles = sql_select('article', '*', "", "numArt DESC", 3);
     </form>
     <h1 class="experiences-immersives">expériences immersives de 2023-2024</h1>
         <div class="rect-all">
-        <a href="/evenement.php">
+        <a href="/evenement.php" class="liens-evenement">
             <div class= "titres-all">
                 <?php foreach($articles as $article){
                     echo('<h3>' . $article['libTitrArt'] . '</h3>');?>
@@ -52,9 +52,9 @@ $articles = sql_select('article', '*', "", "numArt DESC", 3);
                     </div>
                 </div>
                 <?php }?>
-            </div>
-                
+            </div>        
         </a>
+        </div>
             <!-- <div class= "titres-all">
                 <h3>Evènement 2</h3>
                 <div class="bloc-all">
