@@ -14,7 +14,6 @@ if (!check_access(1)) {
 
 $numArt = $_GET['numArt'];
 $article = sql_select("article","*", "numArt = $numArt");
-print_r($numArt);
 //print_r($article);
 
 ?>
