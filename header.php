@@ -78,31 +78,3 @@ require_once 'config.php';
 
 </body>
 
-
-<!-- <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="/index.php">Accueil</a>
-        </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/articles.php">Articles</a>
-          </li>
-
-          <li class="nav-item">
-          <?php if (!check_access(1) || !check_access(2)) { ?>
-          <a class="nav-link disabled" href="/views/backend/articles/create.php" style="display: none;">Écrire un article</a> 
-          <?php
-          }
-          else { ?> <a class="nav-link" href="/views/backend/articles/create.php">Écrire un article</a> <?php }?>
-          </li>
-          
-          <li class="nav-item">
-          <?php if (!check_access(1) || !check_access(2)) { ?>
-          <a class="nav-link disabled" href="/views/backend/dashboard.php" style="display: none;">Dashboard</a> 
-          <?php
-          }
-          else { ?> <a class="nav-link" href="/views/backend/dashboard.php">Dashboard</a> <?php }?>
-          </li>
-      </ul>
-    </div>
---> 
