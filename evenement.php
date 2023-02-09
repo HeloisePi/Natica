@@ -133,7 +133,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
     <div class="row">
 
         <div class="col-2 ">
-        
+            <img src="/images/pp.svg" alt="Pictogramme de photo de profile">
         </div>
 
         <div class="col-10 ">
