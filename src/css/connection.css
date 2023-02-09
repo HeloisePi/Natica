@@ -6,6 +6,11 @@
     margin-top: 2rem;
     margin-bottom: 6rem;
 }
+.fil-ariane1 .separation{
+    font-family: "bebas-neue", sans-serif;
+    font-size: 40px;
+
+}
 
 .fil-ariane2 {
     display: flex;
@@ -15,7 +20,6 @@
     margin-top: 2rem;
     margin-bottom: 1rem;
 }
-
 
 
 .champs-obl {
