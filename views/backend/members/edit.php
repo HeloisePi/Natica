@@ -36,9 +36,6 @@ $membre = sql_select("membre", '*' , "numMemb = '$numMemb'")[0];
 
                     <label for="nomMemb">Nouveau nom du membre</label><br>
                     <input id="nomMemb"  class="form-control" type="text" name="nomMemb" value="<?php echo ($membre['nomMemb']); ?> ">
-
-                    
-                    
                     
                     <label for="pseudoMemb">Nouveau pseudo du membre</label><br>
                     <input id="pseudoMemb"  class="form-control" type="text" name="pseudoMemb" value="<?php echo ($membre['pseudoMemb']); ?> ">
@@ -47,10 +44,12 @@ $membre = sql_select("membre", '*' , "numMemb = '$numMemb'")[0];
                     <label for="passMemb">Nouveau mot de passe du membre</label><br>
                     <input id="passMemb"  class="form-control" type="text" name="passMemb" value="<?php echo ($membre['passMemb']); ?> ">
 
-
                     
                     <label for="eMailMemb">Nouvel e-mail du membre</label><br>
                     <input id="eMailMemb"  class="form-control" type="text" name="eMailMemb" value="<?php echo ($membre['eMailMemb']); ?> ">
+
+                    <label for="numStat">Statut du membre</label><br>
+                    <input id="numStat"  class="form-control" type="text" name="statStat" pattern="[1-3]" value="<?php echo ($membre['numStat']); ?> ">
 
                 </div>
                 <div class="form-group mt-2">
