@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Écrire un article - eXim</title>
+    <title>Dashboard - eXim</title>
     <link rel="stylesheet" href="/src/css/dashboard.css">
     <link rel="stylesheet" href="/src/css/connection.css">
 
@@ -23,7 +23,7 @@ if (isset($_SESSION['numMemb'])) {
     $numStat = sql_select('MEMBRE', 'numStat', "numMemb = '$numMemb'")[0]['numStat'];
     //$numStat = $numStat[0]['numStat'];
     $libStat = sql_select('STATUT', 'libStat', "numStat = $numStat")[0]['libStat'];
-    echo ("Bonjour " . $pseudoMemb . ". Vous êtes connecté en tant que : " . $libStat. "."); 
+    echo ("Bonjour " . $pseudoMemb . " Vous êtes connecté en tant que : " . $libStat. "."); 
 }
 ?>
 
