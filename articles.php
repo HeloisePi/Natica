@@ -33,7 +33,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
             </div>
         </div>
     </form>
-    <h1>expériences immersives de 2023-2024</h1>
+    <h1 class="experiences-immersives">expériences immersives de 2023-2024</h1>
         <div class="rect-all">
         <a href="/evenement.php">
             <div class= "titres-all">

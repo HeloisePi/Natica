@@ -17,15 +17,27 @@ body {
 .connexion:hover {
     color: rgb(0, 0, 0);
     background-color: #ffffff ;
-    border-color: rgb(0, 0, 0);
+    border-color: black;
+    border-width: 1px;
+    text-decoration: none;
+    margin-left: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .connexion {
     color: black;
     background-color: #7C73F5;
-    border-color: black;
-    border-width: 1px;
+
     border-radius: 5px;
+    text-decoration: none;
+    margin-left: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .haut {
