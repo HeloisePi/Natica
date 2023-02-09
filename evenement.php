@@ -128,6 +128,21 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
     <button type="submit" class="conect1">Envoyer</button>
 </div>
 <br>
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-2 ">
+        
+        </div>
+
+        <div class="col-10 ">
+
+        </div>
+    
+    </div>
+</div>
+
 <?php
 include 'footer.php';
 ?>
