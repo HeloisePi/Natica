@@ -7,6 +7,8 @@
   <title>eXim Bordeaux</title>
   <!-- Bootstrap CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
   <!-- Load CSS -->
   <link rel="stylesheet" href="/src/css/style.css">
   <link rel="reset.css" href="/src/css/reset.css">
@@ -56,13 +58,14 @@ require_once 'config.php';
         ?>
           <div class="dropdown">
             <button class="btn-primary m-1 dropdown-toggle connexion" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Mon compte</button>
+            Mon compte
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="/views/backend/dashboard">Dashboard</a></li>
-                <li><a class="dropdown-item" href="#">Ecrire un article</a></li>
+                <li><a class="dropdown-item" href="/views/backend/dashboard.php">Dashboard</a></li>
+                <li><a class="dropdown-item" href="/views/backend/articles/create.php">Ecrire un article</a></li>
                 <li><a class="dropdown-item" href="#">Mode administrateur</a></li>
                 <li><a class="dropdown-item" href="#">Se déconnecter</a></li>
               </ul>
+            </button>
           </div><?php } 
         else {?>
         <a class="btn-primary m-1 connexion" href="/views/backend/login.php" role="button">Se connecter</a><?php }?>
