@@ -21,6 +21,9 @@ h1 {
 
 .toute-la-page {
     margin-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo-fin-mentions-legales {
