@@ -61,9 +61,9 @@ function upload_image($files)
     // Allow certain file formats
     if (
         $imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
-        && $imageFileType != "gif"
+        && $imageFileType != "gif" && $imageFileType != "svg"
     ) {
-        exit("Désolé, seulement les formats JPG, JPEG, PNG & GIF sont autorisés.");
+        exit("Désolé, seulement les formats JPG, JPEG, PNG, SVG & GIF sont autorisés.");
         return 0;
         $uploadOk = 0;
         // header('Location: ../../../views/backend/articles/list.php?error=4');

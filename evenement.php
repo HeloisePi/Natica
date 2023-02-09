@@ -43,7 +43,7 @@ $lisezAussi = sql_select('article', '*', "", "numArt DESC");
 //article [$i[nblike = count '*']];
 
 $numArt = $_GET['numArt'];
-$path = $_GET['urlPhotArt'];
+// $path = $_GET['urlPhotArt'];
 $articles = sql_select("ARTICLE", "*", "numArt = $numArt")[0];
 $libThem = sql_select('ARTICLE INNER JOIN THEMATIQUE ON ARTICLE.numThem = THEMATIQUE.numThem', 'libThem', "ARTICLE.numArt=$numArt")[0]['libThem'];
 $keywords = sql_select('ARTICLE INNER JOIN THEMATIQUE ON ARTICLE.numThem = THEMATIQUE.numThem', 'libThem', "ARTICLE.numArt=$numArt");
