@@ -49,6 +49,10 @@ include 'header.php';
         <p><b>Adresse e-mail :</b>&nbsp; Le groupe Natica</p>
         <p><b>Numéro de téléphone :</b>&nbsp;  05 57 12 20 44</p>
         <p><b>Hébergement :</b>&nbsp; L'IUT Bordeaux Montaigne</p>
+        <br>
+        <div class="sous-titre-mentions-legales">Conception</div>
+        <br>
+        <p><b>Création :</b>&nbsp; Le groupe Natica</p>
 
     </div>
 
