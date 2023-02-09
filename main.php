@@ -12,6 +12,8 @@
 </head>
 <body>
 <div class="haut">
+
+<!-- erreurs à afficher -->
 <?php 
                         if (isset($_GET["error"])) {
                             if ($_GET["error"] == 3){
@@ -28,7 +30,16 @@
                                     <span> Vous avez bien été déconnecté ! </span><br><br>
                                 </span>
                         <?php }
-                        } ?>
+                        } 
+//requete sql pour afficher les articles                   
+require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
+
+$affiche = sql_select('article', '*', "", "numArt DESC");
+$articles = sql_select('article', '*', "", "numArt DESC", 3);                       
+
+?>
+
+<!-- début main -->
     <div class="title">
         <h1 class="titre-eximBordeaux">EXIM BORDEAUX</h1>
         <div class="purple-line"></div>
@@ -46,28 +57,28 @@
 <div class="articles-header">
     <div class="rect">
         <div class="bloc-rect">
-            <div class="info-rect">
-                <h3>test 1</h3>
-                <p> dvdxfcdv</p>
-            </div>
+            <img class="image-affiche" src="src/images/uploads/<?php echo ($affiche['urlPhotArt']) ?>" alt="Image decriptive article.">
+                <div class="info-rect">
+                    <h3><?php echo ($affiche['libTitrArt']) ?></h3>
+                    <p> <?php
+                    echo ($affiche['libChapoArt']);
+                    ?></p>
+                    <p>
+                        Écrit par : Natica <br> Le : <?php echo ($affiche['dtCreArt'])?>
+                    </p>
+                </div>
         </div>
         <div class="square">
             <div class="bloc-square">
                 <div class="info-square 1">
-                    <h3>test 2</h3>
-                    <p>fvhbdcshujbv</p>
-                </div>
-            </div>
-            <div class="bloc-square">
-                <div class="info-square 2">
-                    <h3>test 3</h3>
-                    <p>dfvicnjef</p>
-                </div>
-            </div>
-            <div class="bloc-square">
-                <div class="info-square 3">
-                    <h3>test 4</h3>
-                    <p>fthjutyhtghytg</p>
+                    <?php foreach($articles as $article){?>
+                    <img src="
+                <?php
+                echo ($article['urlPhotoArt']);
+                ?>" alt="Image descriptive article">
+                    <h3><?php echo ($article['libTitrArt']) ?></h3>
+                    <?php echo('<p>' . $article['dtCreArt']. '</p>'); }
+                    ?>
                 </div>
             </div>
         </div>

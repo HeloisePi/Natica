@@ -17,6 +17,7 @@
 include 'header.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
 
+
 $articles = sql_select('article', '*', "", "numArt DESC");
 
 ?>
