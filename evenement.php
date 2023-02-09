@@ -111,6 +111,14 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
     </div>
 </div>
 
+<div class="align-bloc-comm">
+    <label class="date-evenement3 " for="libCom">Votre commentaire :</label>
+    <br>
+    <textarea id="numCom" name="libCom"
+            rows="5" cols="33">
+    </textarea>
+</div>
+
 <br>
 <?php
 include 'footer.php';
