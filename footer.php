@@ -63,7 +63,7 @@
                 <!-- Copyright -->
                 <div class="text-center p-3">
                 © eXim, Tous droits réservés . 
-                <a class="liens" href="https://exim.com/"> Mentions Légales</a>
+                <a class="liens" href="rgpd.php"> Mentions Légales</a>
                 </div>
                 <!-- Copyright -->
             </footer>
