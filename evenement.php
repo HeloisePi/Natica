@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,16 +11,20 @@
     <link rel="stylesheet" href="https://use.typekit.net/ujw8boj.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
 </head>
+
 <body>
-    
+
 </body>
+
 </html>
 
 <?php
 include 'header.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
 $numArt = $_GET['numArt'];
-$articles = sql_select("ARTICLE", "*", "numArt = $numArt");
+$path = $_GET['urlPhotArt'];
+$articles = sql_select("ARTICLE", "*", "numArt = $numArt")[0];
+echo ($articles['urlPhotArt']);
 $libThem = sql_select('ARTICLE INNER JOIN THEMATIQUE ON ARTICLE.numThem = THEMATIQUE.numThem', 'libThem', "ARTICLE.numArt=$numArt")[0]['libThem'];
 $keywords = sql_select('ARTICLE INNER JOIN THEMATIQUE ON ARTICLE.numThem = THEMATIQUE.numThem', 'libThem', "ARTICLE.numArt=$numArt");
 $comments = sql_select('ARTICLE INNER JOIN COMMENT ON ARTICLE.numArt = COMMENT.numArt', '*', "ARTICLE.numArt=$numArt");
@@ -36,53 +41,54 @@ $comments = sql_select('ARTICLE INNER JOIN COMMENT ON ARTICLE.numArt = COMMENT.n
 <div class="header-evenement">
     <div class="texte-header">
         <div class="display-flex-date date-evenement1">
-        <?php
-            echo ('<p>' . $libThem . ' '. ':'. '</p>') ?>
+            <?php
+            echo ('<p>' . $libThem . ' ' . ':' . '</p>') ?>
             <p class="date-evenement2"> date à mettre avec le jazon</p>
         </div>
         <div>
             <p class="titre-article-evenement"><?php
-                    echo ($articles[0]['libTitrArt']) ?></p>
-            <p class="date-evenement1" >
-            <?php
-                    echo ($articles[0]['libChapoArt']);
-                    ?></p>
+                                                echo ($articles['libTitrArt']) ?></p>
+            <p class="date-evenement1">
+                <?php
+                echo ($articles[0]['libChapoArt']);
+                ?></p>
         </div>
         <div>
             <p class="date-evenement3"><?php
-                        echo ('créé par Natica le : ' .$articles[0]['dtCreArt']) ?></p>
+                                        echo ('créé par Natica le : ' . $articles['dtCreArt']) ?></p>
         </div>
     </div>
 
-    <div class="img-header">
-        <img class="image-lune" src="/images/lune.svg" alt="Image d'une lune dans l'espace.">
+    <div class="img-header" enctype="multipart/form-data">
+        <img class="image-lune" src="src/images/uploads/<?php echo ($articles['urlPhotArt']) ?>" alt="Image d'une lune dans l'espace.">
     </div>
 </div>
+
 
 <div class="container text-start">
     <div class="row align-article-evenement">
 
         <div class="col-7 ">
-            <p class="date-evenement3" > <?php
-                    echo ($articles[0]['libAccrochArt'] . ' ' . $articles[0]['parag1Art']); ?>
+            <p class="date-evenement3"> <?php
+                                        echo ($articles['libAccrochArt'] . ' ' . $articles['parag1Art']); ?>
             </p>
             <p class="sous-titre-article"><?php
-                    echo ($articles[0]['libSsTitr1Art']); 
-                    ?></p>
-            <p class="date-evenement3" ><?php
-                    echo ($articles[0]['parag2Art']); ?>
+                                            echo ($articles['libSsTitr1Art']);
+                                            ?></p>
+            <p class="date-evenement3"><?php
+                                        echo ($articles['parag2Art']); ?>
             </p>
             <p class="sous-titre-article"><?php
-                    echo ($articles[0]['libSsTitr2Art']); ?>
+                                            echo ($articles['libSsTitr2Art']); ?>
             </p>
-            <p class="date-evenement3" ><?php
-                    echo ($articles[0]['parag3Art']); ?>
+            <p class="date-evenement3"><?php
+                                        echo ($articles['parag3Art']); ?>
             </p>
             <br>
             <br>
             <p class="date-evenement3"><?php
-                    echo ($articles[0]['libConclArt']); 
-                    ?></p>
+                                        echo ($articles['libConclArt']);
+                                        ?></p>
             <br>
             <br>
 
@@ -99,12 +105,12 @@ $comments = sql_select('ARTICLE INNER JOIN COMMENT ON ARTICLE.numArt = COMMENT.n
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2828.1292245637246!2d-0.5564116!3d44.859664!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd55288fe04778c1%3A0x93bb1087fb9940ec!2sHangar%2020%2C%20Quai%20de%20Bacalan%2C%2033300%20Bordeaux!5e0!3m2!1sfr!2sfr!4v1675932814425!5m2!1sfr!2sfr" width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="align-element-col2">
-            <p>Dates :</p>
-            <p class="sous-titre-col2"> mettre avec les json</p>
+                <p>Dates :</p>
+                <p class="sous-titre-col2"> mettre avec les json</p>
             </div>
             <div class="align-element-col2">
-            <p>Tarifs :</p>
-            <p class="sous-titre-col2"> mettre avec les json</p>
+                <p>Tarifs :</p>
+                <p class="sous-titre-col2"> mettre avec les json</p>
             </div>
             <p class="titre-col-2">Accessibilité : (json aussi)</p>
             <img class="espace-img-col2" src="/assert/svg/Poussette-RVB.svg" alt="Pictograme d'une poussette"><br>
@@ -148,10 +154,10 @@ $comments = sql_select('ARTICLE INNER JOIN COMMENT ON ARTICLE.numArt = COMMENT.n
         </div>
         <div class="col-8 fonction-like text-end">
             <img src="/images/coeur-picto.svg" alt="Pictogramme pour les likes">
-    
-    </div>
-</div>
 
-<?php
-include 'footer.php';
-?>
+        </div>
+    </div>
+
+    <?php
+    include 'footer.php';
+    ?>

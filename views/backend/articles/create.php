@@ -79,11 +79,12 @@ if (!check_access(1)) {
 
                     <label for="erreur"></label>
                     <?php
-                    if (isset($_GET["error"])) {
-                        if ($_GET["error"] == 1)
-                            $msgErreur = $_GET['error'];
-                    }
+                    // if (isset($_GET["error"])) {
+                    //     if ($_GET["error"] == 1)
+                    //         $msgErreur = $_GET['error'];
+                    // }
 
+                    // 
                     ?>
                 </div>
                 <div class="form-group mt-2"></div>

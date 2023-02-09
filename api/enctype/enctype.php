@@ -12,6 +12,7 @@ if (isset($_FILES)) {
     $path = upload_image($_FILES);
     // echo $path;
 }
+$urlPhotArt = sql_escape($path);
 
 $libTitrArt = $_POST['libTitrArt'];
 $libChapoArt = $_POST['libChapoArt'];
@@ -26,12 +27,5 @@ $numThem = $_POST['numThem'];
 
 
 
-sql_insert('article', "`libTitrArt`, `libChapoArt`, `libAccrochArt`, `parag1Art`, `libSsTitr1Art`, `parag2Art`, `libSsTitr2Art`, `parag3Art`, `libConclArt`, `urlPhotArt`, `numThem`", "'$libTitrArt','$libChapoArt','$libAccrochArt','$parag1Art','$libSsTitr1Art','$parag2Art','$libSsTitr2Art','$parag3Art','$libConclArt','$path','$numThem'");
-
-
-// sql_insert('COMMENT', "`libCom`, `numArt`, `numMemb`", "'$libCom', '$numArt', '$numMemb'");
-
-// if (sql_select('ARTICLE', 'urlPhotArt', "urlPhotArt = '$path'")[0]['urlPhotArt'] != $path) {
-//     echo ('yo');
-// }
+sql_insert('article', "`libTitrArt`, `libChapoArt`, `libAccrochArt`, `parag1Art`, `libSsTitr1Art`, `parag2Art`, `libSsTitr2Art`, `parag3Art`, `libConclArt`, `urlPhotArt`, `numThem`", "'$libTitrArt','$libChapoArt','$libAccrochArt','$parag1Art','$libSsTitr1Art','$parag2Art','$libSsTitr2Art','$parag3Art','$libConclArt','$urlPhotArt','$numThem'");
 header('Location: ../../views/backend/articles/list.php');
