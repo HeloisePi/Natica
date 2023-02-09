@@ -14,12 +14,10 @@ body {
     justify-content: space-around;
 }
 
-.dropdown-center {
+.dropdown{
     border-color: black;
     border-width: 1px;
 }
-
-
 
 .connexion:hover {
     color: rgb(0, 0, 0);
