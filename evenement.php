@@ -43,7 +43,7 @@ $lisezAussi = sql_select('article', '*', "", "numArt DESC");
 //article [$i[nblike = count '*']];
 
 $numArt = $_GET['numArt'];
-$path = $_GET['urlPhotArt'];
+//$path = $_GET['urlPhotArt'];
 $articles = sql_select("ARTICLE", "*", "numArt = $numArt")[0];
 $libThem = sql_select('ARTICLE INNER JOIN THEMATIQUE ON ARTICLE.numThem = THEMATIQUE.numThem', 'libThem', "ARTICLE.numArt=$numArt")[0]['libThem'];
 $keywords = sql_select('ARTICLE INNER JOIN THEMATIQUE ON ARTICLE.numThem = THEMATIQUE.numThem', 'libThem', "ARTICLE.numArt=$numArt");
@@ -70,7 +70,7 @@ $comments = sql_select('ARTICLE INNER JOIN COMMENT ON ARTICLE.numArt = COMMENT.n
                                                 echo ($articles['libTitrArt']) ?></p>
             <p class="date-evenement1">
                 <?php
-                echo ($articles[0]['libChapoArt']);
+                echo ($articles['libChapoArt']);
                 ?></p>
         </div>
         <div>
@@ -141,7 +141,7 @@ $comments = sql_select('ARTICLE INNER JOIN COMMENT ON ARTICLE.numArt = COMMENT.n
             <img class="espace-img-col2" src="/assert/svg/Personnes-a-mobilite-reduite-RVB.svg" alt="Pictograme d'une poussette"><br>
             <p class="titre-col-2">Lisez aussi :</p>
             <div class="rect-all">
-
+            <?php $articles = sql_select('article', '*', "", "numArt DESC", 3);?>
                 <?php foreach ($articles as $article) { ?>
                     <div class="titres-all">
                         <?php echo ('<a href="/evenement.php?numArt=' . $article['numArt'] . ' "><h3>' . $article['libTitrArt'] . '</h3></a>'); ?>
