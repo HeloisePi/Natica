@@ -27,7 +27,7 @@ if (!check_access(1)) {
 <div class="fil-ariane2">
     <a href="/index.php" class="liens-ariane">Accueil</a>
     <p class="separation"> > </p>
-    <a href="/evenement.php" class="liens-ariane">Écrire un article</a>
+    <a href="/views/backend/articles/create.php" class="liens-ariane">Écrire un article</a>
 </div>
 
 <div class="container">

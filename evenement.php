@@ -45,7 +45,6 @@ $lisezAussi = sql_select('article', '*', "", "numArt DESC");
 $numArt = $_GET['numArt'];
 $path = $_GET['urlPhotArt'];
 $articles = sql_select("ARTICLE", "*", "numArt = $numArt")[0];
-echo ($articles['urlPhotArt']);
 $libThem = sql_select('ARTICLE INNER JOIN THEMATIQUE ON ARTICLE.numThem = THEMATIQUE.numThem', 'libThem', "ARTICLE.numArt=$numArt")[0]['libThem'];
 $keywords = sql_select('ARTICLE INNER JOIN THEMATIQUE ON ARTICLE.numThem = THEMATIQUE.numThem', 'libThem', "ARTICLE.numArt=$numArt");
 $comments = sql_select('ARTICLE INNER JOIN COMMENT ON ARTICLE.numArt = COMMENT.numArt', '*', "ARTICLE.numArt=$numArt");
@@ -143,21 +142,21 @@ $comments = sql_select('ARTICLE INNER JOIN COMMENT ON ARTICLE.numArt = COMMENT.n
             <p class="titre-col-2">Lisez aussi :</p>
             <div class="rect-all">
 
-        <?php foreach($articles as $article){?>
-            <div class= "titres-all">
-                <?php echo('<a href="/evenement.php?numArt=' . $article['numArt'] . ' "><h3>' . $article['libTitrArt'] . '</h3></a>');?>
-                
-            <div class="bloc-all">
-                <img src="
+                <?php foreach ($articles as $article) { ?>
+                    <div class="titres-all">
+                        <?php echo ('<a href="/evenement.php?numArt=' . $article['numArt'] . ' "><h3>' . $article['libTitrArt'] . '</h3></a>'); ?>
+
+                        <div class="bloc-all">
+                            <img src="
                 <?php
-                echo ($article['urlPhotoArt']);
+                    echo ($article['urlPhotoArt']);
                 ?>" alt="Image descriptive article">
-                <div class="info-all">
-                    <?php echo('<p>' . $article['dtCreArt']. '</p>') ?>
-                </div>
-            </div>
-            </div>
-            <?php }?>
+                            <div class="info-all">
+                                <?php echo ('<p>' . $article['dtCreArt'] . '</p>') ?>
+                            </div>
+                        </div>
+                    </div>
+                <?php } ?>
             </div>
 
         </div>
@@ -209,4 +208,5 @@ include 'footer.php';
 ?>
 
 </body>
+
 </html>
