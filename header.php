@@ -51,7 +51,7 @@ require_once 'config.php';
           }
           else { ?> <a class="nav-link" href="/views/backend/articles/create.php">Écrire un article</a> <?php }?>
           </li>
-          
+
           <li class="nav-item">
           <?php if (!check_access(2)) { ?>
           <a class="nav-link disabled" href="/views/backend/dashboard.php" style="display: none;">Dashboard</a> 
