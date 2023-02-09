@@ -5,6 +5,7 @@ body {
 .articles-header {
     display: flex;
     justify-content: center;
+    flex-direction: row;
 }
 
 .articles-header .rect {
@@ -17,16 +18,14 @@ body {
 
 .articles-header .square {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
-    align-content: flex-end;
-    align-items: flex-end;
+    margin-bottom: 2vh;
 }
 
 .articles-header .bloc-rect {
     display: flex;
-    align-items: flex-start;
-    margin-right: 1.7%;
+    margin-right: 2vw;
     overflow: hidden;
 
     width: 536px;
@@ -39,9 +38,7 @@ body {
 
 .articles-header .bloc-square {
     display: flex;
-    align-items: flex-end;
-    overflow: hidden;
-
+    flex-direction: row;
     width: 200px;
     height: 195px;
     left: 732px;
@@ -51,14 +48,17 @@ body {
 }
 
 .articles-header .info-square {
-    position: absolute;
+    display: inline-block;
+    width: 400px;
+    height: 195px;
     width: 30%;
     height: 10%;
+    font-size: 20px;
 }
 
 .articles-header .info-square h3,
 .articles-header .info-square p {
-    display: flex;
+    display: block;
 }
 
 .articles-header .info-rect h3,

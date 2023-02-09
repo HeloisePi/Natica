@@ -54,56 +54,72 @@ $articles = sql_select('article', '*', "", "numArt DESC", 3);
 </div>
 
 
-<div class="articles-header">
-    <div class="rect">
-        <div class="bloc-rect">
-            <img class="image-affiche" src="src/images/uploads/<?php echo ($affiche['urlPhotArt']) ?>" alt="Image decriptive article.">
-                <div class="info-rect">
-                    <h3><?php echo ($affiche['libTitrArt']) ?></h3>
-                    <p> <?php
-                    echo ($affiche['libChapoArt']);
-                    ?></p>
-                    <p>
-                        Écrit par : Natica <br> Le : <?php echo ($affiche['dtCreArt'])?>
-                    </p>
-                </div>
+<div class="container articles-header">
+    <div class="col-2"></div>
+        <div class="rect">
+            <div class="bloc-rect">
+                <img class="image-affiche" src="src/images/uploads/<?php echo ($affiche['urlPhotArt']) ?>" alt="Image decriptive article.">
+                    <div class="info-rect">
+                        <h3><?php echo ($affiche['libTitrArt']) ?></h3>
+                        <p> <?php
+                        echo ($affiche['libChapoArt']);
+                        ?></p>
+                        <p>
+                            Écrit par : Natica <br> Le : <?php echo ($affiche['dtCreArt'])?>
+                        </p>
+                    </div>
+            </div>
         </div>
-        <div class="square">
+<!--  <div class="container colonne">
+        <div class="row square">
+            <div class="bloc-square"></div>
+                <div class="info-square">
+                    <h3>gjbfvji</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.!</p>
+                </div>
+            <div class="col-3"></div>
+        </div>
+    </div> -->
+    <div class="container colonne">   
+        <div class="row square">
             <div class="bloc-square">
-                <div class="info-square 1">
-                    <?php foreach($articles as $article){?>
+            <?php foreach($articles as $article){?>
                     <img src="
                 <?php
                 echo ($article['urlPhotoArt']);
-                ?>" alt="Image descriptive article">
+            }?>" alt="Image descriptive article">
+            </div>
+                <div class="info-square">
+                    <?php foreach($articles as $article){?>
                     <h3><?php echo ($article['libTitrArt']) ?></h3>
                     <?php echo('<p>' . $article['dtCreArt']. '</p>'); }
                     ?>
                 </div>
-            </div>
-        </div>
+            <div class="col-3"></div>
+        </div>  
     </div>
-</div>
+</div> 
+
 
 <div class="articles-decouvrir">
 <h1>Quelques expériences immersives qui pourraient vous plaire</h1>
     <div class="rect-decouvrir">
         <div class= "titres-decouvrir">
-            <h3>Evènement 1</h3>
+            <h3>Evénement 1</h3>
             <div class="bloc-decouvrir">
                 <div class="info-decouvrir">
                 </div>
             </div>   
         </div>
         <div class= "titres-decouvrir">
-            <h3>Evènement 2</h3>
+            <h3>Evénement 2</h3>
             <div class="bloc-decouvrir">
                 <div class="info-decouvrir">
                 </div>
             </div>
         </div>
         <div class= "titres-decouvrir">
-            <h3>Evènement 3</h3>
+            <h3>Evénement 3</h3>
             <div class="bloc-decouvrir">
                 <div class="info-decouvrir">
                 </div>
