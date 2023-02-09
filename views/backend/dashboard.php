@@ -12,9 +12,18 @@
 <?php
 include '../../header.php';
 //Security check
-if (!check_access(1) || !check_access(2)) {
+if (!check_access(2)) {
     header('Location: /'); //Redirect to home
     exit();
+}
+
+if (isset($_SESSION['numMemb'])) {
+    $pseudoMemb = $_SESSION['pseudoMemb'];
+    $numMemb = $_SESSION['numMemb'];
+    $numStat = sql_select('MEMBRE', 'numStat', "numMemb = '$numMemb'")[0]['numStat'];
+    //$numStat = $numStat[0]['numStat'];
+    $libStat = sql_select('STATUT', 'libStat', "numStat = $numStat")[0]['libStat'];
+    echo ("Bonjour " . $pseudoMemb . ". Vous êtes connecté en tant que : " . $libStat. "."); 
 }
 ?>
 
@@ -41,12 +50,16 @@ if (!check_access(1) || !check_access(2)) {
                         </tr>
                     </thead>
                     <tbody>
+                    <?php if (!check_access(1)) { ?>
+                        
+                    <?php } 
+                    else { ?>
                         <tr>
                             <td>Statuts</td>
                             <td>
                                 <a href="/views/backend/status/list.php" class="btn btn-primary">List</a>
                                 <a href="/views/backend/status/create.php" class="btn btn-success">Create</a>
-
+    
                                 <!-- <a href="/views/backend/status/delete.php" class="btn btn-danger">Delete</a>  Ne sers à rien , et ne marche pas-->
                             </td>
                         </tr>
@@ -76,6 +89,20 @@ if (!check_access(1) || !check_access(2)) {
                             </td>
                         </tr>
                         <tr>
+                            <td>Mots-clés</td>
+                            <td>
+                                <a href="/views/backend/keywords/list.php" class="btn btn-primary">List</a>
+                                <a href="/views/backend/keywords/create.php" class="btn btn-success ">Create</a>
+                                <!-- Les boutons ci dessous sont inutiles -->
+                                <!-- <a href="/views/backend/keywords/edit.php" class="btn btn-warning disabled">Edit</a> -->
+                                <!-- <a href="/views/backend/keywords/delete.php" class="btn btn-danger disabled">Delete</a> -->
+                            </td>
+                        </tr>
+
+                    <?php }
+                    ?>
+
+                        <tr>
                             <td>Commentaires</td>
                             <td>
                                 <a href="/views/backend/comments/list.php" class="btn btn-primary ">List</a>
@@ -91,16 +118,6 @@ if (!check_access(1) || !check_access(2)) {
                                 <a href="/views/backend/likes/create.php" class="btn btn-success ">Create</a>
                                 <!-- <a href="/views/backend/likes/edit.php" class="btn btn-warning disabled">Edit</a>
                                 <a href="/views/backend/likes/delete.php" class="btn btn-danger disabled">Delete</a> -->
-                        </tr>
-                        <tr>
-                            <td>Mots-clés</td>
-                            <td>
-                                <a href="/views/backend/keywords/list.php" class="btn btn-primary">List</a>
-                                <a href="/views/backend/keywords/create.php" class="btn btn-success ">Create</a>
-                                <!-- Les boutons ci dessous sont inutiles -->
-                                <!-- <a href="/views/backend/keywords/edit.php" class="btn btn-warning disabled">Edit</a> -->
-                                <!-- <a href="/views/backend/keywords/delete.php" class="btn btn-danger disabled">Delete</a> -->
-                            </td>
                         </tr>
                     </tbody>
             </div>
