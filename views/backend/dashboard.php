@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Écrire un article - eXim</title>
     <link rel="stylesheet" href="/src/css/dashboard.css">
+    <link rel="stylesheet" href="/src/css/connection.css">
+
 
 <?php
 include '../../header.php';
@@ -15,6 +17,13 @@ if (!check_access(1) || !check_access(2)) {
     exit();
 }
 ?>
+
+<div class="fil-ariane2">
+    <a href="/index.php" class="liens-ariane">Accueil</a>
+    <p class="separation"> > </p>
+    <a href="/views/backend/dashboard.php" class="liens-ariane">Dashboard</a>
+</div>
+
 
 <!--Bootstrap admin dashboard template-->
 <div>
