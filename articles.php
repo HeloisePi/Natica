@@ -18,11 +18,11 @@
     <?php
     include 'header.php';
     require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
+    $articles = sql_select('article', '*', "", "numArt DESC"); ?>
 
 
-    $articles = sql_select('article', '*', "", "numArt DESC")[0];
 
-    ?>
+
 
     <div class="fil-ariane3">
         <a href="/index.php" class="liens-ariane">Accueil</a>
@@ -42,11 +42,12 @@
     <div class="rect-all">
 
         <?php foreach ($articles as $article) { ?>
+
             <div class="titres-all">
                 <?php echo ('<a href="/evenement.php?numArt=' . $article['numArt'] . ' "><h3>' . $article['libTitrArt'] . '</h3></a>'); ?>
 
                 <div class="bloc-all">
-                    <img src="src/images/uploads/<?php echo ($articles['urlPhotArt']) ?>" alt="Image descriptive article">
+                    <img src="src/images/uploads/<?php echo ($article['urlPhotArt']) ?>" alt="Image descriptive article">
                     <div class="info-all">
                         <?php echo ('<p>' . $article['dtCreArt'] . '</p>') ?>
                     </div>
