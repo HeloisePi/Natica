@@ -18,6 +18,12 @@
 <?php
 include 'header.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
+$articleslikes = sql_select('likeart', '*');
+
+foreach ($articleslikes as $articlelike ){
+    echo ($articlelike['numArt']);
+}
+
 $numArt = $_GET['numArt'];
 $articles = sql_select("ARTICLE", "*", "numArt = $numArt");
 $libThem = sql_select('ARTICLE INNER JOIN THEMATIQUE ON ARTICLE.numThem = THEMATIQUE.numThem', 'libThem', "ARTICLE.numArt=$numArt")[0]['libThem'];
@@ -114,6 +120,8 @@ $comments = sql_select('ARTICLE INNER JOIN COMMENT ON ARTICLE.numArt = COMMENT.n
             <img class="espace-img-col2" src="/assert/svg/Deficients-moteur-avec-accompagnateur-RVB.svg" alt="Pictograme d'une poussette"><br>
             <img class="espace-img-col2" src="/assert/svg/Personnes-a-mobilite-reduite-RVB.svg" alt="Pictograme d'une poussette"><br>
             <p class="titre-col-2">Lisez aussi :</p>
+
+
         </div>
 
     </div>
@@ -146,8 +154,7 @@ $comments = sql_select('ARTICLE INNER JOIN COMMENT ON ARTICLE.numArt = COMMENT.n
         <div class="col-6 apercu-comm">
             <p>Trop cool comme article, j'adore !</p>
         </div>
-        <div class="col-8 fonction-like text-end">
-            <img src="/images/coeur-picto.svg" alt="Pictogramme pour les likes">
+        
     
     </div>
 </div>
