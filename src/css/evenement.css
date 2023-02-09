@@ -54,3 +54,32 @@
     font-family: "Bebas-neue", sans-serif;
     font-size: 42px;
 }
+
+.deuxieme-col {
+    font-family: "Montserrat", sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.titre-col-2 {
+    padding-top: 3rem;
+}
+
+.api-google-maps {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+.sous-titre-col2 {
+    font-weight: 1;
+}
+
+.align-element-col2 {
+    display: flex;
+}
+
+.espace-img-col2 {
+    padding-bottom: 1rem;
+}
