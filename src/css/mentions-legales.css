@@ -13,3 +13,22 @@ h1 {
     padding-bottom: 2rem;
 }
 
+.sous-titre-mentions-legales {
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.toute-la-page {
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-fin-mentions-legales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+}

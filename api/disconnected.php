@@ -7,5 +7,7 @@ if (isset($_SESSION['numMemb'])) {
     $_SESSION = array();
     unset($_SESSION);
     session_destroy();
-    echo "Vous avez été déconnecté.";
+
+    header('Location: ../../../index.php?error=4');
 }
+

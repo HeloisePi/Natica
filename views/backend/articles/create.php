@@ -1,6 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Écrire un article - eXim</title>
+    <link rel="stylesheet" href="/src/css/main.css">
+</head>
+<body>
+    
+</body>
+</html>
+
 <?php
 include '../../../header.php';
-
 $numThems = sql_select('thematique', '*');
 //Security check
 //Level 1 mean administator in DB
@@ -10,6 +23,11 @@ if (!check_access(1)) {
 }
 ?>
 
+<div class="fil-ariane2">
+    <a href="/index.php" class="liens-ariane">Accueil</a>
+    <p class="separation"> > </p>
+    <a href="/evenement.php" class="liens-ariane">Écrire un article</a>
+</div>
 
 <div class="container">
     <div class="row">
@@ -97,3 +115,6 @@ if (!check_access(1)) {
 
         </div>
     </div>
+
+<?php require_once '../../../footer.php'; 
+?>
