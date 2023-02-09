@@ -11,7 +11,7 @@ if (!check_access(1)) {
 }
 
 $numThem = $_GET['numThem'];
-$libThem = sql_select("THEMATIQUE", "libThem", "numThem = $numThem")[0]['libThem'];
+$libThem = sql_select("THEMATIQUE", "*", "numThem = '$numThem'")[0]['libThem'];
 
 
 ?>
@@ -29,7 +29,7 @@ $libThem = sql_select("THEMATIQUE", "libThem", "numThem = $numThem")[0]['libThem
                 <div class="form-group">
                     <label for="titre">nouveau nom de la thématique</label>
                     <input id="numThem" class="form-control" style="display: none;" type="text" name="numThem" value=" <?php echo ($numThem) ?>">
-                    <input id="libThem" class="form-control" type="text" name="libThem" <?php echo ($libThem) ?>>
+                    <input id="libThem" class="form-control" type="text" name="libThem" value="<?php echo ($libThem) ?>">
                 </div>
                 <div class="form-group mt-2">
                     <button type="submit" class="btn btn-primary">Edit</button>

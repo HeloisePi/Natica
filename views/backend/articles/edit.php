@@ -14,7 +14,6 @@ if (!check_access(1)) {
 
 $numArt = $_GET['numArt'];
 $article = sql_select("article","*", "numArt = $numArt");
-print_r($numArt);
 //print_r($article);
 
 ?>
@@ -67,16 +66,28 @@ print_r($numArt);
                 <input type="text" id="adresse"  class="form-control" ><br>
                 <label for="cout">Coût * (0 si gratuit)</label><br>
                 <input type="text" id="cout" class="form-control"   required><br>
-                <label for="">Accessibilité de l’expérience (cocher si le lieu est accessible)</label><br>
-                <input type="checkbox" id="" name="">
-                <input type="checkbox" id="" name="">
-                <input type="checkbox" id="" name="">
-                <input type="checkbox" id="" name="">
-                <input type="checkbox" id="" name="">
-                <input type="checkbox" id="" name="">
-                <input type="checkbox" id="" name="">
-                <input type="checkbox" id="" name="">
-                <input type="checkbox" id="" name=""><br>
+                <label for="">Accessibilité de l’expérience (cocher si le lieu est accessible) </label><br>
+
+                <label for="defMent"><img src="/assert/svg/Deficients-mentaux-RVB.svg" alt="Deficients mentaux"></label>
+                <input type="checkbox" id="defMent" name="defMent">
+                
+                <label for="defMotA"> <img src="/assert/svg/Deficients-moteur-avec-accompagnateur-RVB.svg" alt="Déficient moteur avec accompagnateur"></label>
+                <input type="checkbox" id="defMotA" name="defMotA">
+
+                <label for="defMot"> <img src="/assert/svg//Deficients-moteur-RVB.svg" alt="Déficient moteur"></label>
+                <input type="checkbox" id="defMot" name="defMot">
+
+                <label for="defVis"> <img src="/assert/svg/Deficients-visuels-RVB.svg" alt="Deficient visuel"> </label>
+                <input type="checkbox" id="defVis" name="defVis">
+
+                <label for="persMobiRedu"> <img src="/assert/svg/Personnes-a-mobilite-reduite-RVB.svg" alt=" Personnes à mobilité reduite"></label>
+                <input type="checkbox" id="persMobiRedu" name="persMobiRedu">
+
+                <label for="pousette"> <img src="/assert/svg/Poussette-RVB.svg" alt="Pousette"></label>
+                <input type="checkbox" id="pousette" name="pousette"><br>
+
+            </div>
+            <div class="form-group mt-2"></div>
             </div>
             <div class="form-group mt-2"></div>
             <input class="btn btn-primary" type="submit" name="" id="" value="ENVOYER">

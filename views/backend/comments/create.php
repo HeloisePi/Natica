@@ -6,6 +6,9 @@ if (!check_access(1) || !check_access(2)) {
     header('Location: /'); //Redirect to home
     exit();
 }
+
+$membres = sql_select('membre', '*');
+$articles = sql_select('article', '*');
 ?>
 
 <!--Bootstrap form to create a new comment-->
@@ -20,10 +23,31 @@ if (!check_access(1) || !check_access(2)) {
                 <div class="form-group">
                     <label for="titre">Commentaire *</label>
                     <input id="libCom" class="form-control" type="text" name="libCom" required>
+
+
+
                     <label for="titre">numéro de l'article *</label>
-                    <input id="numArt" class="form-control" type="int" name="numArt" required>
+
+                    <select id="numArt" class="form-control" type="int" name="numArt" required>
+                    <?php
+                    foreach( $articles as $article){
+                        ?> <option value="<?php echo $article['numArt'] ?>"> <?php echo $article['libTitrArt']; ?> </option>
+                        <?php
+                    }
+                    ?>
+                </select>
+   
                     <label for="titre">numéro du membre *</label>
-                    <input id="numMemb" class="form-control" type="int" name="numMemb" required>
+                    <select id="numMemb" class="form-control" type="int" name="numMemb" required>
+                    <?php
+                    foreach( $membres as $membre){
+                        ?> <option value="<?php echo $membre['numMemb'] ?>"> <?php echo $membre['pseudoMemb']; ?> </option>
+                        <?php
+                    }
+                    ?>
+
+
+                </select>
                 </div>
                 <div class="form-group mt-2">
                     <button type="submit" class="btn btn-primary">Create</button>

@@ -11,4 +11,5 @@ $numStat = $_POST['numStat'];
 
 sql_delete('STATUT',"numStat = $numStat");
 
-header('Location: ../../views/backend/status/list.php');
+
+//header('Location: ../../views/backend/status/list.php');
