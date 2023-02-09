@@ -14,7 +14,7 @@ if (password_verify($passMemb, $truePassMemb)) {
     $numMemb = sql_select('MEMBRE', 'numMemb', "eMailMemb = '$eMailMemb'")[0]['numMemb'];
     $_SESSION["numMemb"] = $numMemb;
     $_SESSION["pseudoMemb"] = sql_select('MEMBRE', 'pseudoMemb', "eMailMemb = '$eMailMemb'")[0]['pseudoMemb'];
-    header('Location: ../../../main.php?error=3');
+    header('Location: ../../../index.php?error=3');
 
     
         /* now displaying the session id..... */
