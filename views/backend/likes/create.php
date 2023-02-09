@@ -3,6 +3,7 @@ include '../../../header.php';
 $membres = sql_select('membre', '*');
 $articles = sql_select('article', '*');
 
+
 //Security check
 if (!check_access(1) || !check_access(2)) {
     header('Location: /'); //Redirect to home
@@ -51,11 +52,7 @@ if (!check_access(1) || !check_access(2)) {
                 </select>
 
         </div>
-        <div class="form-group mt-2">
 
-            <div class="form-group">
-                <label for="titre">Nombre de likes</label>
-                <input id="likeA" class="form-control" type="int" name="likeA" pattern = "[0-1]" required>
             </div>
             <div class="form-group mt-2">
                 <button type="submit" class="btn btn-primary">Create</button>

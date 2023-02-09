@@ -8,9 +8,16 @@ if (!check_access(1) || !check_access(2)) {
     exit();
 }
 
-$likeA = $_POST['likeA'];
 $numArt = $_POST['numArt'];
 $numMemb = $_POST['numMemb'];
+$verifie = sql_select('likeart','likeA',"numArt = '$numArt' and numMemb = '$numMemb'");
+print_r($verifie);
 
-sql_insert('LIKEART', "`likeA`, `numArt`, `numMemb`", "'$likeA', '$numArt', '$numMemb'");
+if ($verifie[0]['likeA'] == 1){
+    header('Location: ../../views/backend/likes/list.php');
+    exit();
+}
+
+sql_insert('LIKEART', "`likeA`, `numArt`, `numMemb`", " 1, '$numArt', '$numMemb'");
+
 header('Location: ../../views/backend/likes/list.php');

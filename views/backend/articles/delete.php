@@ -12,7 +12,6 @@ if (!check_access(1)) {
 }
 
 $numArt = $_GET['numArt'];
-var_dump($numArt);
 $article = sql_select("article", "*", "numArt = $numArt")[0];
 
 

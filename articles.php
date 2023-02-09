@@ -17,6 +17,8 @@
 include 'header.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
 
+$articles = sql_select('article', '*', "", "numArt DESC", 3);
+
 ?>
 
 <div class="fil-ariane3">
@@ -33,18 +35,27 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
             </div>
         </div>
     </form>
-    <h1>expériences immersives de 2023-2024</h1>
+    <h1 class="experiences-immersives">expériences immersives de 2023-2024</h1>
         <div class="rect-all">
         <a href="/evenement.php">
             <div class= "titres-all">
-                <h3>Evènement 1</h3>
+                <?php foreach($articles as $article){
+                    echo('<h3>' . $article['libTitrArt'] . '</h3>');?>
+                    
                 <div class="bloc-all">
+                    <img src="
+                    <?php
+                    echo ($article['urlPhotoArt']);
+                    ?>" alt="Image descriptive article">
                     <div class="info-all">
+                        <?php echo('<p>' . $article['dtCreArt']. '</p>') ?>
                     </div>
-                </div>   
+                </div>
+                <?php }?>
             </div>
+                
         </a>
-            <div class= "titres-all">
+            <!-- <div class= "titres-all">
                 <h3>Evènement 2</h3>
                 <div class="bloc-all">
                     <div class="info-all">
@@ -58,7 +69,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
                     </div>
                 </div>
             </div>    
-        </div>
+        </div> -->
 </div>
 
 <?php include 'footer.php'; // contains the footer ?>
