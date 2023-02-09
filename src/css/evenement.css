@@ -45,7 +45,7 @@
 }
 
 .align-article-evenement {
-    justify-content: start ;
+    justify-content:flex-start  ;
     padding-top: 2rem;
     padding-bottom: 2rem;
 }

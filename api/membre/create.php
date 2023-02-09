@@ -27,4 +27,5 @@ if (sql_select('MEMBRE', 'eMailMemb', "eMailMemb = '$eMailMemb'")[0]['eMailMemb'
         "prenomMemb, nomMemb, pseudoMemb, passMemb, eMailMemb, numStat",
         "'$prenomMemb','$nomMemb','$pseudoMemb','$encryptedPassMemb','$eMailMemb', 3"
     );
+    header('Location: ../../../views/backend/members/list.php?error=1');
 }

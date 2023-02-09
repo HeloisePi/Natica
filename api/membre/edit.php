@@ -1,6 +1,5 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
-print_r($_POST);
 
 
 
@@ -11,6 +10,6 @@ $pseudoMemb = $_POST['pseudoMemb'];
 $passMemb = $_POST['passMemb'];
 $eMailMemb = $_POST['eMailMemb'];
 
-sql_update('membre', "prenomMemb = $prenomMemb , nomMemb = $nomMemb , pseudoMemb = $pseudoMemb , passMemb = $passMemb ,eMailMemb = $eMailMemb " ,"numMemb =$numMemb" );
+sql_update('membre', "prenomMemb = $prenomMemb , nomMemb = $nomMemb , pseudoMemb = $pseudoMemb , passMemb = $passMemb ,eMailMemb = $eMailMemb ", "numMemb =$numMemb");
 
 header('Location: ../../views/backend/members/list.php');

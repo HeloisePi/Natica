@@ -28,31 +28,33 @@
                 <form action="<?php echo ROOT_URL . '/api/membre/create.php' ?>" method="post">
                     <div class="form-group ">
                         <label for="nomMemb">Nom * </label> <br>
-                        <input class="form-control taille-saisie" type="text" id="nomMemb" name='nomMemb' require> <br>
+                        <input class="form-control taille-saisie" type="text" id="nomMemb" name='nomMemb' required> <br>
 
 
                         <label for="prenomMemb">Prénom * </label> <br>
-                        <input class="form-control taille-saisie" type="text" id="prenomMemb" name='prenomMemb' require> <br>
+                        <input class="form-control taille-saisie" type="text" id="prenomMemb" name='prenomMemb' required> <br>
 
                         <label for="prenomMemb">Pseudo * </label> <br>
-                        <input class="form-control taille-saisie" type="text" id="pseudoMemb" name='pseudoMemb' require> <br>
+                        <input class="form-control taille-saisie" type="text" id="pseudoMemb" name='pseudoMemb' required> <br>
 
                         <label for="eMailMemb">Adresse mail* </label> <br>
-                        <input class="form-control taille-saisie" type="text" id="eMailMemb" name='eMailMemb' require> <br>
+                        <input class="form-control taille-saisie" type="text" id="eMailMemb" name='eMailMemb' required> <br>
 
                         <?php
-                        if (isset($_GET["error"]) && $_GET["error"] == 1) {
-                            $msgErreur = $_GET['error'];
+                        if (isset($_GET["error"])) {
+                            if ($_GET["error"] == 1){
+                                $msgErreur = $_GET['error'];
                         ?>
 
-                            <span>
-                                <span> Erreur, l'adresse mail saisie est déjà attribuée, veuillez entrer une autre adresse mail </span><br><br>
-                            </span>
+                                <span>
+                                    <span> Erreur, l'adresse mail saisie est déjà attribuée, veuillez entrer une autre adresse mail </span><br><br>
+                                </span>
                         <?php
+                            }       
                         } ?>
 
                         <label for="passMemb">Mot de passe* </label> <br>
-                        <input class="form-control taille-saisie" type="password" id="passMemb" name='passMemb' require> <br>
+                        <input class="form-control taille-saisie" type="password" id="passMemb" name='passMemb' required> <br>
 
 
                     </div>

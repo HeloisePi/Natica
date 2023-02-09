@@ -12,6 +12,17 @@
 </head>
 <body>
 <div class="haut">
+<?php 
+                        if (isset($_GET["error"])) {
+                            if ($_GET["error"] == 3){
+                                $msgErreur = $_GET['error'];
+                    ?>
+                                <span>
+                                    <span> Connexion réussie ! </span><br><br>
+                                </span>
+                        <?php }
+                        } ?>
+                        
     <div class="title">
         <h1 class="titre-eximBordeaux">EXIM BORDEAUX</h1>
         <div class="purple-line"></div>
