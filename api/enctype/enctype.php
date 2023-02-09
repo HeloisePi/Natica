@@ -6,13 +6,13 @@ if (!check_access(1)) {
     header('Location: /'); //Redirect to home
     exit();
 }
-var_dump($_FILES);
 
 
 if (isset($_FILES)) {
     $path = upload_image($_FILES);
-    echo $path;
+    // echo $path;
 }
+$urlPhotArt = sql_escape($path);
 
 $libTitrArt = $_POST['libTitrArt'];
 $libChapoArt = $_POST['libChapoArt'];
@@ -28,11 +28,4 @@ $numThem = $_POST['numThem'];
 
 
 sql_insert('article', "`libTitrArt`, `libChapoArt`, `libAccrochArt`, `parag1Art`, `libSsTitr1Art`, `parag2Art`, `libSsTitr2Art`, `parag3Art`, `libConclArt`, `urlPhotArt`, `numThem`", "'$libTitrArt','$libChapoArt','$libAccrochArt','$parag1Art','$libSsTitr1Art','$parag2Art','$libSsTitr2Art','$parag3Art','$libConclArt','$urlPhotArt','$numThem'");
-
-
-// sql_insert('COMMENT', "`libCom`, `numArt`, `numMemb`", "'$libCom', '$numArt', '$numMemb'");
-
-
-
-
 header('Location: ../../views/backend/articles/list.php');

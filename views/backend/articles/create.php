@@ -95,6 +95,15 @@ if (!check_access(1)) {
                     <label for="pousette"> <img src="/assert/svg/Poussette-RVB.svg" alt="Pousette"></label>
                     <input type="checkbox" id="pousette" name="pousette"><br>
 
+                    <label for="erreur"></label>
+                    <?php
+                    // if (isset($_GET["error"])) {
+                    //     if ($_GET["error"] == 1)
+                    //         $msgErreur = $_GET['error'];
+                    // }
+
+                    // 
+                    ?>
                 </div>
                 <div class="form-group mt-2"></div>
                 <input class="btn btn-primary" type="submit" name="" id="" value="ENVOYER">
