@@ -29,10 +29,10 @@ $articles = sql_select("article", "*");
                         <th>paragraphe2 </th>
                         <th>sous titre 2</th>
                         <th>paragraphe3</th>
-                        <th>conclusion  </th>
+                        <th>conclusion </th>
                         <th>image</th>
                         <th>mot clés</th>
-                        
+
 
                     </tr>
                 </thead>
@@ -52,7 +52,7 @@ $articles = sql_select("article", "*");
                             <td><?php echo $article['libConclArt']; ?></td>
                             <td><?php echo $article['urlPhotArt']; ?></td>
                             <td><?php echo $article['numThem']; ?></td>
-                            
+
                             <td>
                                 <a href="edit.php?numArt=<?php echo $article['numArt']; ?>" class="btn btn-primary">Edit</a>
                                 <a href="delete.php?numArt=<?php echo $article['numArt']; ?>" class="btn btn-danger">Delete</a>
@@ -65,5 +65,5 @@ $articles = sql_select("article", "*");
         </div>
     </div>
 
-<?php
-include '../../../footer.php'; // contains the footer
+    <?php
+    include '../../../footer.php'; // contains the footer
