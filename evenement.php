@@ -18,11 +18,22 @@
 <?php
 include 'header.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
-$articleslikes = sql_select('likeart', '*');
+$articleslikes = sql_select('likeart', 'numArt');
+
+$i = 0;
 
 foreach ($articleslikes as $articlelike ){
-    echo ($articlelike['numArt']);
+    $nombreLike = count(sql_select('likeart', 'numArt', "numArt = $articlelike[numArt]")['O']['numArt']);
+    $articleslikes[$i][$nombreLike];
+    $i++;
 }
+//print_r($articleslikes);
+//print_r(ksort($articleslikes, SORT_NUMERIC ));
+//$echo( $nombreLikes[0]['numArt']);
+//I = 0
+//selct dans la table like art where numArt = numArt en cours count.
+//fin de for each i++
+//article [$i[nblike = count '*']];
 
 $numArt = $_GET['numArt'];
 $articles = sql_select("ARTICLE", "*", "numArt = $numArt");
