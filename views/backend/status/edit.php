@@ -1,3 +1,14 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit - eXim</title>
+    <link rel="stylesheet" href="/src/css/connection.css">
+</head>
+<body>
+
 <?php
 
 
@@ -15,6 +26,15 @@ $numStat = $_GET['numStat'];
 $libStat = sql_select("STATUT", "libStat", "numStat = $numStat")[0]['libStat'];
 ?>
 
+<div class="fil-ariane2">
+    <a href="/index.php" class="liens-ariane">Accueil</a>
+    <p class="separation"> > </p>
+    <a href="/views/backend/dashboard.php" class="liens-ariane">Dashboard</a>
+    <p class="separation"> > </p>
+    <a href="/views/backend/status/list.php" class="liens-ariane">Status</a>
+    <p class="separation"> > </p>
+    <div class="liens-ariane">Edit</div>
+</div>
 
 <!--Bootstrap form to create a new status-->
 <div class="container">
@@ -38,4 +58,5 @@ $libStat = sql_select("STATUT", "libStat", "numStat = $numStat")[0]['libStat'];
     </div>
 </div>
 
-</form>
+</body>
+</html>

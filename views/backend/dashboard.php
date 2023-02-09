@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Écrire un article - eXim</title>
     <link rel="stylesheet" href="/src/css/dashboard.css">
+    <link rel="stylesheet" href="/src/css/connection.css">
+
 
 <?php
 include '../../header.php';
@@ -24,6 +26,12 @@ if (isset($_SESSION['numMemb'])) {
     echo ("Bonjour " . $pseudoMemb . ". Vous êtes connecté en tant que : " . $libStat. "."); 
 }
 ?>
+
+<div class="fil-ariane2">
+    <a href="/index.php" class="liens-ariane">Accueil</a>
+    <p class="separation"> > </p>
+    <a href="/views/backend/dashboard.php" class="liens-ariane">Dashboard</a>
+</div>
 
 
 <!--Bootstrap admin dashboard template-->
@@ -115,6 +123,5 @@ if (isset($_SESSION['numMemb'])) {
             </div>
         </div>
     </div>
-
 </div>
 

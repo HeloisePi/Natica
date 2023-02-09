@@ -32,10 +32,10 @@
 
                         <ul class="list-unstyled mb-0">
                             <li>
-                            <a href="#!" class="liens">Accueil</a>
+                            <a href="/index.php" class="liens">Accueil</a>
                             </li>
                             <li>
-                            <a href="#!" class="liens">Articles</a>
+                            <a href="/articles.php" class="liens">Articles</a>
                             </li>
                         </ul>
                     </div>
@@ -47,10 +47,10 @@
 
                         <ul class="list-unstyled">
                             <li>
-                            <a href="#!" class="liens">E-mail : webmaster-iut@u-bordeaux-montaigne.fr</a>
+                            <a href="mailto:webmaster-iut@u-bordeaux-montaigne.fr" class="liens">E-mail : webmaster-iut@u-bordeaux-montaigne.fr</a>
                             </li>
                             <li>
-                            <a href="#!" class="liens">Téléphone :+33 5 57 12 20 44</a>
+                            <a href="tel:+33 5 57 12 20 44" class="liens">Téléphone :+33 5 57 12 20 44</a>
                             </li>
                         </ul>
                     </div>

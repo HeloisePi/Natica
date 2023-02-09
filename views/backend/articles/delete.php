@@ -49,3 +49,4 @@ $article = sql_select("article", "*", "numArt = $numArt")[0];
         </div>
     </div>
 </div>
+

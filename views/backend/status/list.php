@@ -1,3 +1,16 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Status - eXim</title>
+    <link rel="stylesheet" href="/src/css/connection.css">
+</head>
+<body>
+    
+
+
 <?php
 include '../../../header.php'; // contains the header and call to config.php
 //Security check
@@ -10,6 +23,17 @@ if (!check_access(1)) {
 //Load all statuses
 $statuses = sql_select("STATUT", "*");
 ?>
+
+
+
+<div class="fil-ariane2">
+    <a href="/index.php" class="liens-ariane">Accueil</a>
+    <p class="separation"> > </p>
+    <a href="/views/backend/dashboard.php" class="liens-ariane">Dashboard</a>
+    <p class="separation"> > </p>
+    <a href="/views/backend/status/list.php" class="liens-ariane">Status</a>
+</div>
+
 
 <!-- Bootstrap default layout to display all status in foreach -->
 <div class="container">
@@ -40,6 +64,8 @@ $statuses = sql_select("STATUT", "*");
             <a href="create.php" class="btn btn-success">Create</a>
         </div>
     </div>
+</div>
 
-    <?php
-    include '../../../footer.php'; // contains the footer
+
+</body>
+</html>
