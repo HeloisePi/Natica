@@ -21,6 +21,13 @@
                                     <span> Connexion réussie ! </span><br><br>
                                 </span>
                         <?php }
+                            if ($_GET["error"] == 4){
+                                $msgErreur = $_GET['error'];
+                    ?>
+                                <span>
+                                    <span> Vous avez bien été déconnecté ! </span><br><br>
+                                </span>
+                        <?php }
                         } ?>
                         
     <div class="title">
