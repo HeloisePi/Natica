@@ -14,6 +14,11 @@ body {
     justify-content: space-around;
 }
 
+.dropdown{
+    border-color: black;
+    border-width: 1px;
+}
+
 .connexion:hover {
     color: rgb(0, 0, 0);
     background-color: #ffffff ;
@@ -30,7 +35,8 @@ body {
 .connexion {
     color: black;
     background-color: #7C73F5;
-
+    border-color: black;
+    border-width: 1px;
     border-radius: 5px;
     text-decoration: none;
     margin-left: 10px;
@@ -92,8 +98,8 @@ html{
 ::-moz-selection { 
 	color: white;
 	background: #7C73F5;
-  }
-  
+}
+
 ::selection {
 	color: white;
 	background: #7C73F5;

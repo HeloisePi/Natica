@@ -49,7 +49,7 @@ $membre = sql_select("membre", '*' , "numMemb = '$numMemb'")[0];
                     <input id="eMailMemb"  class="form-control" type="text" name="eMailMemb" value="<?php echo ($membre['eMailMemb']); ?> ">
 
                     <label for="numStat">Statut du membre</label><br>
-                    <input id="numStat"  class="form-control" type="text" name="statStat" pattern="[1-3]" value="<?php echo ($membre['numStat']); ?> ">
+                    <input id="numStat"  class="form-control" type="text" name="numStat" pattern="[1-3]" value="<?php echo ($membre['numStat']); ?> ">
 
                 </div>
                 <div class="form-group mt-2">

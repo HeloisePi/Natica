@@ -36,25 +36,26 @@ $articles = sql_select('article', '*', "", "numArt DESC", 3);
         </div>
     </form>
     <h1 class="experiences-immersives">expériences immersives de 2023-2024</h1>
-        <div class="rect-all">
-        <a href="/evenement.php">
+    <div class="rect-all">
+
+        <?php foreach($articles as $article){?>
             <div class= "titres-all">
-                <?php foreach($articles as $article){
-                    echo('<h3>' . $article['libTitrArt'] . '</h3>');?>
-                    
-                <div class="bloc-all">
-                    <img src="
-                    <?php
-                    echo ($article['urlPhotoArt']);
-                    ?>" alt="Image descriptive article">
-                    <div class="info-all">
-                        <?php echo('<p>' . $article['dtCreArt']. '</p>') ?>
-                    </div>
-                </div>
-                <?php }?>
-            </div>
+                <?php echo('<a href="/evenement.php?numArt=' . $article['numArt'] . ' "><h3>' . $article['libTitrArt'] . '</h3></a>');?>
                 
-        </a>
+            <div class="bloc-all">
+                <img src="
+                <?php
+                echo ($article['urlPhotoArt']);
+                ?>" alt="Image descriptive article">
+                <div class="info-all">
+                    <?php echo('<p>' . $article['dtCreArt']. '</p>') ?>
+                </div>
+            </div>
+            </div>
+            <?php }?>
+    </div>
+                
+        
             <!-- <div class= "titres-all">
                 <h3>Evènement 2</h3>
                 <div class="bloc-all">

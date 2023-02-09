@@ -18,6 +18,11 @@
 <?php
 include 'header.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
+$numArt = $_GET['numArt'];
+$articles = sql_select("ARTICLE", "*", "numArt = $numArt");
+$libThem = sql_select('ARTICLE INNER JOIN THEMATIQUE ON ARTICLE.numThem = THEMATIQUE.numThem', 'libThem', "ARTICLE.numArt=$numArt")[0]['libThem'];
+$keywords = sql_select('ARTICLE INNER JOIN THEMATIQUE ON ARTICLE.numThem = THEMATIQUE.numThem', 'libThem', "ARTICLE.numArt=$numArt");
+$comments = sql_select('ARTICLE INNER JOIN COMMENT ON ARTICLE.numArt = COMMENT.numArt', '*', "ARTICLE.numArt=$numArt");
 ?>
 
 <div class="fil-ariane2">
@@ -31,21 +36,21 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
 <div class="header-evenement">
     <div class="texte-header">
         <div class="display-flex-date date-evenement1">
-            <p>Événement : &emsp;</p>
-            <p class="date-evenement2"> du 4 au 24 février</p>
+        <?php
+            echo ('<p>' . $libThem . ' '. ':'. '</p>') ?>
+            <p class="date-evenement2"> date à mettre avec le jazon</p>
         </div>
         <div>
-            <p class="titre-article-evenement">Le planétarium, une expérience dans les étoiles</p>
+            <p class="titre-article-evenement"><?php
+                    echo ($articles[0]['libTitrArt']) ?></p>
             <p class="date-evenement1" >
-            <span><b>Connaissez-vous les profondeurs de la voie lactée ?</b></span> 
-            Pendant les vacances d’hiver, 
-            venez découvrir le planétarium et ses films immersifs à Cap Sciences, 
-            à Bordeaux centre. Nous avons testé pour vous cette expérience immersive.</p>
+            <?php
+                    echo ($articles[0]['libChapoArt']);
+                    ?></p>
         </div>
         <div>
-            <p class="date-evenement3">ÉCRIT PAR : Natica
-            Le : 1er février 2023
-            édité le : 2 février 2023</p>
+            <p class="date-evenement3"><?php
+                        echo ('créé par Natica le : ' .$articles[0]['dtCreArt']) ?></p>
         </div>
     </div>
 
@@ -81,7 +86,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
             <br>
             <div class="sous-titre-article align-texte-com-picto">
                 <p>Commentaires :</p>
-                <img class="picto-com" src="/images/icon-com.svg" alt="Pictograme des commentaires">
+                <img class="picto-com" src="/images/icon-com.svg" alt="Pictogramme des commentaires">
             </div>
         </div>
 
@@ -114,12 +119,35 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
 <div class="align-bloc-comm">
     <label class="date-evenement3 " for="libCom">Votre commentaire :</label>
     <br>
-    <textarea id="numCom" name="libCom"
-            rows="5" cols="33">
+    <textarea class="bloquer-la-taille" id="numCom" name="libCom"
+        rows="5" cols="33">
     </textarea>
+    <br>
+    <div class="align-text-atention-comm">
+        <img src="/images/attention-picto.svg" alt="Pictogramme attention">
+        <p class="text-com-attention">Merci de bien rester cordial et d’écrire des avis constructifs.</p>
+    </div>
 </div>
 
+<div class="btn-envoyer-comm">
+    <button type="submit" class="conect1">Envoyer</button>
+</div>
 <br>
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-2 ">
+            <img src="/images/pp.svg" alt="Pictogramme de photo de profile">
+        </div>
+
+        <div class="col-10 ">
+
+        </div>
+    
+    </div>
+</div>
+
 <?php
 include 'footer.php';
 ?>

@@ -25,7 +25,7 @@ body {
 
 .articles-header .bloc-rect {
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
     margin-right: 1.7%;
     overflow: hidden;
 
@@ -34,7 +34,7 @@ body {
     left: 173px;
     top: 949px;
     background: #C1C6E0;
-    border-radius: 4px;
+    border-radius: 5px;
 }
 
 .articles-header .bloc-square {
@@ -109,8 +109,8 @@ body {
 ::-moz-selection { 
 	color: white;
 	background: #7C73F5;
-  }
-  
+}
+
 ::selection {
 	color: white;
 	background: #7C73F5;
