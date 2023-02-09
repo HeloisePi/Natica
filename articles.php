@@ -37,10 +37,10 @@ $articles = sql_select('article', '*', "", "numArt DESC", 3);
     </form>
     <h1 class="experiences-immersives">expériences immersives de 2023-2024</h1>
         <div class="rect-all">
-        <a href="/evenement.php" class="liens-evenement">
-            <div class= "titres-all">
-                <?php foreach($articles as $article){
-                    echo('<h3>' . $article['libTitrArt'] . '</h3>');?>
+
+            <?php foreach($articles as $article){?>
+                <div class= "titres-all">
+                    <?php echo('<a href="/evenement.php?numArt=' . $article['numArt'] . ' "><h3>' . $article['libTitrArt'] . '</h3></a>');?>
                     
                 <div class="bloc-all">
                     <img src="
@@ -52,9 +52,9 @@ $articles = sql_select('article', '*', "", "numArt DESC", 3);
                     </div>
                 </div>
                 <?php }?>
-            </div>        
-        </a>
-        </div>
+            </div>
+                
+        
             <!-- <div class= "titres-all">
                 <h3>Evènement 2</h3>
                 <div class="bloc-all">

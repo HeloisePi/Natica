@@ -5,7 +5,6 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
 
 
 $numMemb = trim($_POST['numMemb']);
-var_dump($numMemb);
 $prenomMemb = $_POST['prenomMemb'];
 $nomMemb = $_POST['nomMemb'];
 $pseudoMemb = $_POST['pseudoMemb'];
@@ -13,6 +12,6 @@ $passMemb = ($_POST['passMemb']);
 $eMailMemb = trim($_POST['eMailMemb']);
 $numStat = trim($_POST['numStat']);
 
-sql_update('membre', "prenomMemb = $prenomMemb , nomMemb = $nomMemb , pseudoMemb = $pseudoMemb , passMemb = '$passMemb' ,eMailMemb = '$eMailMemb', numStat =$numStat" ,"`numMemb`= $numMemb");
+sql_update('membre', "prenomMemb = '$prenomMemb' , nomMemb = '$nomMemb' , pseudoMemb = '$pseudoMemb' , passMemb = '$passMemb' ,eMailMemb = '$eMailMemb', numStat = $numStat" ,"numMemb = $numMemb");
 
-//header('Location: ../../views/backend/members/list.php');
+header('Location: ../../views/backend/members/list.php');
