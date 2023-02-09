@@ -1,3 +1,14 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create - eXim</title>
+    <link rel="stylesheet" href="/src/css/connection.css">
+</head>
+<body>
+
 <?php
 include '../../../header.php';
 //Security check
@@ -9,6 +20,13 @@ if (!check_access(1)) {
 
 ?>
 
+<div class="fil-ariane2">
+    <a href="/index.php" class="liens-ariane">Accueil</a>
+    <p class="separation"> > </p>
+    <a href="/views/backend/dashboard.php" class="liens-ariane">Dashboard</a>
+    <p class="separation"> > </p>
+    <a href="/views/backend/status/create.php" class="liens-ariane">Create</a>
+</div>
 
 <!--Bootstrap form to create a new status-->
 <div class="container">
@@ -30,3 +48,6 @@ if (!check_access(1)) {
         </div>
     </div>
 </div>
+
+</body>
+</html>
