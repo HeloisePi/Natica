@@ -49,7 +49,7 @@ $articles = sql_select('article', '*', "", "numArt DESC", 3);
     </div>
 
     <div class="scroll-down">
-        <img src="/images/scroll-down.svg" alt="scroll down">
+        <img src="/images/scroll-down.svg" class="scroll-down-image" alt="scroll down">
     </div>
 </div>
 
