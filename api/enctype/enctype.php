@@ -12,6 +12,7 @@ if (isset($_FILES)) {
     $path = upload_image($_FILES);
     // echo $path;
 }
+
 $urlPhotArt = sql_escape($path);
 
 $libTitrArt = $_POST['libTitrArt'];
