@@ -116,16 +116,19 @@ $comments = sql_select('ARTICLE INNER JOIN COMMENT ON ARTICLE.numArt = COMMENT.n
     </div>
 </div>
 
-<div class="align-bloc-comm">
-    <label class="date-evenement3 " for="libCom">Votre commentaire :</label>
-    <br>
-    <textarea class="bloquer-la-taille" id="numCom" name="libCom"
-        rows="5" cols="33">
-    </textarea>
-    <br>
-    <div class="align-text-atention-comm">
-        <img src="/images/attention-picto.svg" alt="Pictogramme attention">
-        <p class="text-com-attention">Merci de bien rester cordial et d’écrire des avis constructifs.</p>
+<div class="container">
+    <div class="row">
+        <div class="col-10 align-bloc-comm">
+            <label class="date-evenement3 " for="libCom">Votre commentaire :</label>
+            <br>
+            <textarea class="bloquer-la-taille col-10" id="numCom" name="libCom">
+            </textarea>
+            <br>
+            <div class="align-text-atention-comm">
+                <img src="/images/attention-picto.svg" alt="Pictogramme attention">
+                <p class="text-com-attention">Merci de bien rester cordial et d’écrire des avis constructifs.</p>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -137,11 +140,11 @@ $comments = sql_select('ARTICLE INNER JOIN COMMENT ON ARTICLE.numArt = COMMENT.n
 <div class="container">
     <div class="row espace-commentaire">
 
-        <div class="col-4 img-pp-com text-center">
+        <div class="col-2 img-pp-com text-center">
             <img src="/images/pp.svg" alt="Pictogramme de photo de profile">
         </div>
 
-        <div class="col-8 apercu-comm">
+        <div class="col-6 apercu-comm">
 
         </div>
     
