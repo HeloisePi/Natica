@@ -12,8 +12,8 @@
 </head>
 <body>
     
-</body>
-</html>
+<body>
+<html>
 
 <?php
 include 'header.php';
@@ -173,3 +173,6 @@ $comments = sql_select('ARTICLE INNER JOIN COMMENT ON ARTICLE.numArt = COMMENT.n
 <?php
 include 'footer.php';
 ?>
+
+</body>
+</html>

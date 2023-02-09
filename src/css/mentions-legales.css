@@ -18,3 +18,14 @@ h1 {
     font-size: 30px;
     font-weight: bold;
 }
+
+.toute-la-page {
+    margin-bottom: 5rem;
+}
+
+.logo-fin-mentions-legales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+}

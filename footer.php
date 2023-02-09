@@ -47,10 +47,10 @@
 
                         <ul class="list-unstyled">
                             <li>
-                            <a href="#!" class="liens">E-mail : abcd@exim-contact.com</a>
+                            <a href="#!" class="liens">E-mail : webmaster-iut@u-bordeaux-montaigne.fr</a>
                             </li>
                             <li>
-                            <a href="#!" class="liens">Téléphone : 01 10 20 30 40</a>
+                            <a href="#!" class="liens">Téléphone :+33 5 57 12 20 44</a>
                             </li>
                         </ul>
                     </div>
