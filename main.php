@@ -29,7 +29,6 @@
                                 </span>
                         <?php }
                         } ?>
-                        
     <div class="title">
         <h1 class="titre-eximBordeaux">EXIM BORDEAUX</h1>
         <div class="purple-line"></div>
