@@ -140,14 +140,16 @@ $comments = sql_select('ARTICLE INNER JOIN COMMENT ON ARTICLE.numArt = COMMENT.n
 <div class="container">
     <div class="row espace-commentaire">
 
-        <div class="col-2 img-pp-com text-center">
+        <div class="col-2 img-pp-coms">
             <img src="/images/pp.svg" alt="Pictogramme de photo de profile">
         </div>
 
         <div class="col-6 apercu-comm">
             <p>Trop cool comme article, j'adore !</p>
         </div>
-    
+        <div class="col-1 fonction-like text-end">
+            <img src="/images/coeur-picto.svg" alt="Pictogramme pour les likes">
+        </div>
     </div>
 </div>
 
