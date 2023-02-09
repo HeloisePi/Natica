@@ -39,33 +39,33 @@ require_once 'config.php';
         <li class="nav-item">
           <a class="nav-link" aria-current="page" href="/index.php">Accueil</a>
         </li>
-        <li class="nav-item">
-        <?php if (!check_access(1) || !check_access(2)) { ?>
-        <a class="nav-link disabled" href="/views/backend/dashboard.php" style="display: none;">Dashboard</a> 
-        <?php
-        }
-        else { ?> <a class="nav-link" href="/views/backend/dashboard.php">Dashboard</a> <?php }?>
-        
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/articles.php">Articles</a>
-        </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/articles.php">Articles</a>
+          </li>
+
+          <li class="nav-item">
+          <?php if (!check_access(1) || !check_access(2)) { ?>
+          <a class="nav-link disabled" href="/views/backend/articles/create.php" style="display: none;">Écrire un article</a> 
+          <?php
+          }
+          else { ?> <a class="nav-link" href="/views/backend/articles/create.php">Écrire un article</a> <?php }?>
+          </li>
+          
+          <li class="nav-item">
+          <?php if (!check_access(1) || !check_access(2)) { ?>
+          <a class="nav-link disabled" href="/views/backend/dashboard.php" style="display: none;">Dashboard</a> 
+          <?php
+          }
+          else { ?> <a class="nav-link" href="/views/backend/dashboard.php">Dashboard</a> <?php }?>
+          </li>
+
       </ul>
     </div>
     <!--right align-->
     <div class="d-flex">
       <?php if (isset($_SESSION['pseudoMemb'])){
         ?>
-          <div class="dropdown">
-            <button class="btn-primary m-1 dropdown-toggle connexion" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Mon compte
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="/views/backend/dashboard.php">Dashboard</a></li>
-                <li><a class="dropdown-item" href="/views/backend/articles/create.php">Écrire un article</a></li>
-                <li><a class="dropdown-item" href="#">Se déconnecter</a></li>
-              </ul>
-            </button>
-          </div><?php } 
+        <a class="btn-primary m-1 connexion" href="/views/backend/login.php" role="button">Se déconnecter</a><?php }
         else {?>
         <a class="btn-primary m-1 connexion" href="/views/backend/login.php" role="button">Se connecter</a><?php }?>
     </div>
