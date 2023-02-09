@@ -18,6 +18,11 @@
 <?php
 include 'header.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
+$numArt = $_GET['numArt'];
+$articles = sql_select("ARTICLE", "*", "numArt = $numArt");
+$libThem = sql_select('ARTICLE INNER JOIN THEMATIQUE ON ARTICLE.numThem = THEMATIQUE.numThem', 'libThem', "ARTICLE.numArt=$numArt")[0]['libThem'];
+$keywords = sql_select('ARTICLE INNER JOIN THEMATIQUE ON ARTICLE.numThem = THEMATIQUE.numThem', 'libThem', "ARTICLE.numArt=$numArt");
+$comments = sql_select('ARTICLE INNER JOIN COMMENT ON ARTICLE.numArt = COMMENT.numArt', '*', "ARTICLE.numArt=$numArt");
 ?>
 
 <div class="fil-ariane2">
@@ -31,21 +36,21 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
 <div class="header-evenement">
     <div class="texte-header">
         <div class="display-flex-date date-evenement1">
-            <p>Événement : &emsp;</p>
-            <p class="date-evenement2"> du 4 au 24 février</p>
+        <?php
+            echo ('<p>' . $libThem . ' '. ':'. '</p>') ?>
+            <p class="date-evenement2"> date à mettre avec le jazon</p>
         </div>
         <div>
-            <p class="titre-article-evenement">Le planétarium, une expérience dans les étoiles</p>
+            <p class="titre-article-evenement"><?php
+                    echo ($articles[0]['libTitrArt']) ?></p>
             <p class="date-evenement1" >
-            <span><b>Connaissez-vous les profondeurs de la voie lactée ?</b></span> 
-            Pendant les vacances d’hiver, 
-            venez découvrir le planétarium et ses films immersifs à Cap Sciences, 
-            à Bordeaux centre. Nous avons testé pour vous cette expérience immersive.</p>
+            <?php
+                    echo ($articles[0]['libChapoArt']);
+                    ?></p>
         </div>
         <div>
-            <p class="date-evenement3">ÉCRIT PAR : Natica
-            Le : 1er février 2023
-            édité le : 2 février 2023</p>
+            <p class="date-evenement3"><?php
+                        echo ('créé par Natica le : ' .$articles[0]['dtCreArt']) ?></p>
         </div>
     </div>
 
