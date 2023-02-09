@@ -61,8 +61,7 @@ require_once 'config.php';
             Mon compte
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="/views/backend/dashboard.php">Dashboard</a></li>
-                <li><a class="dropdown-item" href="/views/backend/articles/create.php">Ecrire un article</a></li>
-                <li><a class="dropdown-item" href="#">Mode administrateur</a></li>
+                <li><a class="dropdown-item" href="/views/backend/articles/create.php">Écrire un article</a></li>
                 <li><a class="dropdown-item" href="#">Se déconnecter</a></li>
               </ul>
             </button>
