@@ -1,5 +1,7 @@
 .header-evenement {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100vw;
 }
 
 .texte-header {
@@ -82,4 +84,24 @@
 
 .espace-img-col2 {
     padding-bottom: 1rem;
+}
+
+.align-texte-com-picto {
+    display: flex;
+}
+
+.picto-com {
+    padding-bottom: 4rem;
+    transform: translateY(-40%);
+}
+
+.image-lune {
+    width: 100%;
+}
+
+@media screen and (max-width: 900) {
+    .header-evenement {
+        display: grid;
+        grid-template-rows : 1fr 1fr;
+    }
 }

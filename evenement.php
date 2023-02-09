@@ -50,7 +50,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
     </div>
 
     <div class="img-header">
-        <img src="/images/lune.svg" alt="Image d'une lune dans l'espace.">
+        <img class="image-lune" src="/images/lune.svg" alt="Image d'une lune dans l'espace.">
     </div>
 </div>
 
@@ -72,6 +72,17 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
             <p class="date-evenement3" >Certes, le planétarium de Cap sciences n'arrive pas à la cheville des bassins de lumières. De plus, la base sous-marine est référencée comme l'un des plus grands centres numériques au monde, avec une histoire très riche. Nous n'avons peut-être pas passé autant de temps que sur d'autres expériences immersives de Bordeaux, il est vrai. De plus, l'expérience n'était pas complètement immersive sur tous les aspects. En revanche, cela va paraître choquant, mais c'est ce qui fait tout le charme du planétarium de Cap sciences.</p>
             <p class="date-evenement3" >Étant venus avec nos enfants, ils ont eu encore plus de plaisir à faire un planétarium adapté à leur âge. Et ce, même s'ils en ont moins appris qu'en découvrant les histoires folles de la base sous-marine. Ces évènements sont démarqués par le fait qu'ils sont sans cesse renouvelés, accessibles et simplistes. C'est un pari fort qui est lancé et nous trouvons honnêtement que le Planétarium remplit le contrat. Nous avons passé de bons moments en famille. N'est-ce pas finalement un des buts des expériences immersives ?</p>
             <p class="date-evenement3" >Pour finir, nous vous recommandons grandement cet évènement magique et encore plus en famille. En revanche, si vous souhaitez une expérience complètement immersive et passer une journée entière à découvrir des lieux et merveilles, cet événement n'est peut-être pas fait pour vous...</p>
+            <br>
+            <br>
+            <p class="date-evenement3">Est-ce que l’événement du planétarium est fait pour vous ?</p>
+            <p class="date-evenement3">Si vous êtes à la recherche de nouvelles connaissances riches qui vont révolutionner la science, le planétarium n’est clairement pas fait pour vous.</p>
+            <p class="date-evenement3">Cependant, si vous souhaitez plonger dans l’infini de l’espace quelques instants, seul ou avec vos proches, c’est une expérience que vous devez définitivement tester.</p>
+            <br>
+            <br>
+            <div class="sous-titre-article align-texte-com-picto">
+                <p>Commentaires :</p>
+                <img class="picto-com" src="/images/icon-com.svg" alt="Pictograme des commentaires">
+            </div>
         </div>
 
         <div class="col-5 deuxieme-col">
