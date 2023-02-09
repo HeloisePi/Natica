@@ -103,28 +103,18 @@ $articles = sql_select('article', '*', "", "numArt DESC", 3);
 
 <div class="articles-decouvrir">
 <h1>Quelques expériences immersives qui pourraient vous plaire</h1>
+    <?php $articles = sql_select('article', '*', "", "", 3); ?>
     <div class="rect-decouvrir">
+        <?php foreach($articles as $article){?>
         <div class= "titres-decouvrir">
-            <h3>Evénement 1</h3>
+            <h3><?php echo substr(($article['libTitrArt']), 0, 23) . "..."?></h3>
             <div class="bloc-decouvrir">
                 <div class="info-decouvrir">
                 </div>
             </div>   
         </div>
-        <div class= "titres-decouvrir">
-            <h3>Evénement 2</h3>
-            <div class="bloc-decouvrir">
-                <div class="info-decouvrir">
-                </div>
-            </div>
-        </div>
-        <div class= "titres-decouvrir">
-            <h3>Evénement 3</h3>
-            <div class="bloc-decouvrir">
-                <div class="info-decouvrir">
-                </div>
-            </div>
-        </div>    
+        <?php }
+                    ?>  
     </div>
 </div>
 

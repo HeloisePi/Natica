@@ -45,7 +45,7 @@ require_once 'config.php';
           </li>
 
           <li class="nav-item">
-          <?php if (!check_access(1) || !check_access(2)) { ?>
+          <?php if (!check_access(1)) { ?>
           <a class="nav-link disabled" href="/views/backend/articles/create.php" style="display: none;">Écrire un article</a> 
           <?php
           }
@@ -53,7 +53,7 @@ require_once 'config.php';
           </li>
 
           <li class="nav-item">
-          <?php if (!check_access(1) || !check_access(2)) { ?>
+          <?php if (!check_access(2)) { ?>
           <a class="nav-link disabled" href="/views/backend/dashboard.php" style="display: none;">Dashboard</a> 
           <?php
           }

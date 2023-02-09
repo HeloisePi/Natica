@@ -3,12 +3,15 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
 
 $eMailMemb = trim($_POST['eMailMemb']);
 $passMemb =  $_POST['passMemb'];
-//$encryptedPassMemb = password_hash($passMemb, PASSWORD_DEFAULT);
+$encryptedPassMemb = password_hash($passMemb, PASSWORD_DEFAULT);
 // $numMemb = $_POST['numMemb'];
 //mettre un and si plusieurs paramètres à sql select
 
+//var_dump($eMailMemb);
 $truePassMemb = sql_select('MEMBRE', 'passMemb', "eMailMemb = '$eMailMemb'")[0]['passMemb'];
+//var_dump($truePassMemb);
 //var_dump($encryptedPassMemb);
+
 //vérifaction du mdp
 if (password_verify($passMemb, $truePassMemb)) {
     $numMemb = sql_select('MEMBRE', 'numMemb', "eMailMemb = '$eMailMemb'")[0]['numMemb'];
@@ -24,6 +27,6 @@ if (password_verify($passMemb, $truePassMemb)) {
     // var_dump("$numMemb", "$passMemb");
 } else {
 
-    // echo "connexion échouée, erreur dans votre mdp ou votre adresse mail !";
+    //echo "connexion échouée, erreur dans votre mdp ou votre adresse mail !";
     header('Location: ../../../views/backend/login.php?error=2');
 }
