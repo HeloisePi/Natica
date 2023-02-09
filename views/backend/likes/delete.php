@@ -12,6 +12,7 @@ if (!check_access(1) || !check_access(2)) {
 
 $numMemb = $_GET['numMemb'];
 $numArt = $_GET['numArt'];
+$likeA = 0;
 
 
 ?>
