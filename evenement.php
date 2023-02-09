@@ -63,25 +63,26 @@ $comments = sql_select('ARTICLE INNER JOIN COMMENT ON ARTICLE.numArt = COMMENT.n
     <div class="row align-article-evenement">
 
         <div class="col-7 ">
-            <p <?php
-                    echo ($articles[0]['libAccrochArt'] . ' ' . $articles[0]['parag1Art']); 
-                    ?> >
+            <p class="date-evenement3" > <?php
+                    echo ($articles[0]['libAccrochArt'] . ' ' . $articles[0]['parag1Art']); ?>
             </p>
-            <p class="sous-titre-article">Une bulle dans les nuages</p>
-            <p class="date-evenement3" >En quoi consiste cet événement et qu'est ce qu'un planétarium ? Nous avons été plongé dans le noir, entouré d'une immense toile avec une capacité de plus de cent personnes. Équipé d'un projecteur, la salle est plongée dans le ciel nocturne. Le film est alors projeté. Cela nous donne la sensation d'être dans un vaisseau spatial qui se déplace à la vitesse de la lumière à travers plus de 3000 étoiles.</p>
-            <p class="date-evenement3" >Réalisées à partir des images prises par la NASA et par des observatoires du monde entier, leur beauté nous a fait quitter la Terre. Il est important de savoir que le planétarium de Cap Science est éphémère. Situé près de Bordeaux centre, il est fortement accessible en transport en commun ou en voiture avec les parkings payants aux alentours.</p>
-            <p class="date-evenement3" >C’est un lieu pour les passionnés d'astronomie, mais aussi pour les familles ou les personnes en situation de handicap. Un guide audio très riche avec un travail sonore et musical peut vous accompagner et vous aider à découvrir les secrets des étoiles si vous êtes malvoyant. Il dispose de plus d'un dispositif d'accès simplifié avec des ascenseurs pour les personnes à mobilités réduites.</p>
-            <p class="date-evenement3" >Le planétarium propose également des projections interactives et ludiques, à destination des enfants, mais auxquels les familles peuvent aussi participer.</p>
-            <p class="sous-titre-article">Une expérience dans les étoiles</p>
-            <p class="date-evenement3" >Entre le salon de réalité virtuelle Vortex à Bordeaux ou le Rêvarium, les concurrents au Planétarium de cap sciences ne sont pas à négliger.</p>
-            <p class="date-evenement3" >Certes, le planétarium de Cap sciences n'arrive pas à la cheville des bassins de lumières. De plus, la base sous-marine est référencée comme l'un des plus grands centres numériques au monde, avec une histoire très riche. Nous n'avons peut-être pas passé autant de temps que sur d'autres expériences immersives de Bordeaux, il est vrai. De plus, l'expérience n'était pas complètement immersive sur tous les aspects. En revanche, cela va paraître choquant, mais c'est ce qui fait tout le charme du planétarium de Cap sciences.</p>
-            <p class="date-evenement3" >Étant venus avec nos enfants, ils ont eu encore plus de plaisir à faire un planétarium adapté à leur âge. Et ce, même s'ils en ont moins appris qu'en découvrant les histoires folles de la base sous-marine. Ces évènements sont démarqués par le fait qu'ils sont sans cesse renouvelés, accessibles et simplistes. C'est un pari fort qui est lancé et nous trouvons honnêtement que le Planétarium remplit le contrat. Nous avons passé de bons moments en famille. N'est-ce pas finalement un des buts des expériences immersives ?</p>
-            <p class="date-evenement3" >Pour finir, nous vous recommandons grandement cet évènement magique et encore plus en famille. En revanche, si vous souhaitez une expérience complètement immersive et passer une journée entière à découvrir des lieux et merveilles, cet événement n'est peut-être pas fait pour vous...</p>
+            <p class="sous-titre-article"><?php
+                    echo ($articles[0]['libSsTitr1Art']); 
+                    ?></p>
+            <p class="date-evenement3" ><?php
+                    echo ($articles[0]['parag2Art']); ?>
+            </p>
+            <p class="sous-titre-article"><?php
+                    echo ($articles[0]['libSsTitr2Art']); ?>
+            </p>
+            <p class="date-evenement3" ><?php
+                    echo ($articles[0]['parag3Art']); ?>
+            </p>
             <br>
             <br>
-            <p class="date-evenement3">Est-ce que l’événement du planétarium est fait pour vous ?</p>
-            <p class="date-evenement3">Si vous êtes à la recherche de nouvelles connaissances riches qui vont révolutionner la science, le planétarium n’est clairement pas fait pour vous.</p>
-            <p class="date-evenement3">Cependant, si vous souhaitez plonger dans l’infini de l’espace quelques instants, seul ou avec vos proches, c’est une expérience que vous devez définitivement tester.</p>
+            <p class="date-evenement3"><?php
+                    echo ($articles[0]['libConclArt']); 
+                    ?></p>
             <br>
             <br>
             <div class="sous-titre-article align-texte-com-picto">
@@ -97,13 +98,13 @@ $comments = sql_select('ARTICLE INNER JOIN COMMENT ON ARTICLE.numArt = COMMENT.n
             </div>
             <div class="align-element-col2">
             <p>Dates :</p>
-            <p class="sous-titre-col2">04/02/2023 au 24/02/2023</p>
+            <p class="sous-titre-col2"> mettre avec les json</p>
             </div>
             <div class="align-element-col2">
             <p>Tarifs :</p>
-            <p class="sous-titre-col2">5 euros €</p>
+            <p class="sous-titre-col2"> mettre avec les json</p>
             </div>
-            <p class="titre-col-2">Accessibilité :</p>
+            <p class="titre-col-2">Accessibilité : (json aussi)</p>
             <img class="espace-img-col2" src="/assert/svg/Poussette-RVB.svg" alt="Pictograme d'une poussette"><br>
             <img class="espace-img-col2" src="/assert/svg/Deficients-moteur-RVB.svg" alt="Pictograme d'une poussette"><br>
             <img class="espace-img-col2" src="/assert/svg/Deficients-mentaux-RVB.svg" alt="Pictograme d'une poussette"><br>
@@ -116,19 +117,16 @@ $comments = sql_select('ARTICLE INNER JOIN COMMENT ON ARTICLE.numArt = COMMENT.n
     </div>
 </div>
 
-<div class="container">
-    <div class="row">
-        <div class="col-10 align-bloc-comm">
-            <label class="date-evenement3 " for="libCom">Votre commentaire :</label>
-            <br>
-            <textarea class="bloquer-la-taille col-10" id="numCom" name="libCom">
-            </textarea>
-            <br>
-            <div class="align-text-atention-comm">
-                <img src="/images/attention-picto.svg" alt="Pictogramme attention">
-                <p class="text-com-attention">Merci de bien rester cordial et d’écrire des avis constructifs.</p>
-            </div>
-        </div>
+<div class="align-bloc-comm">
+    <label class="date-evenement3 " for="libCom">Votre commentaire :</label>
+    <br>
+    <textarea class="bloquer-la-taille" id="numCom" name="libCom"
+        rows="5" cols="33">
+    </textarea>
+    <br>
+    <div class="align-text-atention-comm">
+        <img src="/images/attention-picto.svg" alt="Pictogramme attention">
+        <p class="text-com-attention">Merci de bien rester cordial et d’écrire des avis constructifs.</p>
     </div>
 </div>
 
@@ -138,18 +136,16 @@ $comments = sql_select('ARTICLE INNER JOIN COMMENT ON ARTICLE.numArt = COMMENT.n
 <br>
 
 <div class="container">
-    <div class="row espace-commentaire">
+    <div class="row">
 
-        <div class="col-2 img-pp-coms">
+        <div class="col-2 ">
             <img src="/images/pp.svg" alt="Pictogramme de photo de profile">
         </div>
 
-        <div class="col-6 apercu-comm">
-            <p>Trop cool comme article, j'adore !</p>
+        <div class="col-10 ">
+
         </div>
-        <div class="col-8 fonction-like text-end">
-            <img src="/images/coeur-picto.svg" alt="Pictogramme pour les likes">
-        </div>
+    
     </div>
 </div>
 
