@@ -26,7 +26,7 @@
 
     <div class="fil-ariane3">
         <a href="/index.php" class="liens-ariane">Accueil</a>
-        <p class="separation"> > </p>
+        <p class="separation"> </p>
         <a href="/articles.php" class="liens-ariane">Articles</a>
     </div>
 
@@ -42,6 +42,7 @@
     <div class="rect-all">
 
         <?php foreach($articles as $article){?>
+            
             <div class= "titres-all">
                 <?php echo('<a href="/evenement.php?numArt=' . $article['numArt'] . ' "><h3>' . $article['libTitrArt'] . '</h3></a>');?>
                 
