@@ -130,13 +130,13 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
 <br>
 
 <div class="container">
-    <div class="row">
+    <div class="row espace-commentaire">
 
-        <div class="col-2 ">
+        <div class="col-4 img-pp-com text-center">
             <img src="/images/pp.svg" alt="Pictogramme de photo de profile">
         </div>
 
-        <div class="col-10 ">
+        <div class="col-8 apercu-comm">
 
         </div>
     

@@ -1,4 +1,4 @@
-footer, .text-center, .p-3 {
+footer, .p-3 {
     background-color: #E4E3FE;
 }
 
@@ -22,3 +22,5 @@ h1, .liens {
     z-index: 1O;
     background: #000000;
 }
+
+

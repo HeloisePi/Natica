@@ -164,3 +164,14 @@ label {
     padding-left: 25px;
     padding-right: 25px;
 }
+
+.img-pp-com {
+    background-color: none;
+}
+.espace-commentaire {
+    margin-bottom: 1rem;
+}
+
+.apercu-comm {
+    background-color: #C1C6E0;
+}
