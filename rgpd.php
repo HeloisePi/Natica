@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mentions légales/RGPD/CGU - eXim</title>
     <link rel="stylesheet" href="/src/css/connection.css">
+    <link rel="stylesheet" href="/src/css/footer.css">
     <link rel="stylesheet" href="/src/css/mentions-legales.css">
     <link rel="stylesheet" href="https://use.typekit.net/ujw8boj.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
@@ -27,7 +28,7 @@ include 'header.php';
 </div>
 
 <div class="container toute-la-page">
-    <div class="row col-11">
+    <div class="row col-8">
         <div class="texte-intro">
             <p class="texte-paragraphe">Lors de l’inscription sur le site,
                 l’utilisateur s’engage à lire attentivement les Conditions générales d’utilisation et le <b>Règlement général
