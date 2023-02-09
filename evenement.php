@@ -18,15 +18,20 @@
 <?php
 include 'header.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
-$articleslikes = sql_select('likeart', 'numArt');
 
-$i = 0;
+//Pour le lisez aussi
+$lisezAussi = sql_select('article', '*', "", "numArt DESC");
 
-foreach ($articleslikes as $articlelike ){
-    $nombreLike = count(sql_select('likeart', 'numArt', "numArt = $articlelike[numArt]")['O']['numArt']);
-    $articleslikes[$i][$nombreLike];
-    $i++;
-}
+//tentative de classement par like avortée
+
+//$articleslikes = sql_select('likeart', 'numArt');
+//$i = 0;
+
+// foreach ($articleslikes as $articlelike ){
+//     $nombreLike = count(sql_select('likeart', 'numArt', "numArt = $articlelike[numArt]")['O']['numArt']);
+//     $articleslikes[$i][$nombreLike];
+//     $i++;
+// }
 //print_r($articleslikes);
 //print_r(ksort($articleslikes, SORT_NUMERIC ));
 //$echo( $nombreLikes[0]['numArt']);
@@ -131,7 +136,24 @@ $comments = sql_select('ARTICLE INNER JOIN COMMENT ON ARTICLE.numArt = COMMENT.n
             <img class="espace-img-col2" src="/assert/svg/Deficients-moteur-avec-accompagnateur-RVB.svg" alt="Pictograme d'une poussette"><br>
             <img class="espace-img-col2" src="/assert/svg/Personnes-a-mobilite-reduite-RVB.svg" alt="Pictograme d'une poussette"><br>
             <p class="titre-col-2">Lisez aussi :</p>
+            <div class="rect-all">
 
+        <?php foreach($articles as $article){?>
+            <div class= "titres-all">
+                <?php echo('<a href="/evenement.php?numArt=' . $article['numArt'] . ' "><h3>' . $article['libTitrArt'] . '</h3></a>');?>
+                
+            <div class="bloc-all">
+                <img src="
+                <?php
+                echo ($article['urlPhotoArt']);
+                ?>" alt="Image descriptive article">
+                <div class="info-all">
+                    <?php echo('<p>' . $article['dtCreArt']. '</p>') ?>
+                </div>
+            </div>
+            </div>
+            <?php }?>
+            </div>
 
         </div>
 
