@@ -20,7 +20,7 @@
 
 <?php
 include 'header.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
+require_once __DIR__ . '/config.php';
 
 $lisezAussi = sql_select('article', '*', "", "numArt DESC");
 
@@ -125,20 +125,40 @@ $comments = sql_select('ARTICLE INNER JOIN COMMENT ON ARTICLE.numArt = COMMENT.n
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2828.1292245637246!2d-0.5564116!3d44.859664!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd55288fe04778c1%3A0x93bb1087fb9940ec!2sHangar%2020%2C%20Quai%20de%20Bacalan%2C%2033300%20Bordeaux!5e0!3m2!1sfr!2sfr!4v1675932814425!5m2!1sfr!2sfr" width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="align-element-col2">
-                <p>Dates :</p>
-                <p class="sous-titre-col2"> mettre avec les json</p>
+                <p>Adresse :</p>
+                <?php
+                $file = 'views/backend/articles/data.json'; 
+                $data = file_get_contents($file); 
+                $obj = json_decode($data); 
+                $allArticles = $obj->articles;
+                $aidesFirstArticle = $obj->articles[0]->aides;
+                
+
+
+
+            
+                echo($obj->articles[0]->adresse);
+                ?>
+                <p class="sous-titre-col2"> </p>
             </div>
             <div class="align-element-col2">
                 <p>Tarifs :</p>
-                <p class="sous-titre-col2"> mettre avec les json</p>
+                <?php
+                echo($obj->articles[0]->couts);
+                ?>
+                <p class="sous-titre-col2"> </p>
             </div>
-            <p class="titre-col-2">Accessibilité : (json aussi)</p>
-            <img class="espace-img-col2" src="/assert/svg/Poussette-RVB.svg" alt="Pictograme d'une poussette"><br>
-            <img class="espace-img-col2" src="/assert/svg/Deficients-moteur-RVB.svg" alt="Pictograme d'une poussette"><br>
-            <img class="espace-img-col2" src="/assert/svg/Deficients-mentaux-RVB.svg" alt="Pictograme d'une poussette"><br>
-            <img class="espace-img-col2" src="/assert/svg/Deficients-visuels-RVB.svg" alt="Pictograme d'une poussette"><br>
-            <img class="espace-img-col2" src="/assert/svg/Deficients-moteur-avec-accompagnateur-RVB.svg" alt="Pictograme d'une poussette"><br>
-            <img class="espace-img-col2" src="/assert/svg/Personnes-a-mobilite-reduite-RVB.svg" alt="Pictograme d'une poussette"><br>
+            <p class="titre-col-2"></p>
+                <?php
+                foreach($aidesFirstArticle as $aide ){
+                    if ($aide->isActive == true){
+                        ?><img class="espace-img-col2" src="/assert/svg/<?= $aide->fileName ?>" alt="<?= $aide->name ?>"><br><?php
+                        echo $aide->alt; ?> <br> <?php
+                    }
+
+                }?>
+
+
             <p class="titre-col-2">Lisez aussi :</p>
             <div class="rect-all">
             <?php $lisezAussis = sql_select('article', '*', "", "numArt DESC", 3);?>

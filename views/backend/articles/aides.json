@@ -3,31 +3,37 @@
     {
         "name": "defMent",
         "fileName": "Deficients-mentaux-RVB.svg",
+        "alt": "Deficients mentaux",
         "isActive": false
     },
     {
         "name": "defMotA",
         "fileName": "Deficients-moteur-avec-accompagnateur-RVB.svg",
+        "alt": "Deficients moteur avec accompagnateur",
         "isActive": false
     },
     {
         "name": "defMot",
         "fileName": "Deficients-moteur-RVB.svg",
+        "alt": "Deficients moteur",
         "isActive": false
     },
     {
         "name": "defVis",
         "fileName": "Deficients-visuels-RVB.svg",
+        "alt": "Deficients visuels",
         "isActive": false
     },
     {
         "name": "persMobiRedu",
         "fileName": "Personnes-a-mobilite-reduite-RVB.svg",
+        "alt": "Personnes a mobilite reduite  mentaux",
         "isActive": false
     },
     {
         "name": "pousette",
         "fileName": "Poussette-RVB.svg",
+        "alt": "Poussette",
         "isActive": false
     }
   ]

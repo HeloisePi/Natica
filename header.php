@@ -1,3 +1,9 @@
+<?php
+//load config
+require_once 'config.php';
+
+//load php scripts
+?>
 <!DOCTYPE html>
 <html>
 
@@ -11,7 +17,7 @@
 
   <!-- Load CSS -->
   <link rel="reset.css" href="/src/css/reset.css">
-  <link rel="stylesheet" href="/src/css/style.css">
+  <link rel="stylesheet" href=<?php echo ROOT_URL . "/src/css/style.css"?>>
   <link rel="stylesheet" href="https://use.typekit.net/ujw8boj.css">
   <link rel="stylesheet" href="/assert/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf">
   <link rel="stylesheet" href="/assert/Montserrat-Italic-VariableFont_wght.ttf">
@@ -19,18 +25,13 @@
 
 </head>
 
-<?php
-//load config
-require_once 'config.php';
 
-//load php scripts
-?>
 <div class="bloc-nav">
 <nav class="navbar navbar-expand-lg ">
 
 
   <div class="container-fluid">
-    <img src="/images/eXim-logo.svg" alt="logo">
+    <img src="<?php echo ROOT_URL . "/images/eXim-logo.svg"?>" alt="logo">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>

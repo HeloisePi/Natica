@@ -1,5 +1,5 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
+require_once __DIR__ . '/../../config.php';
 // print_r($_POST);
 if (!check_access(1)) {
     header('Location: /'); //Redirect to home
