@@ -88,7 +88,7 @@
             <div class="row square">
                 <div class="bloc-square">
                     <?php foreach ($articles as $article) { ?>
-                        <img src="src/images/uploads/<?php echo ($article['urlPhotArt']) ?>" <?php
+                        <img src="<?php echo ($article['urlPhotArt']) ?>" <?php
                                                                                             } ?> alt="Image descriptive article">
                 </div>
                 <div class="info-square">
@@ -113,7 +113,7 @@
                     <h3><?php echo substr(($article['libTitrArt']), 0, 23) . "..." ?></h3>
                     <div class="bloc-decouvrir">
                         <div class="info-decouvrir">
-                            <img src="src/images/uploads/<?php echo ($article['urlPhotArt']) ?>" alt="Image descriptive article">                            
+                            <img src="<?php echo ($article['urlPhotArt']) ?>" alt="Image descriptive article">                            
                         </div>
                     </div>
                 </div>

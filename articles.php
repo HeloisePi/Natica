@@ -46,7 +46,7 @@
                 <?php echo('<a href="/evenement.php?numArt=' . $article['numArt'] . ' "><h3>' . $article['libTitrArt'] . '</h3></a>');?>
                 
             <div class="bloc-all">
-                <img class="image-lune" src="src/images/uploads/<?php echo ($article['urlPhotArt']) ?>" alt="Image d'une lune dans l'espace.">
+                <img class="image-lune" src="<?php echo ($article['urlPhotArt']) ?>" alt="Image d'une lune dans l'espace.">
                 <div class="info-all">
                     <?php echo('<p>' . $article['dtCreArt']. '</p>') ?>
                 </div>
