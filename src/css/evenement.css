@@ -177,3 +177,7 @@ label {
     padding-top: 0.5rem;
 }
 
+.btn-com-envoyer {
+    display: flex;
+    justify-content: center;
+}
