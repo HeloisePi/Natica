@@ -92,7 +92,6 @@ body {
     margin-right: 1.7%;
     overflow: hidden;
     margin-bottom: 10% ;
-
     width: 335px;
     height: 314px;
     left: 60px;
@@ -104,4 +103,8 @@ body {
 .titres-all h3{
     width: 335px;
     font-size: 22px;
+}
+
+.info-all {
+    margin-top: auto;
 }
