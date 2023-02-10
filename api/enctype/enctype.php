@@ -13,7 +13,7 @@ $jsonAides = file_get_contents('../../views/backend/articles/aides.json');
 $data = json_decode($jsonString, true);
 $aides = json_decode($jsonAides, true);
 
-var_dump($data);
+// var_dump($data);
 
 
 $allArticles = $data['articles'];
@@ -44,7 +44,7 @@ array_push($data['articles'], $article);
 
 
 $jsonFinalData = json_encode($data);
-var_dump($jsonFinalData);
+// var_dump($jsonFinalData);
 file_put_contents('../../views/backend/articles/data.json', $jsonFinalData);
 
 
@@ -67,10 +67,10 @@ $parag3Art = $_POST['parag3Art'];
 $libConclArt = $_POST['libConclArt'];
 $numThem = $_POST['numThem'];
 
-/*
+
+
 sql_insert('article', "`libTitrArt`, `libChapoArt`, `libAccrochArt`, `parag1Art`, `libSsTitr1Art`, `parag2Art`, `libSsTitr2Art`, `parag3Art`, `libConclArt`, `urlPhotArt`, `numThem`", "'$libTitrArt','$libChapoArt','$libAccrochArt','$parag1Art','$libSsTitr1Art','$parag2Art','$libSsTitr2Art','$parag3Art','$libConclArt','$urlPhotArt','$numThem'");
-sql_insert('article', "`libTitrArt`, `libChapoArt`, `libAccrochArt`, `parag1Art`, `libSsTitr1Art`, `parag2Art`, `libSsTitr2Art`, `parag3Art`, `libConclArt`, `urlPhotArt`, `numThem`", "'$libTitrArt','$libChapoArt','$libAccrochArt','$parag1Art','$libSsTitr1Art','$parag2Art','$libSsTitr2Art','$parag3Art','$libConclArt','$urlPhotArt','$numThem'");
 
 
 
-header('Location: ../../views/backend/articles/list.php'); */
+header('Location: ../../views/backend/articles/list.php');
