@@ -32,7 +32,7 @@ $adresses = array();
 $article = array();
 
 
-$article['name'] = $_POST['libTitrArt'];
+// $article['name'] = $_POST['libTitrArt'];
 $article['aides'] = $aidesOfTheArticle;
 $article['couts'] = $_POST['cout'];
 $article['adresse'] = $_POST['adresse'];
