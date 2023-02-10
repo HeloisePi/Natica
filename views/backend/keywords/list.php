@@ -35,7 +35,7 @@ $keywords = sql_select("motcle", "*");
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h1>Keywords</h1>
+            <h1>Mots-clés</h1>
             <table class="table table-striped">
                 <thead>
                     <tr>
