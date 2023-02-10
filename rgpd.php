@@ -109,11 +109,19 @@ include 'header.php';
             la collecte et le traitement d’informations personnelles s’effectuent dans le <b>respect de la vie privée</b>.</p>
             <p>Selon le Règlement général sur la protection des données (<b>RGPD</b>) du 25 mai 2018 et conformément à la <b>loi n°78-17</b> du 6 janvier relative à l’informatique, 
             aux fichiers et aux libertés, la collecte et le traitement d’informations personnelles s’effectuent dans le respect de la vie privée, 
-            lors de l’inscription sur le site, vous nous <b>autorisez</b> à collecter les données suivantes :</p>
+            lors de l’inscription sur le blog eXim, vous nous <b>autorisez</b> à collecter les données suivantes :</p>
             <br>
             <p><b>Adresse e-mail</p>
             <p>Nom</p>
             <p>Prénom</b></p>
+            <br>
+            <br>
+            <p>Vous autorisez aussi <b>Google</b>, à utiliser une partie de vos données 
+                (communiquées lors de votre inscription sur le blog eXim) lors de l'utilisation de leur <b>API Goggle Maps</b>.</p>
+            <a class="lien-google" href="https://support.google.com/a/answer/60762?hl=fr"> Pour plus d'informations sur l'utilisation de vos données auprès de Google,
+                <b>cliquez ici.</b></a>
+            <br>
+            <br>
             <br>
             <p>Les informations recueillies sur ce formulaire sont enregistrées dans un fichier informatisé par 
             <b>IUT Bordeaux Montaigne</b>, 1 rue Jacques Ellul 33080 Bordeaux Cedex France, [+33 5 57 12 20 44](tel:+33557122044), 
