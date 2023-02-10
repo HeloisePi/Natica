@@ -80,7 +80,7 @@ $comments = sql_select('ARTICLE INNER JOIN COMMENT ON ARTICLE.numArt = COMMENT.n
     </div>
 
     <div class="img-header" enctype="multipart/form-data">
-        <img class="image-lune" src="src/images/uploads/<?php echo ($articles['urlPhotArt']) ?>" alt="Image d'une lune dans l'espace.">
+        <img class="image-lune" src="<?php echo ($articles['urlPhotArt']) ?>" alt="Image d'une lune dans l'espace.">
     </div>
 </div>
 
@@ -147,7 +147,8 @@ $comments = sql_select('ARTICLE INNER JOIN COMMENT ON ARTICLE.numArt = COMMENT.n
                         <?php echo ('<a href="/evenement.php?numArt=' . $lisezAussi['numArt'] . ' "><h3>' . $lisezAussi['libTitrArt'] . '</h3></a>'); ?>
 
                         <div class="bloc-all">
-                        <img class="image-lune" src="src/images/uploads/<?php echo ($lisezAussi['urlPhotArt']) ?>" alt="Image d'une lune dans l'espace.">
+                            
+                        <img class="image-lune" src="<?php echo ($lisezAussi['urlPhotArt']) ?>" alt="Image d'une lune dans l'espace.">
                             <div class="info-all">
                                 <?php echo ('<p>' . $lisezAussi['dtCreArt'] . '</p>') ?>
                             </div>

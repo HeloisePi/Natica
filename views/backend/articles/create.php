@@ -25,6 +25,9 @@ if (!check_access(1)) {
     header('Location: /'); //Redirect to home
     exit();
 }
+
+
+
 ?>
 
 <div class="fil-ariane2">
@@ -84,20 +87,23 @@ if (!check_access(1)) {
                     <label for="defMent"><img src="/assert/svg/Deficients-mentaux-RVB.svg" alt="Deficients mentaux"></label>
                     <input type="checkbox" id="defMent" name="defMent">
 
-                    <label for="defMotA"> <img src="/assert/svg/Deficients-moteur-avec-accompagnateur-RVB.svg" alt="Déficient moteur avec accompagnateur"></label>
-                    <input type="checkbox" id="defMotA" name="defMotA">
+                <label for="defMent"><img src="/assert/svg/Deficients-mentaux-RVB.svg" alt="Deficients mentaux"></label>
+                <input type="checkbox" id="defMent" value="defMent" name="defMent">
+                
+                <label for="defMotA"> <img src="/assert/svg/Deficients-moteur-avec-accompagnateur-RVB.svg" alt="Déficient moteur avec accompagnateur"></label>
+                <input type="checkbox" id="defMotA" value="defMotA" name="defMotA">
 
-                    <label for="defMot"> <img src="/assert/svg/Deficients-moteur-RVB.svg" alt="Déficient moteur"></label>
-                    <input type="checkbox" id="defMot" name="defMot">
+                <label for="defMot"> <img src="/assert/svg//Deficients-moteur-RVB.svg" alt="Déficient moteur"></label>
+                <input type="checkbox" id="defMot" value="defMot"name="defMot">
 
-                    <label for="defVis"> <img src="/assert/svg/Deficients-visuels-RVB.svg" alt="Deficient visuel"> </label>
-                    <input type="checkbox" id="defVis" name="defVis">
+                <label for="defVis"> <img src="/assert/svg/Deficients-visuels-RVB.svg" alt="Deficient visuel"> </label>
+                <input type="checkbox" id="defVis" value="defVis"name="defVis">
 
-                    <label for="persMobiRedu"> <img src="/assert/svg/Personnes-a-mobilite-reduite-RVB.svg" alt=" Personnes à mobilité reduite"></label>
-                    <input type="checkbox" id="persMobiRedu" name="persMobiRedu">
+                <label for="persMobiRedu"> <img src="/assert/svg/Personnes-a-mobilite-reduite-RVB.svg" alt=" Personnes à mobilité reduite"></label>
+                <input type="checkbox" id="persMobiRedu" value="persMobiRedu" name="persMobiRedu">
 
-                    <label for="pousette"> <img src="/assert/svg/Poussette-RVB.svg" alt="Pousette"></label>
-                    <input type="checkbox" id="pousette" name="pousette"><br>
+                <label for="pousette"> <img src="/assert/svg/Poussette-RVB.svg" alt="Pousette"></label>
+                <input type="checkbox" id="pousette" value="pousette" name="pousette"><br>
 
                     <label for="erreur"></label>
                     <?php

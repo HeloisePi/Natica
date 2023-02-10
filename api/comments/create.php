@@ -9,12 +9,12 @@ if (!check_access(2)) {
 }
 
 
-$libCom = $_POST['libCom'];
-$numArt = $_POST['numArt'];
-$numMemb = $_POST['numMemb'];
+$libCom = sql_escape($_POST['libCom']);
+$numArt = sql_escape($_POST['numArt']);
+$numMemb = sql_escape($_POST['numMemb']);
 
 
-sql_escape(sql_insert('COMMENT', "`libCom`, `numArt`, `numMemb`","'$libCom', '$numArt', '$numMemb'"));
+sql_insert('COMMENT', "`libCom`, `numArt`, `numMemb`","'$libCom', '$numArt', '$numMemb'");
 
 header('Location: ../../views/backend/comments/list.php');
 
