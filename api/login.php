@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/../../config.php';
+require_once __DIR__ . '/../config.php';
 
 $eMailMemb = trim($_POST['eMailMemb']);
 $passMemb =  $_POST['passMemb'];
