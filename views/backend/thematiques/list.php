@@ -28,7 +28,7 @@ $thematiques = sql_select("thematique", "*");
     <p class="separation"> > </p>
     <a href="/views/backend/dashboard.php" class="liens-ariane">Dashboard</a>
     <p class="separation"> > </p>
-    <a href="/views/backend/members/create.php" class="liens-ariane">Thématiques</a>
+    <a href="/views/backend/thematiques/list.php" class="liens-ariane">Thématiques</a>
 </div>
 
 <!-- Bootstrap default layout to display all status in foreach -->

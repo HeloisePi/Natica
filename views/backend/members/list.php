@@ -39,12 +39,12 @@ $members = sql_select("membre", "*");
             <table class="table table-striped">
                 <thead>
                     <tr>
-                        <th>numMembre</th>
+                        <th>n° Membre</th>
                         <th>Prénom</th>
                         <th>Nom</th>
                         <th>Pseudo</th>
                         <th>E-mail</th>
-                        <th>Mot de Passe</th>
+                        <th>Mot de passe</th>
 
 
                     </tr>

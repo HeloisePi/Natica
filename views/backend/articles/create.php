@@ -64,7 +64,7 @@ if (!check_access(1)) {
                     <textarea type="text" id="paragraphe3" name="parag3Art" class="form-control" required></textarea><br>
                     <label for="conclusion">Conclusion * </label><br>
                     <textarea type="text" id="conclusion" name="libConclArt" class="form-control" required></textarea><br>
-                    <label for="numThem">Mot Clés *</label><br>
+                    <label for="numThem">Mots-clés *</label><br>
                     <?php
                     foreach ($numThems as $numThem) {
                     ?> <input type="checkbox" value="<?php echo $numThem['numThem'] ?>" id="numThem" name="numThem"> <?php echo $numThem['libThem']; ?> </input><br>
