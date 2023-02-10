@@ -1,0 +1,34 @@
+{
+    "aides": [
+    {
+        "name": "defMent",
+        "fileName": "Deficients-mentaux-RVB.svg",
+        "isActive": false
+    },
+    {
+        "name": "defMotA",
+        "fileName": "Deficients-moteur-avec-accompagnateur-RVB.svg",
+        "isActive": false
+    },
+    {
+        "name": "defMot",
+        "fileName": "Deficients-moteur-RVB.svg",
+        "isActive": false
+    },
+    {
+        "name": "defVis",
+        "fileName": "Deficients-visuels-RVB.svg",
+        "isActive": false
+    },
+    {
+        "name": "persMobiRedu",
+        "fileName": "Personnes-a-mobilite-reduite-RVB.svg",
+        "isActive": false
+    },
+    {
+        "name": "pousette",
+        "fileName": "Poussette-RVB.svg",
+        "isActive": false
+    }
+  ]
+}

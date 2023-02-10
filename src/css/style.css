@@ -21,8 +21,8 @@ body {
 }
 
 .connexion:hover {
-    color: rgb(0, 0, 0);
-    background-color: #ffffff ;
+    color: rgb(255, 255, 255);
+    background-color: #8C52AD ;
     border-color: black;
     border-width: 1px;
     text-decoration: none;

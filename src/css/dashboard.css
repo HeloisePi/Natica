@@ -1,0 +1,44 @@
+.list, .create {
+    color: black;
+    background-color: #7C73F5;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-left: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 7px;
+}
+
+.list:hover, .create:hover {
+    color: rgb(255, 255, 255);
+    background-color: #8C52AD ;
+    text-decoration: none;
+    margin-left: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 7px;
+}
+
+.envoyer, .envoyer:hover {
+    margin-bottom: 4%;
+}
+
+.edit, .edit:hover {
+    margin-left: -2vw;
+    margin-top: 1vh;
+}
+.suppr, .suppr:hover {
+    margin-left : -0.05vw;
+    margin-top: 1vh;
+}
+
+h1 {
+    font-size: 62px;
+    font-family: "bebas-neue", sans-serif;
+    padding-top: 0.5%;
+    margin-bottom: 5% ;
+    padding-left: 5rem;
+padding-bottom : 3%;
+}

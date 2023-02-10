@@ -1,3 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste des membres - eXim</title>
+    <link rel="stylesheet" href="/src/css/dashboard.css">
+    <link rel="stylesheet" href="/src/css/articles.css">
+</head>
+<body>
+    
 <?php
 include '../../../header.php'; // contains the header and call to config.php
 //Security check
@@ -11,20 +23,28 @@ if (!check_access(1)) {
 $members = sql_select("membre", "*");
 ?>
 
+<div class="fil-ariane3">
+    <a href="/index.php" class="liens-ariane">Accueil</a>
+    <p class="separation"> > </p>
+    <a href="/views/backend/dashboard.php" class="liens-ariane">Dashboard</a>
+    <p class="separation"> > </p>
+    <a href="/views/backend/members/list.php" class="liens-ariane">Membres</a>
+</div>
+
 <!-- Bootstrap default layout to display all members in foreach -->
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h1>Members</h1>
+            <h1>Liste des membres</h1>
             <table class="table table-striped">
                 <thead>
                     <tr>
-                        <th>numMembre</th>
-                        <th>prenom</th>
-                        <th>nom</th>
-                        <th>pseudo</th>
-                        <th>e-mail</th>
-                        <th>Mot de Passe</th>
+                        <th>n° Membre</th>
+                        <th>Prénom</th>
+                        <th>Nom</th>
+                        <th>Pseudo</th>
+                        <th>E-mail</th>
+                        <th>Mot de passe</th>
 
 
                     </tr>
@@ -39,8 +59,8 @@ $members = sql_select("membre", "*");
                             <td><?php echo $member['eMailMemb']; ?></td>
                             <td><?php echo $member['passMemb']; ?></td>
                             <td>
-                                <a href="edit.php?numMemb=<?php echo $member['numMemb']; ?>" class="btn btn-primary">Edit</a>
-                                <a href="delete.php?numMemb=<?php echo $member['numMemb']; ?>" class="btn btn-danger">Delete</a>
+                                <a href="edit.php?numMemb=<?php echo $member['numMemb']; ?>" class="btn-primary list edit">Éditer</a>
+                                <a href="delete.php?numMemb=<?php echo $member['numMemb']; ?>" class="btn btn-danger">Supprimer</a>
                             </td>
                         </tr>
                     <?php } ?>
@@ -57,6 +77,10 @@ $members = sql_select("membre", "*");
             <?php
             } ?>
 
-            <a href="create.php" class="btn btn-success">Create</a>
+            <a href="create.php" class="btn-success list">Créer</a>
         </div>
     </div>
+
+    
+</body>
+</html>

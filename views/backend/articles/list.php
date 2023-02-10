@@ -1,3 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste des articles - eXim</title>
+    <link rel="stylesheet" href="/src/css/dashboard.css">
+    <link rel="stylesheet" href="/src/css/articles.css">
+</head>
+<body>
+    
+
 <?php
 include '../../../header.php'; // contains the header and call to config.php
 //Security check
@@ -10,28 +23,33 @@ if (!check_access(1)) {
 //Load all statuses
 $articles = sql_select("article", "*");
 ?>
-
+<div class="fil-ariane3">
+    <a href="/index.php" class="liens-ariane">Accueil</a>
+    <p class="separation"> > </p>
+    <a href="/views/backend/dashboard.php" class="liens-ariane">Dashboard</a>
+    <p class="separation"> > </p>
+    <a href="/views/backend/articles/list.php" class="liens-ariane">Liste des articles</a>
+</div>
 <!-- Bootstrap default layout to display all status in foreach -->
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h1>Articles</h1>
             <table class="table table-striped">
                 <thead>
                     <tr>
-                        <th>numero Article</th>
-                        <th>date de création</th>
+                        <th>n° Article</th>
+                        <th>Date de création</th>
                         <th>Titre </th>
-                        <th>chapo</th>
+                        <th>Chapô</th>
                         <th>Accroche</th>
-                        <th>paragraphe1</th>
-                        <th>sous titre 1</th>
-                        <th>paragraphe2 </th>
-                        <th>sous titre 2</th>
-                        <th>paragraphe3</th>
-                        <th>conclusion </th>
-                        <th>image</th>
-                        <th>mot clés</th>
+                        <th>Paragraphe 1</th>
+                        <th>Sous-titre 2</th>
+                        <th>Paragraphe 2</th>
+                        <th>Sous-titre 3</th>
+                        <th>Paragraphe 3 </th>
+                        <th>Conclusion</th>
+                        <th>Image</th>
+                        <th>Mots-clés</th>
 
 
                     </tr>
@@ -54,13 +72,16 @@ $articles = sql_select("article", "*");
                             <td><?php echo $article['numThem']; ?></td>
 
                             <td>
-                                <a href="edit.php?numArt=<?php echo $article['numArt']; ?>" class="btn btn-primary">Edit</a>
-                                <a href="delete.php?numArt=<?php echo $article['numArt']; ?>" class="btn btn-danger">Delete</a>
+                                <a href="edit.php?numArt=<?php echo $article['numArt']; ?>" class="btn-primary list suppr">Éditer</a>
+                                <a href="delete.php?numArt=<?php echo $article['numArt']; ?>" class="btn btn-danger suppr">Supprimer</a>
                             </td>
                         </tr>
                     <?php } ?>
                 </tbody>
             </table>
-            <a href="create.php" class="btn btn-success">Create</a>
+            <a href="create.php" class="btn-success list">Créer</a>
         </div>
     </div>
+
+</body>
+</html>

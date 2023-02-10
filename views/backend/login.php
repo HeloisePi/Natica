@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Se connecter - eXim</title>
     <link rel="stylesheet" href="/src/css/connection.css">
+    <link rel="stylesheet" href="/src/css/dashboard.css">
     <link rel="stylesheet" href="https://use.typekit.net/ujw8boj.css">
     <link rel="stylesheet" href="https://use.typekit.net/ujw8boj.css">
     <link rel="stylesheet" href="https://use.typekit.net/ujw8boj.css">
@@ -83,7 +84,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
                 </div>
 
                 <div class="form-group mt-2">
-                    <button type="submit" class="conect">Se connecter</button>
+                    <button type="submit" class="conect list">Se connecter</button>
                 </div>
                 <div class="align-btn-connect">
                     <p class="text-connect">Vous n’avez pas de compte ?</p>

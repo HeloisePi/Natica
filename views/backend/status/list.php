@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Status - eXim</title>
+    <title>Liste des statuts - eXim</title>
     <link rel="stylesheet" href="/src/css/connection.css">
+    <link rel="stylesheet" href="/src/css/dashboard.css">
 </head>
 <body>
     
@@ -31,7 +32,7 @@ $statuses = sql_select("STATUT", "*");
     <p class="separation"> > </p>
     <a href="/views/backend/dashboard.php" class="liens-ariane">Dashboard</a>
     <p class="separation"> > </p>
-    <a href="/views/backend/status/list.php" class="liens-ariane">Status</a>
+    <a href="/views/backend/status/list.php" class="liens-ariane">Statuts</a>
 </div>
 
 
@@ -39,12 +40,12 @@ $statuses = sql_select("STATUT", "*");
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h1>Status</h1>
+            <h1>Liste des statuts</h1>
             <table class="table table-striped">
                 <thead>
                     <tr>
                         <th>Id</th>
-                        <th>Name</th>
+                        <th>Rôle</th>
                         <th>Actions</th>
                     </tr>
                 </thead>
@@ -54,18 +55,17 @@ $statuses = sql_select("STATUT", "*");
                             <td><?php echo $status['numStat']; ?></td>
                             <td><?php echo $status['libStat']; ?></td>
                             <td>
-                                <a href="edit.php?numStat=<?php echo $status['numStat']; ?>" class="btn btn-primary">Edit</a>
-                                <a href="delete.php?numStat=<?php echo $status['numStat']; ?>" class="btn btn-danger">Delete</a>
+                                <a href="edit.php?numStat=<?php echo $status['numStat']; ?>" class="btn-primary list">Éditer</a>
+                                <a href="delete.php?numStat=<?php echo $status['numStat']; ?>" class="btn btn-danger">Supprimer</a>
                             </td>
                         </tr>
                     <?php } ?>
                 </tbody>
             </table>
-            <a href="create.php" class="btn btn-success">Create</a>
+            <a href="create.php" class="btn-success list">Créer</a>
         </div>
     </div>
 </div>
-
 
 </body>
 </html>

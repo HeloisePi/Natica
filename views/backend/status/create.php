@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create - eXim</title>
+    <title>Créer un statut - eXim</title>
     <link rel="stylesheet" href="/src/css/connection.css">
+    <link rel="stylesheet" href="/src/css/dashboard.css">
 </head>
 <body>
 
@@ -25,14 +26,14 @@ if (!check_access(1)) {
     <p class="separation"> > </p>
     <a href="/views/backend/dashboard.php" class="liens-ariane">Dashboard</a>
     <p class="separation"> > </p>
-    <a href="/views/backend/status/create.php" class="liens-ariane">Create</a>
+    <a href="/views/backend/status/create.php" class="liens-ariane">Nouveau statut</a>
 </div>
 
 <!--Bootstrap form to create a new status-->
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h1>Create new Status</h1>
+            <h1>Créer un nouveau statut</h1>
         </div>
         <div class="col-md-12">
             <!--Form to create a new status-->
@@ -42,12 +43,13 @@ if (!check_access(1)) {
                     <input id="libStat" class="form-control" type="text" name="libStat">
                 </div>
                 <div class="form-group mt-2">
-                    <button type="submit" class="btn btn-primary">Create</button>
+                    <button type="submit" class="btn-primary list">Créer</button>
                 </div>
             </form>
         </div>
     </div>
 </div>
+
 
 </body>
 </html>

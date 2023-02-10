@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>S'inscrire - eXim</title>
     <link rel="stylesheet" href="/src/css/connection.css">
+    <link rel="stylesheet" href="/src/css/dashboard.css">
     <link rel="stylesheet" href="https://use.typekit.net/ujw8boj.css">
     <link rel="stylesheet" href="/assert/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf">
     <link rel="stylesheet" href="/assert/Montserrat-Italic-VariableFont_wght.ttf">
@@ -91,7 +92,7 @@
                     </div>
 
                     <div class="form-group mt-2">
-                        <button type="submit" class="conect">Créer un compte</button>
+                        <button type="submit" class="conect list">Créer un compte</button>
                     </div>
 
                     <div class="align-btn-connect">

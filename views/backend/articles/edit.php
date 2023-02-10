@@ -1,5 +1,17 @@
-<?php
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Éditer - eXim</title>
+    <link rel="stylesheet" href="/src/css/connection.css">
+    <link rel="stylesheet" href="/src/css/articles.css">
+    <link rel="stylesheet" href="/src/css/dashboard.css">
+</head>
+<body>
 
+<?php
 
 
 include '../../../header.php';
@@ -18,11 +30,20 @@ $article = sql_select("article", "*", "numArt = $numArt");
 
 ?>
 
+<div class="fil-ariane2">
+    <a href="/index.php" class="liens-ariane">Accueil</a>
+    <p class="separation"> > </p>
+    <a href="/views/backend/dashboard.php" class="liens-ariane">Dashboard</a>
+    <p class="separation"> > </p>
+    <a href="/views/backend/articles/list.php" class="liens-ariane">Liste des articles</a>
+    <p class="separation"> > </p>
+    <div class="liens-ariane">Éditer</div>
+</div>
 
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h1>Edit an article</h1>
+            <h1>Éditer un article</h1>
         </div>
         <div class="col-md-12">
 
@@ -49,7 +70,7 @@ $article = sql_select("article", "*", "numArt = $numArt");
                     <input type="text" id="paragraphe3" name="parag3Art" class="form-control" value="<?php echo ($article[0]['parag3Art']) ?>" required><br>
                     <label for="conclusion">Conclusion * </label><br>
                     <input type="text" id="conclusion" name="libConclArt" class="form-control" value="<?php echo ($article[0]['libConclArt']) ?>" required><br>
-                    <label for="motcles">Mot Clés *</label><br>
+                    <label for="motcles">Mot-clés *</label><br>
                     <select id="motcles" name="libMotCle" class="form-control" required>
                         <?php
                         foreach ($numThems as $numThem) {
@@ -91,7 +112,7 @@ $article = sql_select("article", "*", "numArt = $numArt");
                 <div class="form-group mt-2"></div>
         </div>
         <div class="form-group mt-2"></div>
-        <input class="btn btn-primary" type="submit" name="" id="" value="ENVOYER">
+        <input class="btn-primary list" type="submit" name="" id="" value="ENVOYER">
 
 
 
@@ -100,3 +121,6 @@ $article = sql_select("article", "*", "numArt = $numArt");
 
     </div>
 </div>
+
+</body>
+</html>

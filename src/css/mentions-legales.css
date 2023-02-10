@@ -32,3 +32,16 @@ h1 {
     align-items: center;
     margin-bottom: 5rem;
 }
+
+.lien-mentions-legales {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    color: black;
+    padding-right: 1rem;
+    text-decoration: none;
+}
+
+.lien-mentions-legales:hover {
+    color: #7C73F5;
+    text-decoration: underline;
+}
