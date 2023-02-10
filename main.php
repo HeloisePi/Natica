@@ -37,38 +37,38 @@
         require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
 
 
-        $articles = sql_select('article', '*', "", "numArt DESC", 3);
-
+        
         ?>
 
-        <!-- début main -->
-        <div class="title">
-            <h1 class="titre-eximBordeaux">EXIM BORDEAUX</h1>
-            <div class="purple-line"></div>
-        </div>
-        <div class="under-title">
-            <h2>Expériences Immersives</h2>
-        </div>
+<!-- début main -->
+<div class="title">
+    <h1 class="titre-eximBordeaux">EXIM BORDEAUX</h1>
+    <div class="purple-line"></div>
+</div>
+<div class="under-title">
+    <h2>Expériences Immersives</h2>
+</div>
 
-        <div class="scroll-down">
-            <img src="/images/scroll-down.svg" class="scroll-down-image" alt="scroll down">
-        </div>
-    </div>
+<div class="scroll-down">
+    <img src="/images/scroll-down.svg" class="scroll-down-image" alt="scroll down">
+</div>
+</div>
 
 
-    <div class="container articles-header">
-        <div class="col-2"></div>
-        <div class="rect">
-            <div class="bloc-rect">
-                <?php foreach ($articles as $article) { ?>
-                    <img class="image-affiche" src="src/images/uploads/<?php echo ($article['urlPhotArt']) ?>" alt="Image decriptive article.">
+<div class="container articles-header">
+    <div class="col-2"></div>
+    <div class="rect">
+        <div class="bloc-rect">
+            <?php $articles = sql_select('article', '*', "", "numArt DESC", 1);?>
+            <?php foreach ($articles as $article) { ?>
+                    <img class="image-affiche" src="<?php echo ($article['urlPhotArt']) ?>" alt="Image decriptive article.">
                 <?php } ?>
                 <div class="info-rect">
+                    <div class="infos">
                     <?php echo ('<a href="/evenement.php?numArt=' . $article['numArt'] . ' "><h3>' . $article['libTitrArt'] . '</h3></a>'); ?>
                     <p> <?php
                         echo ('<a href="/evenement.php?numArt=' . $article['numArt'] . ' ">' . $article['libChapoArt'] . '</a>');
                         ?></p>
-                    <div class="infos">
                         <p>
                             Écrit par : Natica <br> Le : <?php echo ($article['dtCreArt']) ?>
                         </p>
@@ -76,19 +76,11 @@
                 </div>
             </div>
         </div>
-        <!--  <div class="container colonne">
-        <div class="row square">
-            <div class="bloc-square"></div>
-                <div class="info-square">
-                    <h3>gjbfvji</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.!</p>
-                </div>
-            <div class="col-3"></div>
-        </div>
-    </div> -->
+        
         <div class="container colonne">
             <div class="row square">
                 <div class="bloc-square">
+                <?php $articles = sql_select('article', '*', "", "numArt DESC", 3);?>
                     <?php foreach ($articles as $article) { ?>
                         <img src="<?php echo ($article['urlPhotArt']) ?>" <?php
                                                                         } ?> alt="Image descriptive article">
