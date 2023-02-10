@@ -36,8 +36,11 @@
         //requete sql pour afficher les articles                   
         require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
 
-        $affiche = sql_select('article', '*', "", "numArt DESC");
-        $articles = sql_select('article', '*', "", "numArt DESC", 3);
+        $articles = sql_select('article', '*', "", "numArt DESC");
+        //$articles = sql_select('article', '*', "", "numArt DESC", 3);
+
+        //print_r($affiche);
+        //print_r($affiches);
 
         ?>
 
@@ -64,12 +67,12 @@
                     <img class="image-affiche" src="src/images/uploads/<?php echo ($article['urlPhotArt']) ?>" alt="Image decriptive article.">
                 <?php } ?>
                 <div class="info-rect">
-                    <h3><?php echo ($affiche['libTitrArt']) ?></h3>
+                    <h3><?php echo ($article['libTitrArt']) ?></h3>
                     <p> <?php
-                        echo ($affiche['libChapoArt']);
+                        echo ($article['libChapoArt']);
                         ?></p>
                     <p>
-                        Écrit par : Natica <br> Le : <?php echo ($affiche['dtCreArt']) ?>
+                        Écrit par : Natica <br> Le : <?php echo ($article['dtCreArt']) ?>
                     </p>
                 </div>
             </div>
