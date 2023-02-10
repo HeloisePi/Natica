@@ -36,7 +36,7 @@
         //requete sql pour afficher les articles                   
         require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
 
-        
+
         $articles = sql_select('article', '*', "", "numArt DESC", 3);
 
         ?>
@@ -64,16 +64,15 @@
                     <img class="image-affiche" src="src/images/uploads/<?php echo ($article['urlPhotArt']) ?>" alt="Image decriptive article.">
                 <?php } ?>
                 <div class="info-rect">
-                    <?php echo('<a href="/evenement.php?numArt=' . $article['numArt'] . ' "><h3>' . $article['libTitrArt'] . '</h3></a>');?>
+                    <?php echo ('<a href="/evenement.php?numArt=' . $article['numArt'] . ' "><h3>' . $article['libTitrArt'] . '</h3></a>'); ?>
                     <p> <?php
-                        echo('<a href="/evenement.php?numArt=' . $article['numArt'] . ' ">'. $article['libChapoArt'] .'</a>');
+                        echo ('<a href="/evenement.php?numArt=' . $article['numArt'] . ' ">' . $article['libChapoArt'] . '</a>');
                         ?></p>
-
-                </div>
-                <div class="infos">
-                    <p>
-                        Écrit par : Natica <br> Le : <?php echo ($article['dtCreArt']) ?>
-                    </p>
+                    <div class="infos">
+                        <p>
+                            Écrit par : Natica <br> Le : <?php echo ($article['dtCreArt']) ?>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -96,7 +95,7 @@
                 </div>
                 <div class="info-square">
                     <?php foreach ($articles as $article) {
-                        echo('<a href="/evenement.php?numArt=' . $article['numArt'] . ' "><h3>' . $article['libTitrArt'] . '</h3></a>');?>
+                        echo ('<a href="/evenement.php?numArt=' . $article['numArt'] . ' "><h3>' . $article['libTitrArt'] . '</h3></a>'); ?>
                     <?php echo ('<p>' . $article['dtCreArt'] . '</p>');
                     }
                     ?>
