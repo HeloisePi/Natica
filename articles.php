@@ -22,7 +22,6 @@
 
 
 
-
     <div class="fil-ariane3">
         <a href="/index.php" class="liens-ariane">Accueil</a>
         <p class="separation"> > </p>
@@ -40,7 +39,7 @@
     <h1 class="experiences-immersives">expériences immersives de 2023-2024</h1>
     <div class="rect-all">
 
-        <?php foreach($articles as $article){?>
+        <?php foreach($articles as $article)?>
 
         <div class= "titres-all">
             <?php echo('<a href="/evenement.php?numArt=' . $article['numArt'] . ' "><h3>' . $article['libTitrArt'] . '</h3></a>');?>
@@ -50,9 +49,10 @@
                 <div class="info-all">
                     <?php echo('<p>' . $article['dtCreArt']. '</p>') ?>
                 </div>
-            <?php } ?>
+
             </div>
         </div>
+
 
             <!-- <div class= "titres-all">
                 <h3>Evènement 2</h3>
@@ -70,9 +70,7 @@
             </div>    
         </div> -->
     </div>
-
-    <?php include 'footer.php'; // contains the footer 
-    ?>
+    <?php require_once 'footer.php';?>
 </body>
 
 </html>
