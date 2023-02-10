@@ -13,10 +13,7 @@ $likeA = $_POST['likeA'];
 $numMemb = $_POST['numMemb'];
 
 
-if($verifie[0]['likeA']== 1){
-    header('Location: ../../../views/backend/likes/list.php');
-    exit();
-}
 
 sql_delete('LIKEART', "numArt = '$numArt' and numMemb = '$numMemb'");
+// var_dump($likeA, $numArt, $numMemb);
 header('Location: ../../../views/backend/likes/list.php');
