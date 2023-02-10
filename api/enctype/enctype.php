@@ -28,16 +28,19 @@ foreach($aides['aides'] as $aide) {
     array_push($aidesOfTheArticle, $aide);
 }
 
-
+$adresses = array();
 $article = array();
+
 
 $article['name'] = $_POST['libTitrArt'];
 $article['aides'] = $aidesOfTheArticle;
-
+$article['couts'] = $_POST['cout'];
+$article['adresse'] = $_POST['adresse'];
 
 
 
 array_push($data['articles'], $article);
+
 
 
 $jsonFinalData = json_encode($data);
@@ -64,10 +67,9 @@ $parag3Art = $_POST['parag3Art'];
 $libConclArt = $_POST['libConclArt'];
 $numThem = $_POST['numThem'];
 
-echo 'salut';
-
+/*
 sql_insert('article', "`libTitrArt`, `libChapoArt`, `libAccrochArt`, `parag1Art`, `libSsTitr1Art`, `parag2Art`, `libSsTitr2Art`, `parag3Art`, `libConclArt`, `urlPhotArt`, `numThem`", "'$libTitrArt','$libChapoArt','$libAccrochArt','$parag1Art','$libSsTitr1Art','$parag2Art','$libSsTitr2Art','$parag3Art','$libConclArt','$urlPhotArt','$numThem'");
 sql_insert('article', "`libTitrArt`, `libChapoArt`, `libAccrochArt`, `parag1Art`, `libSsTitr1Art`, `parag2Art`, `libSsTitr2Art`, `parag3Art`, `libConclArt`, `urlPhotArt`, `numThem`", "'$libTitrArt','$libChapoArt','$libAccrochArt','$parag1Art','$libSsTitr1Art','$parag2Art','$libSsTitr2Art','$parag3Art','$libConclArt','$urlPhotArt','$numThem'");
 
 
-header('Location: ../../views/backend/articles/list.php');
+header('Location: ../../views/backend/articles/list.php'); */
