@@ -113,9 +113,7 @@
                     <h3><?php echo substr(($article['libTitrArt']), 0, 23) . "..." ?></h3>
                     <div class="bloc-decouvrir">
                         <div class="info-decouvrir">
-                            <?php foreach ($articles as $article) { ?>
-                                <img src="src/images/uploads/<?php echo ($article['urlPhotArt']) ?>" alt="Image descriptive article">
-                            <?php } ?>
+                            <img src="src/images/uploads/<?php echo ($article['urlPhotArt']) ?>" alt="Image descriptive article">                            
                         </div>
                     </div>
                 </div>

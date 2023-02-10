@@ -3,7 +3,7 @@ require_once $_SERVER['DOCUMENT_ROOT']. '/config.php';
 //print_r($_POST);
 
 //security check
-if (!check_access(1) || !check_access(2)) {
+if (!check_access(2)) {
     header('Location: /'); //Redirect to home
     exit();
 }
@@ -14,7 +14,7 @@ $numArt = $_POST['numArt'];
 $numMemb = $_POST['numMemb'];
 
 
-sql_insert('COMMENT', "`libCom`, `numArt`, `numMemb`","'$libCom', '$numArt', '$numMemb'");
+sql_escape(sql_insert('COMMENT', "`libCom`, `numArt`, `numMemb`","'$libCom', '$numArt', '$numMemb'"));
 
 header('Location: ../../views/backend/comments/list.php');
 

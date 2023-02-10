@@ -29,4 +29,8 @@ $numThem = $_POST['numThem'];
 
 
 sql_insert('article', "`libTitrArt`, `libChapoArt`, `libAccrochArt`, `parag1Art`, `libSsTitr1Art`, `parag2Art`, `libSsTitr2Art`, `parag3Art`, `libConclArt`, `urlPhotArt`, `numThem`", "'$libTitrArt','$libChapoArt','$libAccrochArt','$parag1Art','$libSsTitr1Art','$parag2Art','$libSsTitr2Art','$parag3Art','$libConclArt','$urlPhotArt','$numThem'");
+if (sql_select('ARTICLES', 'urlPhotArt', "urlPhotArt = '$urlPhotArt'")[0]['urlPhotArt'] == $urlPhotArt) {
+    header('Location: ../../../views/backend/articles/list.php?error=1');
+}
+
 header('Location: ../../views/backend/articles/list.php');
