@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit - eXim</title>
+    <title>Éditer - eXim</title>
     <link rel="stylesheet" href="/src/css/connection.css">
+    <link rel="stylesheet" href="/src/css/articles.css">
+    <link rel="stylesheet" href="/src/css/dashboard.css">
 </head>
 <body>
 
@@ -20,7 +22,7 @@ include '../../../header.php';
     if (!check_access(1)) {
     header('Location: /'); //Redirect to home
     exit();
-} 
+    } 
 
 $numStat = $_GET['numStat'];
 $libStat = sql_select("STATUT", "libStat", "numStat = $numStat")[0]['libStat'];
@@ -31,16 +33,16 @@ $libStat = sql_select("STATUT", "libStat", "numStat = $numStat")[0]['libStat'];
     <p class="separation"> > </p>
     <a href="/views/backend/dashboard.php" class="liens-ariane">Dashboard</a>
     <p class="separation"> > </p>
-    <a href="/views/backend/status/list.php" class="liens-ariane">Status</a>
+    <a href="/views/backend/status/list.php" class="liens-ariane">Statut</a>
     <p class="separation"> > </p>
-    <div class="liens-ariane">Edit</div>
+    <div class="liens-ariane">Éditer</div>
 </div>
 
 <!--Bootstrap form to create a new status-->
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h1>Editer les statuts</h1>
+            <h1>Éditer les statuts</h1>
         </div>
         <div class="col-md-12">
             <!--Form to edit a new status-->
@@ -51,7 +53,7 @@ $libStat = sql_select("STATUT", "libStat", "numStat = $numStat")[0]['libStat'];
                     <input id="libStat" class="form-control" type="text" name="libStat" value ="<?php echo($libStat) ?>">
                 </div>
                 <div class="form-group mt-2">
-                    <button type="submit" class="btn btn-primary">Edit</button>
+                    <button type="submit" class="btn-primary list">Éditer</button>
                 </div>
             </form>
         </div>
