@@ -112,7 +112,7 @@
         <div class="rect-decouvrir">
             <?php foreach ($articles as $article) { ?>
                 <div class="titres-decouvrir">
-                <?php echo('<a href="/evenement.php?numArt=' . $article['numArt'] . ' "><h3>' . substr($article['libTitrArt'], 0, 40) . '</h3></a>');?>
+                <?php echo('<a href="/evenement.php?numArt=' . $article['numArt'] . ' "><h3>' . substr($article['libTitrArt'], 0, 28). '...' . '</h3></a>');?>
                     <div class="bloc-decouvrir">
                         <img src="<?php echo ($article['urlPhotArt']) ?>" alt="Image descriptive article">                            
                         <div class="info-decouvrir">

@@ -48,12 +48,12 @@
                 <img class="image-lune" src="<?php echo ($article['urlPhotArt']) ?>" alt="Image d'une lune dans l'espace.">
                 <div class="info-all">
                     <?php echo('<p>' . $article['dtCreArt']. '</p>') ?>
-            <?php 
-        }
-        ?>
                 </div>
             </div>
         </div>
+            <?php 
+        }
+        ?>
 
             <!-- <div class= "titres-all">
                 <h3>Evènement 2</h3>
