@@ -38,7 +38,6 @@
     </div>
     </form>
     <h1 class="experiences-immersives">expériences immersives de 2023-2024</h1>
-    <?php foreach ($articles as $article) { ?>
 
         <div class="rect-all">
 
