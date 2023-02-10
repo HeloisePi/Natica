@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,9 +9,11 @@
     <link rel="stylesheet" href="/src/css/main.css">
     <link rel="stylesheet" href="/src/css/connection.css">
 </head>
+
 <body>
-    
+
 </body>
+
 </html>
 
 <?php
@@ -98,12 +101,11 @@ if (!check_access(1)) {
 
                     <label for="erreur"></label>
                     <?php
-                    // if (isset($_GET["error"])) {
-                    //     if ($_GET["error"] == 1)
-                    //         $msgErreur = $_GET['error'];
-                    // }
-
-                    // 
+                    if (isset($_GET["error"])) {
+                        if ($_GET["error"] == 1)
+                            $msgErreur = $_GET['error'];
+                        echo ('Le document est trop volumineux');
+                    }
                     ?>
                 </div>
                 <div class="form-group mt-2"></div>
@@ -117,5 +119,5 @@ if (!check_access(1)) {
         </div>
     </div>
 </div>
-<?php require_once '../../../footer.php'; 
+<?php require_once '../../../footer.php';
 ?>
