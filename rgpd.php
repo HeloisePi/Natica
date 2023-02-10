@@ -118,7 +118,7 @@ include 'header.php';
             <br>
             <p>Vous autorisez aussi <b>Google</b>, à utiliser une partie de vos données 
                 (communiquées lors de votre inscription sur le blog eXim) lors de l'utilisation de leur <b>API Goggle Maps</b>.</p>
-            <a class="lien-google" href="https://support.google.com/a/answer/60762?hl=fr"> Pour plus d'informations sur l'utilisation de vos données auprès de Google,
+            <a class="lien-mentions-legales" href="https://support.google.com/a/answer/60762?hl=fr"> Pour plus d'informations sur l'utilisation de vos données auprès de Google,
                 <b>cliquez ici.</b></a>
             <br>
             <br>
@@ -139,8 +139,10 @@ include 'header.php';
             <br>
             <p>IUT Bordeaux Montaigne</p>
             <p>1 rue Jacques Ellul 33080 Bordeaux Cedex France</p>
-            <p>+33 5 57 12 20 44</p>
-            <p>webmaster-iut@u-bordeaux-montaigne.fr</p>
+            <a href="tel:+33 5 57 12 20 44" class="texte-paragraphe lien-mentions-legales">+33 5 57 12 20 44</a>
+            <br>
+            <br>
+            <a href="mailto:webmaster-iut@u-bordeaux-montaigne.fr" class="texte-paragraphe lien-mentions-legales">webmaster-iut@u-bordeaux-montaigne.fr</a>
             <br>
             <br>
             <br>
