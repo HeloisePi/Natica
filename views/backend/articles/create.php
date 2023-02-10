@@ -65,22 +65,31 @@ if (!check_access(1)) {
                     <textarea type="text" id="conclusion" name="libConclArt" class="form-control" required></textarea><br>
                     <label for="numThem">Mots-clés *</label><br>
                     <?php
-                    foreach ($numThems as $numThem) {
+                    /*foreach ($numThems as $numThem) {
                     ?> <input type="checkbox" value="<?php echo $numThem['numThem'] ?>" id="numThem" name="numThem"> <?php echo $numThem['libThem']; ?> </input><br>
+                    <?php*/
+                    ?>
+                    
+
+                    <select id="numMemb" class="form-control" type="int" name="numMemb" required>
                     <?php
+                    foreach( $numThems as $numThem){
+                        ?> <option value="<?php echo $numThem['numThem'] ?>"> <?php echo $numThem['libThem']; ?> </option>
+                        <?php
                     }
                     ?>
 
 
+                </select>
 
                     <br>
                     <label for="photo">Importer photo *</label><br>
                     <input type="file" id="file" name="file"><br>
 
                     <br><br><label for="adresse">Adresse</label><br>
-                    <input type="text" id="adresse" class="form-control"><br>
+                    <input type="text" id="adresse" name="adresse" class="form-control"><br>
                     <label for="cout">Coût * (0 si gratuit)</label><br>
-                    <input type="text" id="cout" class="form-control" required><br>
+                    <input type="text" id="cout" name="cout" class="form-control" required><br>
                     <label for="">Accessibilité de l’expérience (cocher si le lieu est accessible) </label><br>
 
                     <label for="defMent"><img src="/assert/svg/Deficients-mentaux-RVB.svg" alt="Deficients mentaux"></label>
