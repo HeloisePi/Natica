@@ -41,30 +41,22 @@
 
     <div class="rect-all">
 
-        <div class="titres-all">
-            <?php echo ('<a href="/evenement.php?numArt=' . $article['numArt'] . ' "><h3>' . $article['libTitrArt'] . '</h3></a>'); ?>
+        <?php foreach ($articles as $article) { ?>
+            <div class="titres-all">
+                <?php echo ('<a href="/evenement.php?numArt=' . $article['numArt'] . ' "><h3>' . $article['libTitrArt'] . '</h3></a>'); ?>
 
-            <div class="bloc-all">
-                <div class="info-all">
-                    <?php echo ('<p>' . $article['dtCreArt'] . '</p>') ?>
-                </div>
-                <img class="image-lune" src="<?php echo ($article['urlPhotArt']) ?>" alt="Image d'une lune dans l'espace.">
-                <?php foreach ($articles as $article) { ?>
-                    <div class="titres-all">
-                        <?php echo ('<a href="/evenement.php?numArt=' . $article['numArt'] . ' "><h3>' . $article['libTitrArt'] . '</h3></a>'); ?>
-
-                        <div class="bloc-all">
-                            <img class="image-lune" src="<?php echo ($article['urlPhotArt']) ?>" alt="Image d'une lune dans l'espace.">
-                            <div class="info-all">
-                                <?php echo ('<p>' . $article['dtCreArt'] . '</p>') ?>
-                            </div>
-                        </div>
+                <div class="bloc-all">
+                    <img class="image-lune" src="<?php echo ($article['urlPhotArt']) ?>" alt="Image d'une lune dans l'espace.">
+                    <div class="info-all">
+                        <?php echo ('<p>' . $article['dtCreArt'] . '</p>') ?>
                     </div>
-                <?php
-                }
-                ?>
+                </div>
+            </div>
+        <?php
+        }
+        ?>
 
-                <!-- <div class= "titres-all">
+        <!-- <div class= "titres-all">
                 <h3>Evènement 2</h3>
                 <div class="bloc-all">
                     <div class="info-all">
@@ -79,8 +71,8 @@
                 </div>
             </div>    
         </div> -->
-            </div>
-            <?php require_once 'footer.php'; ?>
+    </div>
+    <?php require_once 'footer.php'; ?>
 </body>
 
 </html>
