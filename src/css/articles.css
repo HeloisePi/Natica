@@ -88,7 +88,7 @@ body {
     text-decoration: none;
 }
 .bloc-all {
-    display: flex;
+    display: block;
     margin-right: 1.7%;
     overflow: hidden;
     margin-bottom: 10% ;
@@ -104,4 +104,8 @@ body {
 .titres-all h3{
     width: 335px;
     font-size: 22px;
+}
+
+.info-all {
+    align-items: start;
 }
