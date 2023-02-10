@@ -36,7 +36,7 @@
         //requete sql pour afficher les articles                   
         require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
 
-        $affiche = sql_select('article', '*', "", "numArt DESC");
+        
         $articles = sql_select('article', '*', "", "numArt DESC", 3);
 
         ?>
@@ -64,12 +64,12 @@
                     <img class="image-affiche" src="src/images/uploads/<?php echo ($article['urlPhotArt']) ?>" alt="Image decriptive article.">
                 <?php } ?>
                 <div class="info-rect">
-                    <h3><?php echo ($affiche['libTitrArt']) ?></h3>
+                    <?php echo('<a href="/evenement.php?numArt=' . $article['numArt'] . ' "><h3>' . $article['libTitrArt'] . '</h3></a>');?>
                     <p> <?php
-                        echo ($affiche['libChapoArt']);
+                        echo('<a href="/evenement.php?numArt=' . $article['numArt'] . ' ">'. $article['libChapoArt'] .'</a>');
                         ?></p>
                     <p>
-                        Écrit par : Natica <br> Le : <?php echo ($affiche['dtCreArt']) ?>
+                        Écrit par : Natica <br> Le : <?php echo ($article['dtCreArt']) ?>
                     </p>
                 </div>
             </div>
@@ -92,8 +92,8 @@
                                                                                             } ?> alt="Image descriptive article">
                 </div>
                 <div class="info-square">
-                    <?php foreach ($articles as $article) { ?>
-                        <h3><?php echo ($article['libTitrArt']) ?></h3>
+                    <?php foreach ($articles as $article) {
+                        echo('<a href="/evenement.php?numArt=' . $article['numArt'] . ' "><h3>' . $article['libTitrArt'] . '</h3></a>');?>
                     <?php echo ('<p>' . $article['dtCreArt'] . '</p>');
                     }
                     ?>
@@ -110,7 +110,7 @@
         <div class="rect-decouvrir">
             <?php foreach ($articles as $article) { ?>
                 <div class="titres-decouvrir">
-                    <h3><?php echo substr(($article['libTitrArt']), 0, 23) . "..." ?></h3>
+                <?php echo('<a href="/evenement.php?numArt=' . $article['numArt'] . ' "><h3>' . substr($article['libTitrArt'], 0, 23) . '</h3></a>');?>
                     <div class="bloc-decouvrir">
                         <div class="info-decouvrir">
                             <img src="<?php echo ($article['urlPhotArt']) ?>" alt="Image descriptive article">                            
