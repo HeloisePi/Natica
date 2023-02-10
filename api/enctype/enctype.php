@@ -32,4 +32,4 @@ sql_insert('article', "`libTitrArt`, `libChapoArt`, `libAccrochArt`, `parag1Art`
 //     header('Location: ../../../views/backend/articles/list.php?error=1');
 // }
 
-//header('Location: ../../views/backend/articles/list.php');
+header('Location: ../../views/backend/articles/list.php');
