@@ -1,7 +1,7 @@
 <?php
 
 
-require_once $_SERVER['DOCUMENT_ROOT']. '/config.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
 
 
 
@@ -22,7 +22,7 @@ $parag3Art = sql_escape($_POST['parag3Art']);
 $libConclArt = sql_escape($_POST['libConclArt']);
 $urlPhotArt = sql_escape($_POST['urlPhotArt']);
 $numThem = $_POST['numThem'];
-echo $numThem;
+// echo $numThem;
 
 /*
 $accessible_array = array();
@@ -59,11 +59,11 @@ if(isset($_POST['pousette'])){
 */
 //$accessible_array_table = json_encode($accessible_array);
 
-var_dump($data);
+// var_dump($data);
 
 //print_r($defMent,$defMotA,$defMot,$defVis,$persMobiRedu,$pousette );
 //file_put_contents('jsonFile.json', $newJsonString);
 
 
 sql_insert('article', "`libTitrArt`, `libChapoArt`, `libAccrochArt`, `parag1Art`, `libSsTitr1Art`, `parag2Art`, `libSsTitr2Art`, `parag3Art`, `libConclArt`, `urlPhotArt`, `numThem`", "'$libTitrArt','$libChapoArt','$libAccrochArt','$parag1Art','$libSsTitr1Art','$parag2Art','$libSsTitr2Art','$parag3Art','$libConclArt','$urlPhotArt','$numThem'");
-//header('Location: ../../views/backend/articles/list.php');
+header('Location: ../../views/backend/articles/list.php');
