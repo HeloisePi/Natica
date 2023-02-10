@@ -73,11 +73,6 @@ body {
     display: absolute;
 }
 
-.infos {
-    margin-top: 25rem;
-    display: flex;
-    top: 25%;
-}
 
 .articles-decouvrir {
     background-color: #7C73F5;
