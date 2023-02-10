@@ -60,6 +60,3 @@ $members = sql_select("membre", "*");
             <a href="create.php" class="btn btn-success">Create</a>
         </div>
     </div>
-
-    <?php
-    include '../../../footer.php'; // contains the footer

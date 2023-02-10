@@ -12,6 +12,11 @@ $passMemb = trim(($_POST['passMemb']));
 $eMailMemb = trim($_POST['eMailMemb']);
 $numStat = trim($_POST['numStat']);
 
+if (!check_access(1)) {
+    header('Location: /');
+}
+else {
 sql_update('membre', "prenomMemb = '$prenomMemb' , nomMemb = '$nomMemb' , pseudoMemb = '$pseudoMemb' , passMemb = '$passMemb' ,eMailMemb = '$eMailMemb', numStat = $numStat" ,"numMemb = $numMemb");
 
 header('Location: ../../views/backend/members/list.php');
+}
