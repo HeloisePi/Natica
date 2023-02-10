@@ -4,16 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delete - eXim</title>
+    <title>Supprimer - eXim</title>
     <link rel="stylesheet" href="/src/css/connection.css">
+    <link rel="stylesheet" href="/src/css/articles.css">
+    <link rel="stylesheet" href="/src/css/dashboard.css">
 </head>
 <body>
 
-
-
 <?php
-
-
 
 include '../../../header.php';
 
@@ -35,9 +33,9 @@ $libStat = sql_select("STATUT", "libStat", "numStat = $numStat")[0]['libStat'];
     <p class="separation"> > </p>
     <a href="/views/backend/dashboard.php" class="liens-ariane">Dashboard</a>
     <p class="separation"> > </p>
-    <a href="/views/backend/status/list.php" class="liens-ariane">Status</a>
+    <a href="/views/backend/status/list.php" class="liens-ariane">Statut</a>
     <p class="separation"> > </p>
-    <div class="liens-ariane">Delete</div>
+    <div class="liens-ariane">Supprimer</div>
 </div>
 
 
@@ -45,7 +43,7 @@ $libStat = sql_select("STATUT", "libStat", "numStat = $numStat")[0]['libStat'];
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h1>Delete Status</h1>
+            <h1>Supprimer le statut</h1>
         </div>
         <div class="col-md-12">
             <!--Form to create a new status-->
