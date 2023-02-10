@@ -68,6 +68,9 @@
                     <p> <?php
                         echo('<a href="/evenement.php?numArt=' . $article['numArt'] . ' ">'. $article['libChapoArt'] .'</a>');
                         ?></p>
+
+                </div>
+                <div class="infos">
                     <p>
                         Écrit par : Natica <br> Le : <?php echo ($article['dtCreArt']) ?>
                     </p>
@@ -89,7 +92,7 @@
                 <div class="bloc-square">
                     <?php foreach ($articles as $article) { ?>
                         <img src="<?php echo ($article['urlPhotArt']) ?>" <?php
-                                                                                            } ?> alt="Image descriptive article">
+                                                                        } ?> alt="Image descriptive article">
                 </div>
                 <div class="info-square">
                     <?php foreach ($articles as $article) {
@@ -114,7 +117,7 @@
                     <div class="bloc-decouvrir">
                         <img src="<?php echo ($article['urlPhotArt']) ?>" alt="Image descriptive article">                            
                         <div class="info-decouvrir">
-                            
+                            <img src="<?php echo ($article['urlPhotArt']) ?>" alt="Image descriptive article">
                         </div>
                     </div>
                 </div>
