@@ -117,5 +117,3 @@ if (!check_access(1)) {
         </div>
     </div>
 </div>
-<?php require_once '../../../footer.php'; 
-?>
