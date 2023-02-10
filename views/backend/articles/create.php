@@ -7,6 +7,9 @@
     <title>Écrire un article - eXim</title>
     <link rel="stylesheet" href="/src/css/main.css">
     <link rel="stylesheet" href="/src/css/connection.css">
+    <link rel="stylesheet" href="/src/css/dashboard.css">
+    <link rel="stylesheet" href="/assert/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf">
+    <link rel="stylesheet" href="/assert/Montserrat-Italic-VariableFont_wght.ttf">
 </head>
 <body>
     
@@ -107,7 +110,7 @@ if (!check_access(1)) {
                     ?>
                 </div>
                 <div class="form-group mt-2"></div>
-                <input class="btn btn-primary" type="submit" name="" id="" value="ENVOYER">
+                <input class="btn-primary list envoyer" type="submit" name="" id="" value="ENVOYER">
 
 
 
@@ -117,3 +120,4 @@ if (!check_access(1)) {
         </div>
     </div>
 </div>
+<?php require_once '../../../footer.php'; ?>

@@ -42,8 +42,8 @@
 
         <?php foreach($articles as $article){?>
 
-            <div class= "titres-all">
-                <?php echo('<a href="/evenement.php?numArt=' . $article['numArt'] . ' "><h3>' . $article['libTitrArt'] . '</h3></a>');?>
+        <div class= "titres-all">
+            <?php echo('<a href="/evenement.php?numArt=' . $article['numArt'] . ' "><h3>' . $article['libTitrArt'] . '</h3></a>');?>
                 
             <div class="bloc-all">
                 <img class="image-lune" src="src/images/uploads/<?php echo ($article['urlPhotArt']) ?>" alt="Image d'une lune dans l'espace.">
@@ -52,7 +52,7 @@
                 </div>
             <?php } ?>
             </div>
-
+        </div>
 
             <!-- <div class= "titres-all">
                 <h3>Evènement 2</h3>

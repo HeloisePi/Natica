@@ -57,8 +57,8 @@ if (isset($_SESSION['numMemb'])) {
                         <tr>
                             <td>Statuts</td>
                             <td>
-                                <a href="/views/backend/status/list.php" class="btn btn-primary">List</a>
-                                <a href="/views/backend/status/create.php" class="btn btn-success">Create</a>
+                                <a href="/views/backend/status/list.php" class="btn-primary list">Liste</a>
+                                <a href="/views/backend/status/create.php" class="btn-success create">Créer</a>
     
                                 <!-- <a href="/views/backend/status/delete.php" class="btn btn-danger">Delete</a>  Ne sers à rien , et ne marche pas-->
                             </td>
@@ -66,15 +66,15 @@ if (isset($_SESSION['numMemb'])) {
                         <tr>
                             <td>Membres</td>
                             <td>
-                                <a href="/views/backend/members/list.php" class="btn btn-primary ">List</a>
-                                <a href="/views/backend/members/create.php" class="btn btn-success ">Create</a>
+                                <a href="/views/backend/members/list.php" class="btn-primary list">Liste</a>
+                                <a href="/views/backend/members/create.php" class="btn-success create">Créer</a>
                                 <!-- <a href="/views/backend/members/edit.php" class="btn btn-warning disabled">Edit</a> -->
                         </tr>
                         <tr>
                             <td>Articles</td>
                             <td>
-                                <a href="/views/backend/articles/list.php" class="btn btn-primary ">List</a>
-                                <a href="/views/backend/articles/create.php" class="btn btn-success ">Create</a>
+                                <a href="/views/backend/articles/list.php" class="btn-primary list">Liste</a>
+                                <a href="/views/backend/articles/create.php" class="btn-success create">Créer</a>
 
 
                             </td>
@@ -82,8 +82,8 @@ if (isset($_SESSION['numMemb'])) {
                         <tr>
                             <td>Thématiques</td>
                             <td>
-                                <a href="/views/backend/thematiques/list.php" class="btn btn-primary ">List</a>
-                                <a href="/views/backend/thematiques/create.php" class="btn btn-success ">Create</a>
+                                <a href="/views/backend/thematiques/list.php" class="btn-primary list">Liste</a>
+                                <a href="/views/backend/thematiques/create.php" class="btn-success create">Créer</a>
                                 <!-- <a href="/views/backend/thematiques/edit.php" class="btn btn-warning disabled">Edit</a>
                                 <a href="/views/backend/thematiques/delete.php" class="btn btn-danger disabled">Delete</a> -->
                             </td>
@@ -91,8 +91,8 @@ if (isset($_SESSION['numMemb'])) {
                         <tr>
                             <td>Mots-clés</td>
                             <td>
-                                <a href="/views/backend/keywords/list.php" class="btn btn-primary">List</a>
-                                <a href="/views/backend/keywords/create.php" class="btn btn-success ">Create</a>
+                                <a href="/views/backend/keywords/list.php" class="btn-primary list">Liste</a>
+                                <a href="/views/backend/keywords/create.php" class="btn-success create">Créer</a>
                                 <!-- Les boutons ci dessous sont inutiles -->
                                 <!-- <a href="/views/backend/keywords/edit.php" class="btn btn-warning disabled">Edit</a> -->
                                 <!-- <a href="/views/backend/keywords/delete.php" class="btn btn-danger disabled">Delete</a> -->
@@ -105,8 +105,8 @@ if (isset($_SESSION['numMemb'])) {
                         <tr>
                             <td>Commentaires</td>
                             <td>
-                                <a href="/views/backend/comments/list.php" class="btn btn-primary ">List</a>
-                                <a href="/views/backend/comments/create.php" class="btn btn-success ">Create</a>
+                                <a href="/views/backend/comments/list.php" class="btn-primary list">Liste</a>
+                                <a href="/views/backend/comments/create.php" class="btn-success create">Créer</a>
                                 <!-- <a href="/views/backend/comments/edit.php" class="btn btn-warning disabled">Edit</a> -->
                                 <!-- <a href="/views/backend/comments/delete.php" class="btn btn-danger disabled">Delete</a> -->
                             </td>
@@ -114,8 +114,8 @@ if (isset($_SESSION['numMemb'])) {
                         <tr>
                             <td>Likes</td>
                             <td>
-                                <a href="/views/backend/likes/list.php" class="btn btn-primary ">List</a>
-                                <a href="/views/backend/likes/create.php" class="btn btn-success ">Create</a>
+                                <a href="/views/backend/likes/list.php" class="btn-primary list">Liste</a>
+                                <a href="/views/backend/likes/create.php" class="btn-success create">Créer</a>
                                 <!-- <a href="/views/backend/likes/edit.php" class="btn btn-warning disabled">Edit</a>
                                 <a href="/views/backend/likes/delete.php" class="btn btn-danger disabled">Delete</a> -->
                         </tr>
