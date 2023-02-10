@@ -40,6 +40,3 @@ $thematiques = sql_select("thematique", "*");
             <a href="create.php" class="btn btn-success">Create</a>
         </div>
     </div>
-
-    <?php
-    include '../../../footer.php'; // contains the footer
