@@ -33,7 +33,7 @@ h1 {
     margin-bottom: 5rem;
 }
 
-.lien-google {
+.lien-mentions-legales {
     font-family: "Montserrat", sans-serif;
     font-size: 20px;
     color: black;
@@ -41,7 +41,7 @@ h1 {
     text-decoration: none;
 }
 
-.lien-google:hover {
+.lien-mentions-legales:hover {
     color: #7C73F5;
     text-decoration: underline;
 }
