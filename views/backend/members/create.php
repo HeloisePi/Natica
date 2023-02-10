@@ -57,3 +57,6 @@ if (!check_access(1)) {
         </div>
     </div>
 </div>
+
+</body>
+</html>

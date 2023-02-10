@@ -60,3 +60,6 @@ $libThem = sql_select("THEMATIQUE", "*", "numThem = '$numThem'")[0]['libThem'];
 </div>
 
 </form>
+
+</body>
+</html>

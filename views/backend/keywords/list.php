@@ -60,3 +60,5 @@ $keywords = sql_select("motcle", "*");
         </div>
     </div>
 
+</body>
+</html>

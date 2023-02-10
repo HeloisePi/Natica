@@ -121,3 +121,6 @@ $article = sql_select("article", "*", "numArt = $numArt");
 
     </div>
 </div>
+
+</body>
+</html>

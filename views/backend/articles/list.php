@@ -82,3 +82,6 @@ $articles = sql_select("article", "*");
             <a href="create.php" class="btn-success list">Créer</a>
         </div>
     </div>
+
+</body>
+</html>

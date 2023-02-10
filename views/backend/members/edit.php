@@ -81,3 +81,6 @@ $membre = sql_select("membre", '*' , "numMemb = '$numMemb'")[0];
 </div>
 
 </form>
+
+</body>
+</html>

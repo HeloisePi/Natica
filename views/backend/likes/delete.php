@@ -39,3 +39,6 @@ $likeA = 0;
         </div>
     </div>
 </div>
+
+</body>
+</html>

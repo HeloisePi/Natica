@@ -62,3 +62,6 @@ $libCom = sql_select("COMMENT","libCom", "numCom = $numCom")[0]['libCom'];
 </div>
     
 </form>
+
+</body>
+</html>

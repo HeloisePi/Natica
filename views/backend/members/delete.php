@@ -42,3 +42,6 @@ $membre = sql_select("membre", '*', "numMemb = '$numMemb'")[0];
         </div>
     </div>
 </div>
+
+</body>
+</html>

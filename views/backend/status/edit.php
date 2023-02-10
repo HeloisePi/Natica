@@ -60,5 +60,6 @@ $libStat = sql_select("STATUT", "libStat", "numStat = $numStat")[0]['libStat'];
     </div>
 </div>
 
+
 </body>
 </html>

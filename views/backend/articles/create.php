@@ -13,8 +13,7 @@
 </head>
 <body>
     
-</body>
-</html>
+
 
 <?php
 include '../../../header.php';
@@ -127,3 +126,6 @@ if (!check_access(1)) {
     </div>
 </div>
 <?php require_once '../../../footer.php'; ?>
+
+</body>
+</html>

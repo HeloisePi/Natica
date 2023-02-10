@@ -76,3 +76,6 @@ $articles = sql_select('article', '*');
         </div>
     </div>
 </form>
+
+</body>
+</html>

@@ -60,3 +60,6 @@ $likes = sql_select("likeart", "*");
             <a href="create.php" class="btn-success list">Créer</a>
         </div>
     </div>
+
+</body>
+</html>

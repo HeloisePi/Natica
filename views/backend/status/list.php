@@ -67,6 +67,5 @@ $statuses = sql_select("STATUT", "*");
     </div>
 </div>
 
-
 </body>
 </html>

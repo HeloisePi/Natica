@@ -65,3 +65,7 @@ $commentaires = sql_select("COMMENT", "*");
             <a href="create.php" class="btn-success list">Créer</a>
         </div>
     </div>
+
+    
+</body>
+</html>

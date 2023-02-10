@@ -49,3 +49,6 @@ $pseudoMemb = sql_select("MEMBRE", 'pseudoMemb', "numMemb = $numMemb")[0]['pseud
         </div>
     </div>
 </div>
+
+</body>
+</html>

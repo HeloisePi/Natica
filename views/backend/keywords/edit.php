@@ -62,3 +62,6 @@ $libMotCle = sql_select("MOTCLE","libMotCle", "numMotCle = $numMotCle")[0]['libM
 </div>
     
 </form>
+
+</body>
+</html>
