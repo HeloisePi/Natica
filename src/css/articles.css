@@ -88,11 +88,10 @@ body {
     text-decoration: none;
 }
 .bloc-all {
-    display: block;
+    display: flex;
     margin-right: 1.7%;
     overflow: hidden;
     margin-bottom: 10% ;
-
     width: 335px;
     height: 314px;
     left: 60px;
@@ -107,5 +106,5 @@ body {
 }
 
 .info-all {
-    align-items: start;
+    margin-top: auto;
 }

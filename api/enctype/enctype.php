@@ -34,7 +34,7 @@ $article = array();
 
 // $article['name'] = $_POST['libTitrArt'];
 $article['aides'] = $aidesOfTheArticle;
-$article['couts'] = $_POST['cout'];
+$article['couts'] = trim($_POST['cout']);
 $article['adresse'] = $_POST['adresse'];
 
 
@@ -48,25 +48,24 @@ $jsonFinalData = json_encode($data);
 file_put_contents('../../views/backend/articles/data.json', $jsonFinalData);
 
 
-/*
+
 if (isset($_FILES)) {
     $path = upload_image($_FILES);
     // echo $path;
 }
 
-$urlPhotArt = sql_escape($path);*/
+$urlPhotArt = sql_escape($path);
 
-$libTitrArt = $_POST['libTitrArt'];
-$libChapoArt = $_POST['libChapoArt'];
-$libAccrochArt = $_POST['libAccrochArt'];
-$parag1Art = $_POST['parag1Art'];
-$libSsTitr1Art = $_POST['libSsTitr1Art'];
-$parag2Art = $_POST['parag2Art'];
-$libSsTitr2Art = $_POST['libSsTitr2Art'];
-$parag3Art = $_POST['parag3Art'];
-$libConclArt = $_POST['libConclArt'];
+$libTitrArt = sql_escape($_POST['libTitrArt']);
+$libChapoArt = sql_escape($_POST['libChapoArt']);
+$libAccrochArt = sql_escape($_POST['libAccrochArt']);
+$parag1Art = sql_escape($_POST['parag1Art']);
+$libSsTitr1Art = sql_escape($_POST['libSsTitr1Art']);
+$parag2Art = sql_escape($_POST['parag2Art']);
+$libSsTitr2Art = sql_escape($_POST['libSsTitr2Art']);
+$parag3Art = sql_escape($_POST['parag3Art']);
+$libConclArt = sql_escape($_POST['libConclArt']);
 $numThem = $_POST['numThem'];
-
 
 
 sql_insert('article', "`libTitrArt`, `libChapoArt`, `libAccrochArt`, `parag1Art`, `libSsTitr1Art`, `parag2Art`, `libSsTitr2Art`, `parag3Art`, `libConclArt`, `urlPhotArt`, `numThem`", "'$libTitrArt','$libChapoArt','$libAccrochArt','$parag1Art','$libSsTitr1Art','$parag2Art','$libSsTitr2Art','$parag3Art','$libConclArt','$urlPhotArt','$numThem'");
