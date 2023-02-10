@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,8 +12,13 @@
     <link rel="stylesheet" href="/assert/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf">
     <link rel="stylesheet" href="/assert/Montserrat-Italic-VariableFont_wght.ttf">
 </head>
+
 <body>
-    
+
+</body>
+
+</html>
+
 
 
 <?php
@@ -63,24 +69,24 @@ if (!check_access(1)) {
                     <textarea type="text" id="paragraphe3" name="parag3Art" class="form-control" required></textarea><br>
                     <label for="conclusion">Conclusion * </label><br>
                     <textarea type="text" id="conclusion" name="libConclArt" class="form-control" required></textarea><br>
-                    <label for="numThem">Mots-clés *</label><br>
+                    <label for="numThem">Thématiques *</label><br>
                     <?php
                     /*foreach ($numThems as $numThem) {
                     ?> <input type="checkbox" value="<?php echo $numThem['numThem'] ?>" id="numThem" name="numThem"> <?php echo $numThem['libThem']; ?> </input><br>
                     <?php*/
                     ?>
-                    
+
 
                     <select id="numMemb" class="form-control" type="int" name="numMemb" required>
-                    <?php
-                    foreach( $numThems as $numThem){
+                        <?php
+                        foreach ($numThems as $numThem) {
                         ?> <option value="<?php echo $numThem['numThem'] ?>"> <?php echo $numThem['libThem']; ?> </option>
                         <?php
-                    }
-                    ?>
+                        }
+                        ?>
 
 
-                </select>
+                    </select>
 
                     <br>
                     <label for="photo">Importer photo *</label><br>
@@ -95,32 +101,31 @@ if (!check_access(1)) {
                     <label for="defMent"><img src="/assert/svg/Deficients-mentaux-RVB.svg" alt="Deficients mentaux"></label>
                     <input type="checkbox" id="defMent" name="defMent">
 
-                <label for="defMent"><img src="/assert/svg/Deficients-mentaux-RVB.svg" alt="Deficients mentaux"></label>
-                <input type="checkbox" id="defMent" value="defMent" name="defMent">
-                
-                <label for="defMotA"> <img src="/assert/svg/Deficients-moteur-avec-accompagnateur-RVB.svg" alt="Déficient moteur avec accompagnateur"></label>
-                <input type="checkbox" id="defMotA" value="defMotA" name="defMotA">
+                    <label for="defMent"><img src="/assert/svg/Deficients-mentaux-RVB.svg" alt="Deficients mentaux"></label>
+                    <input type="checkbox" id="defMent" value="defMent" name="defMent">
 
-                <label for="defMot"> <img src="/assert/svg//Deficients-moteur-RVB.svg" alt="Déficient moteur"></label>
-                <input type="checkbox" id="defMot" value="defMot"name="defMot">
+                    <label for="defMotA"> <img src="/assert/svg/Deficients-moteur-avec-accompagnateur-RVB.svg" alt="Déficient moteur avec accompagnateur"></label>
+                    <input type="checkbox" id="defMotA" value="defMotA" name="defMotA">
 
-                <label for="defVis"> <img src="/assert/svg/Deficients-visuels-RVB.svg" alt="Deficient visuel"> </label>
-                <input type="checkbox" id="defVis" value="defVis"name="defVis">
+                    <label for="defMot"> <img src="/assert/svg//Deficients-moteur-RVB.svg" alt="Déficient moteur"></label>
+                    <input type="checkbox" id="defMot" value="defMot" name="defMot">
 
-                <label for="persMobiRedu"> <img src="/assert/svg/Personnes-a-mobilite-reduite-RVB.svg" alt=" Personnes à mobilité reduite"></label>
-                <input type="checkbox" id="persMobiRedu" value="persMobiRedu" name="persMobiRedu">
+                    <label for="defVis"> <img src="/assert/svg/Deficients-visuels-RVB.svg" alt="Deficient visuel"> </label>
+                    <input type="checkbox" id="defVis" value="defVis" name="defVis">
 
-                <label for="pousette"> <img src="/assert/svg/Poussette-RVB.svg" alt="Pousette"></label>
-                <input type="checkbox" id="pousette" value="pousette" name="pousette"><br>
+                    <label for="persMobiRedu"> <img src="/assert/svg/Personnes-a-mobilite-reduite-RVB.svg" alt=" Personnes à mobilité reduite"></label>
+                    <input type="checkbox" id="persMobiRedu" value="persMobiRedu" name="persMobiRedu">
+
+                    <label for="pousette"> <img src="/assert/svg/Poussette-RVB.svg" alt="Pousette"></label>
+                    <input type="checkbox" id="pousette" value="pousette" name="pousette"><br>
 
                     <label for="erreur"></label>
                     <?php
-                    // if (isset($_GET["error"])) {
-                    //     if ($_GET["error"] == 1)
-                    //         $msgErreur = $_GET['error'];
-                    // }
-
-                    // 
+                    if (isset($_GET["error"])) {
+                        if ($_GET["error"] == 1)
+                            $msgErreur = $_GET['error'];
+                        echo ('Le document est trop volumineux');
+                    }
                     ?>
                 </div>
                 <div class="form-group mt-2"></div>
@@ -137,4 +142,5 @@ if (!check_access(1)) {
 <?php require_once '../../../footer.php'; ?>
 
 </body>
+
 </html>

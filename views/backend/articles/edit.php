@@ -70,7 +70,7 @@ $article = sql_select("article", "*", "numArt = $numArt");
                     <input type="text" id="paragraphe3" name="parag3Art" class="form-control" value="<?php echo ($article[0]['parag3Art']) ?>" required><br>
                     <label for="conclusion">Conclusion * </label><br>
                     <input type="text" id="conclusion" name="libConclArt" class="form-control" value="<?php echo ($article[0]['libConclArt']) ?>" required><br>
-                    <label for="motcles">Mot-clés *</label><br>
+                    <label for="motcles">Thématiques *</label><br>
                     <select id="motcles" name="libMotCle" class="form-control" required>
                         <?php
                         foreach ($numThems as $numThem) {

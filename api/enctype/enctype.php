@@ -19,10 +19,10 @@ var_dump($data);
 $allArticles = $data['articles'];
 
 $aidesOfTheArticle = array();
-foreach($aides['aides'] as $aide) {
-    if(isset($_POST[$aide['name']])){
+foreach ($aides['aides'] as $aide) {
+    if (isset($_POST[$aide['name']])) {
         $aide['isActive'] = true;
-    }else{
+    } else {
         $aide['isActive'] = false;
     }
     array_push($aidesOfTheArticle, $aide);
@@ -70,6 +70,7 @@ $numThem = $_POST['numThem'];
 /*
 sql_insert('article', "`libTitrArt`, `libChapoArt`, `libAccrochArt`, `parag1Art`, `libSsTitr1Art`, `parag2Art`, `libSsTitr2Art`, `parag3Art`, `libConclArt`, `urlPhotArt`, `numThem`", "'$libTitrArt','$libChapoArt','$libAccrochArt','$parag1Art','$libSsTitr1Art','$parag2Art','$libSsTitr2Art','$parag3Art','$libConclArt','$urlPhotArt','$numThem'");
 sql_insert('article', "`libTitrArt`, `libChapoArt`, `libAccrochArt`, `parag1Art`, `libSsTitr1Art`, `parag2Art`, `libSsTitr2Art`, `parag3Art`, `libConclArt`, `urlPhotArt`, `numThem`", "'$libTitrArt','$libChapoArt','$libAccrochArt','$parag1Art','$libSsTitr1Art','$parag2Art','$libSsTitr2Art','$parag3Art','$libConclArt','$urlPhotArt','$numThem'");
+
 
 
 header('Location: ../../views/backend/articles/list.php'); */

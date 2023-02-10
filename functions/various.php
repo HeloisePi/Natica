@@ -39,7 +39,6 @@ function upload_image($files)
         exit("Le document n'est pas une image");
         return 0;
         $uploadOk = 0;
-        // header('Location: ../../../views/backend/articles/list.php?error=1');
     }
 
     // Check if file already exists
@@ -47,7 +46,6 @@ function upload_image($files)
         exit("Désolé, le document existe déjà.");
         return 0;
         $uploadOk = 0;
-        // header('Location: ../../../views/backend/articles/list.php?error=2');
     }
 
     // Check file size
@@ -55,7 +53,6 @@ function upload_image($files)
         exit("Désolé, le poids de votre image est trop volumineux.");
         return 0;
         $uploadOk = 0;
-        // header('Location: ../../../views/backend/articles/list.php?error=3');
     }
 
     // Allow certain file formats
@@ -66,14 +63,12 @@ function upload_image($files)
         exit("Désolé, seulement les formats JPG, JPEG, PNG, SVG & GIF sont autorisés.");
         return 0;
         $uploadOk = 0;
-        // header('Location: ../../../views/backend/articles/list.php?error=4');
     }
 
     // Check if $uploadOk is set to 0 by an error
     if ($uploadOk == 0) {
         exit("Désolé, votre fichier n'a pas été importé.");
         return 0;
-        // header('Location: ../../../views/backend/articles/list.php?error=5');
         // if everything is ok, try to upload file
     } else {
         if (move_uploaded_file($files["file"]["tmp_name"], $target_file)) {
@@ -82,7 +77,6 @@ function upload_image($files)
         } else {
             exit("Désolé, il ya eu une erreur lors de l'importation de votre fichier.");
             return 0;
-            // header('Location: ../../../views/backend/articles/list.php?error=6');
         }
     }
 }
