@@ -27,21 +27,22 @@ body {
     display: flex;
     margin-right: 2vw;
     overflow: hidden;
-
     width: 536px;
     height: 624px;
     left: 173px;
     top: 949px;
     background: #C1C6E0;
     border-radius: 5px;
+    z-index: -2;
 }
 
 .image-affiche {
     position: absolute;
-    width: 536px;
-    height: 4px;
-    background: #7C73F5;
+    width: 448px;
     border-radius: 5px;
+    z-index: -1;
+    padding-left: 104px;
+    padding-top: 20px;
 }
 
 .articles-header .bloc-square {
@@ -51,9 +52,9 @@ body {
     height: 195px;
     left: 732px;
     top: 949px;
-    background: #C1C6E0;
     border-radius: 5px;
 }
+
 
 .articles-header .info-square {
     display: inline-block;
@@ -63,15 +64,19 @@ body {
     font-size: 20px;
 }
 
-.articles-header .info-square h3,
-.articles-header .info-square p {
+.articles-header .infos  p {
     display: flex;
+    max-width: 400px;
 }
 
-.articles-header .info-rect h3,
-.articles-header .info-rect p {
-    display: absolute;
+.articles-header .info-rect {
+    /* display: absolute; */
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    padding-left: 5%;
 }
+
 
 
 .articles-decouvrir {

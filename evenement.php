@@ -125,7 +125,7 @@ $comments = sql_select('ARTICLE INNER JOIN COMMENT ON ARTICLE.numArt = COMMENT.n
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2828.1292245637246!2d-0.5564116!3d44.859664!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd55288fe04778c1%3A0x93bb1087fb9940ec!2sHangar%2020%2C%20Quai%20de%20Bacalan%2C%2033300%20Bordeaux!5e0!3m2!1sfr!2sfr!4v1675932814425!5m2!1sfr!2sfr" width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="align-element-col2">
-                <p>Adresse :</p>
+                <p>Adresse :</p><br>
                 <?php
                 $file = 'views/backend/articles/data.json'; 
                 $data = file_get_contents($file); 
