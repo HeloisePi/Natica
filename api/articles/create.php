@@ -6,20 +6,20 @@ if (!check_access(1)) {
     exit();
 }
 
-$libTitrArt = $_POST['libTitrArt'];
-$libChapoArt = $_POST['libChapoArt'];
-$libAccrochArt = $_POST['libAccrochArt'];
-$parag1Art = $_POST['parag1Art'];
-$libSsTitr1Art = $_POST['libSsTitr1Art'];
-$parag2Art = $_POST['parag2Art'];
-$libSsTitr2Art = $_POST['libSsTitr2Art'];
-$parag3Art = $_POST['parag3Art'];
-$libConclArt = $_POST['libConclArt'];
-$urlPhotArt = $_POST['urlPhotArt'];
+$libTitrArt = sql_escape($_POST['libTitrArt']);
+$libChapoArt = sql_escape($_POST['libChapoArt']);
+$libAccrochArt = sql_escape($_POST['libAccrochArt']);
+$parag1Art = sql_escape($_POST['parag1Art']);
+$libSsTitr1Art = sql_escape($_POST['libSsTitr1Art']);
+$parag2Art = sql_escape($_POST['parag2Art']);
+$libSsTitr2Art = sql_escape($_POST['libSsTitr2Art']);
+$parag3Art = sql_escape($_POST['parag3Art']);
+$libConclArt = sql_escape($_POST['libConclArt']);
+$urlPhotArt = sql_escape($_POST['urlPhotArt']);
 $numThem = $_POST['numThem'];
 echo $numThem;
 
 
 
-sql_escape(sql_insert('article', "`libTitrArt`, `libChapoArt`, `libAccrochArt`, `parag1Art`, `libSsTitr1Art`, `parag2Art`, `libSsTitr2Art`, `parag3Art`, `libConclArt`, `urlPhotArt`, `numThem`", "'$libTitrArt','$libChapoArt','$libAccrochArt','$parag1Art','$libSsTitr1Art','$parag2Art','$libSsTitr2Art','$parag3Art','$libConclArt','$urlPhotArt','$numThem'"));
-header('Location: ../../views/backend/articles/list.php');
+sql_insert('article', "`libTitrArt`, `libChapoArt`, `libAccrochArt`, `parag1Art`, `libSsTitr1Art`, `parag2Art`, `libSsTitr2Art`, `parag3Art`, `libConclArt`, `urlPhotArt`, `numThem`", "'$libTitrArt','$libChapoArt','$libAccrochArt','$parag1Art','$libSsTitr1Art','$parag2Art','$libSsTitr2Art','$parag3Art','$libConclArt','$urlPhotArt','$numThem'");
+//header('Location: ../../views/backend/articles/list.php');

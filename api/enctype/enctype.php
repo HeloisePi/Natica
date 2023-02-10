@@ -14,23 +14,22 @@ if (isset($_FILES)) {
 }
 
 $urlPhotArt = sql_escape($path);
-
-$libTitrArt = $_POST['libTitrArt'];
-$libChapoArt = $_POST['libChapoArt'];
-$libAccrochArt = $_POST['libAccrochArt'];
-$parag1Art = $_POST['parag1Art'];
-$libSsTitr1Art = $_POST['libSsTitr1Art'];
-$parag2Art = $_POST['parag2Art'];
-$libSsTitr2Art = $_POST['libSsTitr2Art'];
-$parag3Art = $_POST['parag3Art'];
-$libConclArt = $_POST['libConclArt'];
+$libTitrArt = sql_escape($_POST['libTitrArt']);
+$libChapoArt = sql_escape($_POST['libChapoArt']);
+$libAccrochArt = sql_escape($_POST['libAccrochArt']);
+$parag1Art = sql_escape($_POST['parag1Art']);
+$libSsTitr1Art = sql_escape($_POST['libSsTitr1Art']);
+$parag2Art = sql_escape($_POST['parag2Art']);
+$libSsTitr2Art = sql_escape($_POST['libSsTitr2Art']);
+$parag3Art = sql_escape($_POST['parag3Art']);
+$libConclArt = sql_escape($_POST['libConclArt']);
 $numThem = $_POST['numThem'];
 
 
-
 sql_insert('article', "`libTitrArt`, `libChapoArt`, `libAccrochArt`, `parag1Art`, `libSsTitr1Art`, `parag2Art`, `libSsTitr2Art`, `parag3Art`, `libConclArt`, `urlPhotArt`, `numThem`", "'$libTitrArt','$libChapoArt','$libAccrochArt','$parag1Art','$libSsTitr1Art','$parag2Art','$libSsTitr2Art','$parag3Art','$libConclArt','$urlPhotArt','$numThem'");
-if (sql_select('ARTICLES', 'urlPhotArt', "urlPhotArt = '$urlPhotArt'")[0]['urlPhotArt'] == $urlPhotArt) {
-    header('Location: ../../../views/backend/articles/list.php?error=1');
-}
+//sql_insert('article', "`libTitrArt`, `libChapoArt`, `libAccrochArt`, `parag1Art`, `libSsTitr1Art`, `parag2Art`, `libSsTitr2Art`, `parag3Art`, `libConclArt`, `urlPhotArt`, `numThem`", "'$libTitrArt','$libChapoArt','$libAccrochArt','$parag1Art','$libSsTitr1Art','$parag2Art','$libSsTitr2Art','$parag3Art','$libConclArt','$urlPhotArt','$numThem'");
+// if (sql_select('ARTICLES', 'urlPhotArt', "urlPhotArt = '$urlPhotArt'")[0]['urlPhotArt'] == $urlPhotArt) {
+//     header('Location: ../../../views/backend/articles/list.php?error=1');
+// }
 
-header('Location: ../../views/backend/articles/list.php');
+//header('Location: ../../views/backend/articles/list.php');
