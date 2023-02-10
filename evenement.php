@@ -55,7 +55,7 @@ $comments = sql_select('ARTICLE INNER JOIN COMMENT ON ARTICLE.numArt = COMMENT.n
     <p class="separation"> > </p>
     <a href="/articles.php" class="liens-ariane">Articles</a>
     <p class="separation"> > </p>
-    <a href="/evenement.php" class="liens-ariane"><?php echo ('<p>' . $libThem . ' ' . ':' . '</p>') ?></a>
+    <a href="#!" class="liens-ariane"><?php echo ('<p>' . $libThem . ' ' . ':' . '</p>') ?></a>
 </div>
 
 <div class="header-evenement">
