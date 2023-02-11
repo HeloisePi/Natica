@@ -183,7 +183,7 @@ $comments = sql_select('ARTICLE INNER JOIN COMMENT ON ARTICLE.numArt = COMMENT.n
 </div>
 
 <?php 
-$commentaires = sql_select('COMMENT', '*', "", "numArt DESC");
+$commentaires = sql_select('COMMENT', '*', "numArt = $numArt", "numArt DESC");
 //$numMemb = $commentaires['numMemb'];
 //$pseudoMemb = sql_select('MEMBRE', 'pseudoMemb', "numMemb = $numMemb");
 ?>
@@ -219,23 +219,43 @@ $commentaires = sql_select('COMMENT', '*', "", "numArt DESC");
 </form>
 <br>
 
-<?php foreach ($commentaires as $commentaire){?>
-<div class="container">
-    <div class="row espace-commentaire">
-        <div class="col-2 img-pp-coms">
-            <img src="/images/pp.svg" alt="Pictogramme de photo de profile">
-        </div>
-        <div class="col-6 apercu-comm">
-            <p></p>
-            <p><?php echo $commentaire['libCom']?></p>
-        </div>
-    </div>
-</div>
-<?php }?>
+<?php foreach ($commentaires as $commentaire){
+    if (!check_access(2)) {?>
+            <div class="container">
+                <div class="row espace-commentaire">
+                    <div class="col-2 img-pp-coms">
+                        <img src="/images/pp.svg" alt="Pictogramme de photo de profile">
+                    </div>
+                    <div class="col-6 apercu-comm">
+                        <p><?php echo $commentaire['libCom'] ?></p>
+                    </div>
+                <div class = "col-2 signaler-commentaire">
+                </div>
+                </div>
+            </div>
+        </form>
+    <?php }
+    else {?>
+        <form action="<?php echo ROOT_URL . '/api/comments/delete.php' ?>" method="post">
+        <input id="numCom" class="form-control" style="display: none;" type="text" name="numCom" value=" <?php echo $commentaire['numCom'] ?>">
+            <div class="container">
+                <div class="row espace-commentaire">
+                    <div class="col-2 img-pp-coms">
+                        <img src="/images/pp.svg" alt="Pictogramme de photo de profile">
+                    </div>
+                    <div class="col-6 apercu-comm">
+                        <p></p>
+                        <textarea id="libCom" class="form-control" type="text" name="libCom" readonly = "readonly"><?php echo $commentaire['libCom'] ?></textarea>
+                    </div>
+                    <button type="submit" class="bouton-signaler">Signaler le commentaire</button>
+                </div>
+            </div>
+        </form>
 
-<?php
-include 'footer.php';
-?>
+    <?php }
+}
+
+include 'footer.php';?>
 
 </body>
 

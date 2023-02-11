@@ -18,6 +18,25 @@ if (!check_access(2)) {
     header('Location: /'); //Redirect to home
     exit();
 }
+//erreurs à afficher 
+        if (isset($_GET["error"])) {
+            if ($_GET["error"] == 1) {
+                $msgErreur = $_GET['error'];
+            ?>
+                <span>
+                    <span> Le commentaire a bien été supprimé ! </span><br><br>
+                </span>
+        <?php }
+            if ($_GET["error"] == 2) {
+                $msgErreur = $_GET['error'];
+            ?>
+                <span>
+                    <span> Le commentaire a bien été ajouté ! </span><br><br>
+                </span>
+        <?php }
+        }
+        //requete sql pour afficher les articles                   
+        require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
 
 //Load all comments
 $commentaires = sql_select("COMMENT", "*");

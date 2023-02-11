@@ -100,6 +100,7 @@
     width: 100%;
 }
 
+
 @media screen and (max-width: 900) {
     .header-evenement {
         display: grid;
@@ -172,7 +173,7 @@ label {
     margin-bottom: 3rem;
 }
 
-.apercu-comm {
+.apercu-comm textarea{
     background-color: #C1C6E0;
     padding-top: 0.5rem;
 }

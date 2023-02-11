@@ -13,7 +13,7 @@ if (!check_access(2)) {
 }
 else{   
     sql_insert('COMMENT', "`libCom`, `numArt`, `numMemb`","'$libCom', '$numArt', '$numMemb'");
-    header('Location: ../../views/backend/comments/list.php');
+    header('Location: ../../views/backend/comments/list.php?error=2');
 }
 
 

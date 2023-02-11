@@ -16,4 +16,4 @@ var_dump($numCom);
 
 sql_delete('COMMENT',"numCom = '$numCom'");
 
-header('Location: ../../views/backend/comments/list.php');
+header('Location: ../../views/backend/comments/list.php?error=1');
