@@ -14,7 +14,7 @@
 include '../../../header.php'; // contains the header and call to config.php
 
 //Security check
-if (!check_access(1) || !check_access(2)) {
+if (!check_access(2)) {
     header('Location: /'); //Redirect to home
     exit();
 }
