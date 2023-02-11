@@ -54,8 +54,8 @@
                             }       
                         } ?>
 
-                        <label for="passMemb">Mot de passe* </label> <br>
-                        <input class="form-control taille-saisie" type="password" id="passMemb" name='passMemb' required> <br>
+                        <label for="passMemb">Mot de passe* (plus de 8 caractères) </label> <br>
+                        <input class="form-control taille-saisie" type="password" id="passMemb" name='passMemb' minlength="8"required> <br>
 
 
                     </div>

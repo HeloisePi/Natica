@@ -46,7 +46,7 @@ $articles = sql_select('article', '*');
 
 
 
-                    <label for="titre">Numéro de l'article *</label>
+                    <label for="titre">Titre de l'article *</label>
 
                     <select id="numArt" class="form-control" type="int" name="numArt" required>
                     <?php
@@ -57,7 +57,7 @@ $articles = sql_select('article', '*');
                     ?>
                 </select>
 
-                    <label for="titre">Numéro du membre *</label>
+                    <label for="titre">Membre *</label>
                     <select id="numMemb" class="form-control" type="int" name="numMemb" required>
                     <?php
                     foreach( $membres as $membre){

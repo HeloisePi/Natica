@@ -182,47 +182,56 @@ $comments = sql_select('ARTICLE INNER JOIN COMMENT ON ARTICLE.numArt = COMMENT.n
     </div>
 </div>
 
+<?php 
+$commentaires = sql_select('COMMENT', '*', "", "numArt DESC");
+//$numMemb = $commentaires['numMemb'];
+//$pseudoMemb = sql_select('MEMBRE', 'pseudoMemb', "numMemb = $numMemb");
+?>
+
+
+<form action="<?php echo ROOT_URL . '/api/comments/create.php' ?>" method="post">
+<input id="numArt" class="form-control" style="display: none;" type="text" name="numArt" value=" <?php echo ($numArt) ?>">
 <div class="container">
     <div class="row">
         <div class="col-10 align-bloc-comm">
-            <label class="date-evenement3 " for="libCom">Votre commentaire :</label>
-            <br>
-            <textarea class="bloquer-la-taille col-10" id="numCom" name="libCom">
-            </textarea>
-            <br>
-            <div class="align-text-atention-comm">
-                <img src="/images/attention-picto.svg" alt="Pictogramme attention">
-                <p class="text-com-attention">Merci de bien rester cordial et d’écrire des avis constructifs.</p>
-            </div>
+                <label class="date-evenement3 " for="libCom">Votre commentaire :</label>
+                <br>
+                <textarea type="text" id="commentaire" name="libCom" maxlength="100" class="bloquer-la-taille col-10" required>
+                </textarea>
+                <br>
+                <div class="align-text-atention-comm">
+                    <img src="/images/attention-picto.svg" alt="Pictogramme attention">
+                    <?php if (isset($_SESSION['numMemb'])){?>
+                    <p class="text-com-attention">Merci de bien rester cordial et d’écrire des avis constructifs.</p> <?php }
+                    else{ ?>
+                        <p class="text-com-attention">Vous devez avoir un compte pour envoyer des commentaires</p>
+                    <?php }?>
+                </div>
         </div>
     </div>
 </div>
+<?php if (isset($_SESSION['numMemb'])){?>
 <div class="btn-com-envoyer">
+<input id="numMemb" class="form-control" style="display: none;" type="text" name="numMemb" value=" <?php echo $_SESSION['numMemb'] ?>">    
     <button type="submit" class="conect1">Envoyer</button>
+    <?php } ?>
 </div>
+</form>
 <br>
 
+<?php foreach ($commentaires as $commentaire){?>
 <div class="container">
     <div class="row espace-commentaire">
         <div class="col-2 img-pp-coms">
             <img src="/images/pp.svg" alt="Pictogramme de photo de profile">
         </div>
         <div class="col-6 apercu-comm">
-            <p>Trop cool comme article, j'adore !</p>
+            <p></p>
+            <p><?php echo $commentaire['libCom']?></p>
         </div>
     </div>
 </div>
-
-<div class="container">
-    <div class="row espace-commentaire">
-        <div class="col-2 img-pp-coms">
-            <img src="/images/pp.svg" alt="Pictogramme de photo de profile">
-        </div>
-        <div class="col-6 apercu-comm">
-            <p>Ça donne envie de d'y aller.</p>
-        </div>
-    </div>
-</div>
+<?php }?>
 
 <?php
 include 'footer.php';
