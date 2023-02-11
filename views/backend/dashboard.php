@@ -39,7 +39,7 @@ if (isset($_SESSION['numMemb'])) {
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1>Mode administrateur</h1>
+                <h1> <?php echo ("Mode ".  $libStat )?></h1>
             </div>
             <div class="col-md-12">
                 <table class="table table-striped">
