@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:8889
--- Généré le : sam. 11 fév. 2023 à 11:15
+-- Généré le : sam. 11 fév. 2023 à 18:36
 -- Version du serveur : 5.7.39
 -- Version de PHP : 7.4.33
 
@@ -68,6 +68,13 @@ CREATE TABLE `COMMENT` (
   `numArt` int(8) NOT NULL,
   `numMemb` int(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Déchargement des données de la table `COMMENT`
+--
+
+INSERT INTO `COMMENT` (`numCom`, `dtCreCom`, `libCom`, `attModOK`, `dtModCom`, `notifComKOAff`, `delLogiq`, `numArt`, `numMemb`) VALUES
+(2, '2023-02-11 11:38:59', 'J\'adore !', 0, '0000-00-00 00:00:00', NULL, 0, 8, 12);
 
 -- --------------------------------------------------------
 
@@ -255,7 +262,7 @@ ALTER TABLE `ARTICLE`
 -- AUTO_INCREMENT pour la table `COMMENT`
 --
 ALTER TABLE `COMMENT`
-  MODIFY `numCom` int(10) NOT NULL AUTO_INCREMENT;
+  MODIFY `numCom` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT pour la table `MEMBRE`
